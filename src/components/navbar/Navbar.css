@@ -1,0 +1,67 @@
+.navbarr {
+    position:relative;
+   overflow:hidden;
+   cursor: pointer;
+}
+#toggler{
+    width:54px;
+    height:50px;
+    border-radius:2px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    position:fixed;
+    z-index:1;
+    right: 20px;
+    top: 20px;
+    
+ }
+ #navBar {
+   top : 4rem;
+ }
+ .logo-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    z-index:1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
+    width: 100%;
+    height: auto;
+  }
+ .tog{
+    width:60%;
+    height:2.5px;
+    background:#ffff;
+    margin:4px 0;
+    transition:opacity .15s, transform .5s;;
+ }
+ ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    font-weight:700;
+    font-variant:small-caps;
+    width:200px;
+    font-family:sans-serif;
+    font-size:20px;
+    position:fixed;
+    margin-top:75px;
+    right: -200px; 
+    transition: right 0.5s; 
+    z-index: 11111111;
+ }
+ ul li{
+    padding:20px;
+    border-bottom:1px #046635 solid;
+    background:#fff;
+    transition:background .3s;
+ }
+ ul li:hover{
+    background:#046635;
+    color:#fff;
+ }
+
+
+ 
