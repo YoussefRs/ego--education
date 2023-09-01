@@ -33,17 +33,11 @@ function Bac() {
     <div className='min-h-full overflow-x-hidden z-0 conf'>
       <WaveShape />
       <div className='welcome w-full'>
-        <div className="flex justify-center md:justify-center lg:justify-end">
+        <div className="flex justify-center md:justify-end lg:justify-end">
           {/* <h1 className='text-2xl lg:text-4xl'>WELCOME TO EGO</h1> */}
-          <img src={prog} />
+          <img src={prog} className='h-[100px] lg:h-full md:h-full '/>
         </div>
-        <div className="courses">
-          <div className="bac-details">
-            <h3>What We Do</h3>
-            
-          </div>
-        </div>
-        <WaveShape rotate={'rotate(180deg)'} />
+        {/* <WaveShape rotate={'rotate(180deg)'} /> */}
       </div>
     </div>
   );

@@ -3,9 +3,9 @@
 }
 
 
-main p{
+/* main p{
     color: #fff;
-}
+} */
 
 .btn{
     display: inline-block;
@@ -35,7 +35,7 @@ main p{
     /* margin: 3rem 0; */
     transition: 0.5s;
     /* background: #9bd3a5; */
-    height: 30rem;
+    /* height: 30rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,7 +56,6 @@ main p{
 } */
 .heading h2,p{
     color: #fff;
-    
 }
 
 .course-details p,h3{

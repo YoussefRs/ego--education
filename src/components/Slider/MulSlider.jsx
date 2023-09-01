@@ -50,31 +50,39 @@ function MulSlider() {
       ],
   };  
     const cards = [
-      {"image":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg", 
-      "title":"Burgundy Flemming", 
-      "subtitle":"Advertising"},
-    {"image":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample119.jpg", 
-      "title":"Nigel Nigel", 
-      "subtitle":"Sound & Vision"},
-    {"image":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample120.jpg", 
-      "title":"Caspian Bellevedere", 
-      "subtitle":"Accounting"},
-    {"image":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample120.jpg", 
-      "title":"Caspian Bellevedere", 
-      "subtitle":"Accounting"},
+      {"image":"https://www.ego-education.com/wp-content/uploads/elementor/thumbs/educazione_formazione-pubkc8zxjhejkpqu68tvn6qtvqsee4fek8czxecerc.jpg", 
+      "title":"Educational Sciences", 
+      "subtitle":"Tution fee: € 3000",
+      "duration":"Duration: 3 Years Years"},
+
+    {"image":"https://www.ego-education.com/wp-content/uploads/elementor/thumbs/economia-aziendale-pubkjptru3mjt6wckh16gawnrxzdjk2mx6xv6j9tbs.jpg", 
+      "title":"Business Administration", 
+      "subtitle":"Tution fee: € 3.000",
+      "duration":"Duration: 3 Years Years"},
+
+    {"image":"https://www.ego-education.com/wp-content/uploads/elementor/thumbs/sport-sciences-pubk1zlcxlcutynf3b5hx9yofbd5d2ow5fz6bnk4oo.jpg", 
+      "title":"Sport Sciences", 
+      "subtitle":"Tution fee: € 3.000",
+      "duration":"Duration: 3 Years Years"},
+
+    {"image":"https://www.ego-education.com/wp-content/uploads/elementor/thumbs/ingegneria-civile-pubkhzsfb19mixegmq7svqk8kih5fj8convti9tsqg.jpg", 
+      "title":"Civil Engineering", 
+      "subtitle":"Tution fee: € 3.000",
+      "duration":"Duration: 3 Years Years"},
   ];
 
   return (
     <>
-      <Slider {...settings} >
+      <Slider {...settings} className=' md:p-0 lg:p-0' >
                         {cards.map((each, i) =>(
-                            <div key={i} className=' w-full newsCard news-Slide-up '>
-                                <img className='object-cover w-inherit cursor-pointer card rounded-2xl border-none ' src={each.image}/>
-                                <div class='newsCaption'>
+                            <div key={i} className=' newsCard news-Slide-up  '>
+                                <img className='object-cover w-inherit cursor-pointer card rounded-2xl border-none' src={each.image}/>
+                                <div class='newsCaption '>
                                   <h2 class='newsCaption-title'>{each.title}</h2>
                                   <p class='newsCaption-content'>
-                                    Description
+                                  {each.subtitle}
                                   </p>
+                                  {each.duration}
                                   <p><a class='newsCaption-link' href='#'>READ MORE</a></p>    
                                 </div>
                             </div>

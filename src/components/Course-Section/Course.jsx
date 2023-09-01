@@ -2,7 +2,6 @@ import React from 'react'
 import './Course.css'
 import WaveShape from '../WaveShape'
 import MulSlider from '../Slider/MulSlider'
-import Prog from '../../assets/logo/Progetto-senza-titolo.png'
 
 function Course() {
   return (

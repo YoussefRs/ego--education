@@ -40,12 +40,12 @@ body{
 /* -------   Essentials   ------ */
 
 h1{
-  font-size: 4.5rem;
-  text-align: center;
+  font-size: 2.5rem;
+  text-align: right;
   color: #fff;
 }
 
-h2{
+/* h2{
   font-size: 2.5rem;
   color: #fffcfc;
   text-align: center;
@@ -67,7 +67,7 @@ p{
   font-size: 15px;
   color: rgb(189, 186, 186);
   text-align: center;
-}
+} */
 
 .slider{
   background: #2a2e33;

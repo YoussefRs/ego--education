@@ -16,8 +16,8 @@
     width: 100%;
     height: 100%;
     background-color: #000;
-    -webkit-transform: translateY(80%);
-            transform: translateY(80%);
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     -webkit-transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;

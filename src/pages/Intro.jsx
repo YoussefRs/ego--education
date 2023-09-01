@@ -20,17 +20,17 @@ function Intro() {
             <span className='hide '><img src={Logo} alt='ego-education logo' className="text" style={{height: 100}}/></span>
                 <div className='p-0 m-0 text-center'>
                 <h2 className='hide '>
-                    <span className='text-2xl sm:text-sm md:text-5xl lg:text-6xl xl:text-7xl font-bold'>Own your future</span>
+                    <span className='text-2xl text-white sm:text-sm md:text-5xl lg:text-6xl xl:text-7xl font-bold'>Own your future</span>
                 </h2>
                 <h2 className='hide '>
-                    <span className='text-2xl sm:text-l md:text-5xl lg:text-6xl xl:text-7xl font-bold'>learning <span style={{color: '#046635', textDecoration: 'underline', }}
-                        className='text-2xl sm:text-l md:text-5xl lg:text-6xl xl:text-7xl font-bold'
+                    <span className='text-2xl text-white sm:text-l md:text-5xl lg:text-6xl xl:text-7xl font-bold'>learning <span style={{color: '#046635', textDecoration: 'underline', }}
+                        className='text-2xl text-white sm:text-l md:text-5xl lg:text-6xl xl:text-7xl font-bold'
                         >
                         new skills</span>
                     </span>
                 </h2>  
                 <h2 className='hide '>
-                    <span className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold'>online.</span>
+                    <span className='text-2xl text-white sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold'>online.</span>
                 </h2>  
                 </div>
             </div>

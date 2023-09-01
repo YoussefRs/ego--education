@@ -4,6 +4,7 @@ import Course from '../components/Course-Section/Course';
 import Navbar from '../components/navbar/Navbar';
 import Bac from '../components/Degrees-Section/Bac';
 import WaveShape from '../components/WaveShape';
+import Exp from '../components/Experience-Section/Exp';
 
 
 function Homepage() {
@@ -28,13 +29,13 @@ function Homepage() {
             </video>
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black to-transparent"></div>
           </div>
-          <WaveShape  rotate={'rotateX(180deg)'}/>
+          {/* <WaveShape  rotate={'rotateX(180deg)'}/> */}
         </main>
       </div>
-      <Welcome />
       <Course />
       {/* <Welcome /> */}
       <Bac />
+      <Exp />
     </div>
 
   );
