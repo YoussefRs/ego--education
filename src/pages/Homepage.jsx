@@ -33,7 +33,7 @@ function Homepage() {
         </main>
       </div>
       <Course />
-      {/* <Welcome /> */}
+      <Welcome />
       <Bac />
       <Exp />
     </div>
