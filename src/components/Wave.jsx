@@ -10,7 +10,6 @@ function WaveShape({color, height, rotate}) {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="absolute "
           style={{ height: `${height}`,  }}
         >
           {/* ,<svg viewBox="0 0 1540 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(69, 53, 53, 0)" d="M 0 0 C 78.10000000000001 0 702.9 110 781 110 L 781 110 L 781 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(69, 53, 53, 0)" d="M 780 110 C 855 110 1455 200 1530 200 L 1530 200 L 1530 0 L 780 0 Z" stroke-width="0"></path> </svg> */}

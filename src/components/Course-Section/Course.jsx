@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
+import './Course.css'
 import WaveShape from '../WaveShape'
 import MulSlider from '../Slider/MulSlider'
-import '../Welcome-section/Welcome.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -30,15 +30,15 @@ function Course() {
     });
   }, []);
   return (
-    <div className='min-h-full overflow-hidden confWrap'>
-                <WaveShape  rotate={'rotateY(180deg)'}/>
-                <div className='welcome w-screen'>
-                    <div className="heading w-screen pr-8 pl-8 flex justify-between items-center confWrap z-2" >
-                        <h1 className='text-2xl lg:text-4xl'>COURSES </h1>
+    <div className=''>
+                {/* <WaveShape  rotate={'rotateY(180deg)'}/> */}
+                <div className=''>
+                  <div className="" >
                         {/* <p className='text-sm lg:text-lg'>VIEW MORE </p> */}
                     </div>
                 
-                    <div className="confWrap lg:ml-8 lg:mr-12">
+                    <div className="lg:ml-8 lg:mr-12">
+                      <h1 className='text-2xl lg:text-4xl text-left'>COURSES </h1>
                         <MulSlider />
                     </div>
                 </div>
