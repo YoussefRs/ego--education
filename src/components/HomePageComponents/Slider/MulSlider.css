@@ -1,10 +1,9 @@
 .newsCard {
     position: relative;
-    width: 500px;
-    height: 250px;
     color:#fff;
     overflow: hidden;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 15px;
   }
   
   .newsCaption {
@@ -16,19 +15,21 @@
     width: 100%;
     height: 100%;
     background-color: #000;
-    -webkit-transform: translateY(70%);
-            transform: translateY(70%);
+    -webkit-transform: translateY(75%);
+            transform: translateY(80%);
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     -webkit-transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
     transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
     transition: transform 0.4s, opacity 0.1s 0.3s;
     transition: transform 0.4s, opacity 0.1s 0.3s, -webkit-transform 0.4s;
+    text-align: center;
   }
   
   .newsCaption-title {
     margin-top: 0px;
-    font-size: 30px;
+    /* font-size: 20px; */
+    padding: 15px;
   }
   
   .newsCaption-content {
@@ -36,6 +37,7 @@
   }
   
   .newsCaption-link {
+    
     color: #fff;
     text-decoration: underline;
     opacity: .8;
@@ -58,4 +60,5 @@
     transition: opacity 0.1s, -webkit-transform 0.4s;
     transition: transform 0.4s, opacity 0.1s;
     transition: transform 0.4s, opacity 0.1s, -webkit-transform 0.4s;
+    
   }

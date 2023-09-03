@@ -1,18 +1,18 @@
-
+import { useEffect, useRef, useState } from 'react'
+import viteLogo from '/vite.svg'
 import './App.css'
-import './components/Welcome-section/Welcome.css'
-import Intro from './pages/Intro'
-import Homepage from './pages/Homepage'
-
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Intro from './pages/intro'
+import Homepage from './pages/HomePage'
+import Course from './components/HomePageComponents/Courses/Course'
+gsap.registerPlugin(ScrollTrigger)
 
 function App() {
-
- 
-
   return (
     <>
-      <Intro />
-      <Homepage />
+        <Intro />
+        <Homepage />
     </>
   )
 }

@@ -12,16 +12,6 @@ function MulSlider() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
-    nextArrow: (
-      <div>
-        <div className="next-slick-arrow text-white"> ⫸ </div>
-      </div>
-    ),
-    prevArrow: (
-      <div>
-        <div className="prev-slick-arrow"> ⫷ </div>
-      </div>
-    ),
     responsive: [
         {
           breakpoint: 1024,
@@ -73,13 +63,13 @@ function MulSlider() {
 
   return (
     <>
-      <Slider {...settings} className=' md:p-0 lg:p-0' >
+      <Slider {...settings} className=' ml-8 mr-8' >
                         {cards.map((each, i) =>(
                             <div key={i} className=' newsCard news-Slide-up  '>
                                 <img className='object-cover w-inherit cursor-pointer card rounded-2xl border-none' src={each.image}/>
                                 <div class='newsCaption '>
                                   <h2 class='newsCaption-title'>{each.title}</h2>
-                                  <p class='newsCaption-content'>
+                                  <p class='newsCaption-content  '>
                                   {each.subtitle}
                                   </p>
                                   {each.duration}

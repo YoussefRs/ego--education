@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import Logo from '../../assets/logo/logo-ego-white.png'
+import Logo from '../../../assets/logo/logo-ego-white.png'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-   <section className='navbarr w-full mb-[6em] md:mb-[6em] lg:mb-[6em]'>
+   <section className='navbarr w-full mb-[5.6em] lg:mb-0'>
         <div className="logo-container z-9">
           <img src={Logo} alt="Logo" style={{height: 50,}} />
         </div>
