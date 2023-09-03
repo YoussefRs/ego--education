@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
