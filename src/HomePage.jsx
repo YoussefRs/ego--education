@@ -1,7 +1,7 @@
-import Course from "../components/HomePageComponents/Courses/Course";
-import Navbar from "../components/HomePageComponents/NavBar/Navbar";
-import Team from "../components/HomePageComponents/Team/Team";
-import Welcome from "../components/HomePageComponents/Welcome/Welcome";
+import Course from "./components/HomePageComponents/Courses/Course";
+import Navbar from "./components/HomePageComponents/NavBar/Navbar";
+import Team from "./components/HomePageComponents/Team/Team";
+import Welcome from "./components/HomePageComponents/Welcome/Welcome";
 
 function Homepage() {
 
