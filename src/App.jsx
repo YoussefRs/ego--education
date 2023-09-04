@@ -4,7 +4,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./Components/Home";
 import Loading from "./Components/Loading/Loading";
 import Footer from "./Components/Footer/Footer";
-import Navbarr from "./Components/NavBar/Navbar";
+import Navbarr from "./Components/navBar";
 
 function App() {
 
