@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import './App.css'
 import { Route, Routes, useLocation } from "react-router-dom";
-import Navbar from './components/navbar/Navbar';
 import Home from "./Components/Home";
 import Loading from "./Components/Loading/Loading";
 import Footer from "./Components/Footer/Footer";
+import Navbar from "./Components/NavBar/Navbar";
 
 function App() {
 
