@@ -1,7 +1,7 @@
 import React from "react";
-import "../../App.css";
+import "../App.css";
 import "./Navbar.css";
-import logo from "../../assets/logo/logo-ego-white-2.png"
+import logo from "../assets/logo/logo-ego-white-2.png"
 import { NavLink } from "react-router-dom";
 
 function Navbarr() {
