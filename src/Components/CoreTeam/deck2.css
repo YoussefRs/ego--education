@@ -1,0 +1,14 @@
+.deckback{
+    position: relative;
+    background-color: #000;
+    /* background-color: rgba(10, 25, 49, 0.9); */
+    z-index: 100;
+    /* opacity: 1; */
+    height: 750px;
+}
+
+@media screen and (max-width:412px) {
+    .deckback{
+        height: 700px;
+    }
+}

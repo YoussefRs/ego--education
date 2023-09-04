@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:wght@200&family=Roboto:wght@500&family=Rowdies&display=swap");
+
+.deck-button {
+  text-align: center;
+  margin-top: 150px;
+  /* margin-bottom: 50px; */
+  position: relative;
+}
+
+.core-firstrow {
+  z-index: 100;
+  text-align: center;
+}
+
+.core-subheading {
+  font-family: draic;
+  font-size: 1rem;
+  padding-top: 40px;
+  color: #046635;;
+  letter-spacing: 0.5em;
+}
+.core-heading {
+  /* font-family: "Rowdies", cursive; */
+  font-size: 2.5rem;
+  padding: 20px;
+  white-space: nowrap;
+  font-family: SansationBold;
+}
+.seperator {
+  display: flex;
+  margin: auto;
+}
+
+.core-line2 {
+  height: 3px;
+  width: 35%;
+  color: white;
+  z-index: 30000;
+  margin: auto;
+  background-color: azure;
+  text-align: left;
+  margin-left: 0;
+}
+
+.core-line1 {
+  height: 3px;
+  width: 45%;
+  color: white;
+  z-index: 30000;
+  margin: auto;
+  background-color: azure;
+  text-align: left;
+  margin-right: 0;
+}
+
+/* .button {
+  background-color: #00A0FF;
+  border-radius: 100px;
+  width: 50px;
+  cursor: pointer;
+  padding: 10px;
+  margin-left:20px;
+  margin-right:20px ;
+}
+.button-image{
+    position: relative;
+    height: 20px;
+    width: 20px;
+} */
+
+.space {
+  height: 50px;
+}
+.meetteam {
+  text-align: center;
+}
+
+.meettheteam {
+  font-family: SansationBold;
+  font-size: 2.5rem;
+}
+.linex {
+  text-align: center;
+
+  /* left:38.7%; */
+  height: 7px;
+  width: 200px;
+  background-color: aliceblue;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.button1 {
+  width: 48px;
+  height: 48px;
+  background-color: #046635;;
+  border: 2px solid #046635;;
+  border-radius: 48px;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button1::after {
+  /* content: "\2192"; */
+  font-size: 18px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.button2 {
+  width: 48px;
+  height: 48px;
+  background-color: #046635;;
+  border-radius: 48px;
+  border: 2px solid #046635;;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button2::after {
+  /* content: "\2190"; */
+  font-size: 18px;
+  color: white;
+  transition: all 0s ease;
+}
+
+button:hover {
+  background-color: #141820;
+  border-color: #046635;
+}
+/* 
+button:hover::after {
+  color: white;
+  background-color: #141820;
+} */
+
+@media screen and (max-width: 412px) {
+  .space {
+    height: 0;
+  }
+  .core-firstrow {
+    margin-bottom: 20px;
+  }
+
+  .core-subheading {
+    font-size: 0.8rem;
+    letter-spacing: 0.4em;
+  }
+
+  .core-heading {
+    font-size: 1.7rem;
+  }
+  .core-line1 {
+    width: 25%;
+    height: 2.8px;
+  }
+  .core-line2 {
+    width: 25%;
+    height: 2.8px;
+  }
+  /* .button1::after {
+    content: "\2192";
+  } */
+}

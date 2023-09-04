@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@800&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@500&family=Poppins:wght@200&family=Roboto:wght@500&family=Rowdies&display=swap");
+
+.maincard {
+  z-index: 18;
+}
+.namee {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.3rem;
+  font-size: 1.7rem;
+  z-index: 5;
+  position: relative;
+  top: -100px;
+  text-align: left;
+  padding-left: 20px;
+  text-shadow: 2px 2px 20px  #000000;
+}
+.ll {
+  height: 4px;
+  width: 30px;
+  background-color: #0a1931;
+  position: relative;
+  top: -185px;
+  left: 21px;
+}
+.pos {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.1rem;
+  padding: 0.3rem;
+  position: relative;
+  top: -220px;
+  text-align: left;
+  padding-left: 20px;
+  color: white;
+  text-shadow: 2px 2px 20px  #000000;
+
+}
+
+.core_team_social_img {
+  position: relative;
+  top: -12rem;
+  display: none;
+  /* top: -32rem; */
+  z-index: 300000;
+  left: 7rem;
+  width: 50px;
+  /* animation: pulsate-bck 0.5s ease-in-out infinite both; */
+}
+
+.core_team_social_img.show{
+  display: inline;
+  position: relative;
+  top: -12rem;
+  /* top: -32rem; */
+  z-index: 300000;
+  left: 7rem;
+  width: 50px;
+}
+
+@media screen and (max-width: 412px) {
+  .card {
+    width: 20px;
+  }
+}
+
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
