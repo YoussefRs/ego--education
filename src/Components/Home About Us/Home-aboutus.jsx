@@ -3,6 +3,7 @@ import aboutusinfo from "../../Data/home-about-us";
 import "./Home-aboutus.css";
 import AOS from "aos";
 import { Link } from "react-router-dom";
+import ShapedWave from "../CustomWaveShape/ShapedWave";
 // import 'aos/dist/aos.css';
 
 function HomeAbout() {
@@ -60,6 +61,7 @@ function HomeAbout() {
   
   return (
     <div className="aboutsection1">
+      <ShapedWave />
       <div className="firstrow">
         <h1 data-aos={"zoom-out"} className="wheredowe">
           WHERE DO WE COME FROM

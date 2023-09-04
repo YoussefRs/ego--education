@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import Loading from "./Components/Loading/Loading";
 import Footer from "./Components/Footer/Footer";
 import Navbarr from "./Components/navBar";
+import Navigation from './Components/NavBar/Navigation'
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
         <Loading />
       ) : (
         <div className="App">
-          <Navbarr />
+          <Navigation />
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>

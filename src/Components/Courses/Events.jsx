@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 
 import "./Events.css";
+import ShapedWave from "../CustomWaveShape/ShapedWave";
 
 export const CarouselItem = ({ children, width }) => {
   return (
@@ -117,6 +118,7 @@ const Events = ({ children }) => {
         </div>
       </div>
     </div>
+    <ShapedWave rotate={'rotateX(180deg)'}/>
     </div>
   );
 };

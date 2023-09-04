@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Card from "./card";
 import "./deck.css";
 import Prathis from "../../assets/Core Team/Prahis.svg";
+import ShapedWave from "../CustomWaveShape/ShapedWave";
 // import arrow from "../../Assets/arrow.png";
 
 // import ourteaminfo from '../../Data/home-our-team';
@@ -180,6 +181,8 @@ class Deck extends Component {
   render() {
     return (
       <div>
+        <ShapedWave rotate={'rotateX(180deg)'}/>
+        <ShapedWave />
         <div className="space"></div>
         <div className="core-firstrow">
           <h1 data-aos={"zoom-out"} className="core-subheading">

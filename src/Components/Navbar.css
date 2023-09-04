@@ -42,7 +42,7 @@ li {
   position: relative;
   top: -55px;
   transition: all 0.3s ease;
-  font-family: "Roboto", sans-serif;
+  font-family: SansationLight;
 }
 
 .nav-link {

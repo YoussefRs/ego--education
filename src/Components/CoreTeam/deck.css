@@ -9,13 +9,14 @@
 
 .core-firstrow {
   z-index: 100;
-  text-align: center;
+  text-align: left;
 }
 
 .core-subheading {
   font-family: draic;
   font-size: 1rem;
-  padding-top: 40px;
+  padding-top: 20px;
+  padding-left: 20px;
   color: #046635;;
   letter-spacing: 0.5em;
 }
