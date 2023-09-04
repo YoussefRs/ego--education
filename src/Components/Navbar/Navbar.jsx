@@ -4,7 +4,7 @@ import "./Navbar.css";
 import logo from "../../assets/logo/logo-ego-white-2.png"
 import { NavLink } from "react-router-dom";
 
-function Navbar() {
+function Navbarr() {
   return (
     <>
       <div className="navbar">
@@ -86,4 +86,4 @@ function Navbar() {
     </>
   );
 }
-export default Navbar;
+export default Navbarr;
