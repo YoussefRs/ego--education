@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import './App.css'
 import { Route, Routes, useLocation } from "react-router-dom";
+import ThemeProvider from "./Context/themeProvider";
 import Home from "./Components/Home";
 import Loading from "./Components/Loading/Loading";
 import Footer from "./Components/Footer/Footer";
@@ -28,7 +29,8 @@ function App() {
       {loading ? (
         <Loading />
       ) : (
-        <div className="App">
+        <ThemeProvider>
+          <div className="App">
           <Navigation />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -47,6 +49,7 @@ function App() {
           <Background className="particles" />
           <Footer />
         </div>
+        </ThemeProvider>
       )}
     </>
   );

@@ -55,6 +55,7 @@ h1 {
 .paricles {
   position: sticky;
   width: 100%;
+  z-index: -33333333333;
 }
 
 :root {

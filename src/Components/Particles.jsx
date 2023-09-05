@@ -1,5 +1,6 @@
 
 import Particles from "react-tsparticles";
+import '../App.css'
 
 function particle() {
   return (
@@ -45,10 +46,10 @@ function particle() {
         },
         particles: {
           color: {
-            value: "#FFFFFF",
+            value: "fff",
           },
           links: {
-            color: "#ffffff",
+            color: "#046635",
             distance: 150,
             enable: true,
             opacity: 0.5,

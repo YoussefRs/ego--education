@@ -181,7 +181,7 @@ class Deck extends Component {
   render() {
     return (
       <div>
-        <ShapedWave rotate={'rotateX(180deg)'}/>
+        
         <ShapedWave />
         <div className="space"></div>
         <div className="core-firstrow">

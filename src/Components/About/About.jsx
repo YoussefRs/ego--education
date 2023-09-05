@@ -93,12 +93,12 @@ const About = () => {
             />
             <div className="neumeric-info-boxes">
               <div className="neumeric-info-row-1">
-                <NeumericInfobox NeumericTitle={"Members"} n={"30+"} />
-                <NeumericInfobox NeumericTitle={"Projects"} n={"50+"} />
+                <NeumericInfobox NeumericTitle={"Graduate"} />
+                <NeumericInfobox NeumericTitle={"Postgraduate"}  />
               </div>
               <div className="neumeric-info-row-2">
-                <NeumericInfobox NeumericTitle={"Alumini"} n={"300+"} />
-                <NeumericInfobox NeumericTitle={"Achievements"} n={"50+"} />
+                <NeumericInfobox NeumericTitle={"Professional Training"}  />
+                <NeumericInfobox NeumericTitle={"Orienteering"}  />
               </div>
             </div>
           </div>

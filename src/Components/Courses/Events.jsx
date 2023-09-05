@@ -46,7 +46,9 @@ const Events = ({ children }) => {
   });
 
   return (
-    <div className="outer-event">    <div className="firstrow">
+    <>
+      <ShapedWave rotate={'rotateY(180deg)'}/>
+      <div className="outer-event">    <div className="firstrow">
         <h1 data-aos={"zoom-out"} className="wheredowe">
           WHAT DO WE PROVIDE
         </h1>
@@ -120,6 +122,7 @@ const Events = ({ children }) => {
     </div>
     <ShapedWave rotate={'rotateX(180deg)'}/>
     </div>
+    </>
   );
 };
 

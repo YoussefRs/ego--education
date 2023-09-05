@@ -185,6 +185,7 @@ function HomeAbout() {
           </>
         );
       })}
+      <ShapedWave rotate={'rotateX(180deg)'}/>
     </div>
   );
 }

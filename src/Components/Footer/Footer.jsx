@@ -1,4 +1,5 @@
-import React from "react";
+import React , { useContext } from "react";
+import { ThemeContext } from "../../Context/themeProvider";
 import { Link, NavLink } from "react-router-dom";
 import "./Footer.css";
 import logo from "../../assets/logo/logo-ego-white.png";
@@ -6,6 +7,9 @@ import Progetto from "../../assets/logo/Progetto-senza-titolo.png"
 import ShapedWave from "../CustomWaveShape/ShapedWave";
 
 const Footer = () => {
+  const { setIsDarkMode } = useContext(ThemeContext)
+
+  const handleChangeTheme = () => setIsDarkMode((isDarkMode) => !isDarkMode)
   return (
     <>
       <div className="footer_section">
@@ -174,7 +178,8 @@ const Footer = () => {
           <div className="footer_ruler"></div>
           <p className="footer_copyright">
           Copyright © 2022. All rights reserved | ego-education.com <br />
-          Powered by The Digital World
+          Powered by The Digital 
+          <button onClick={handleChangeTheme}>Click Me</button>
           </p>
         </div>
       </div>

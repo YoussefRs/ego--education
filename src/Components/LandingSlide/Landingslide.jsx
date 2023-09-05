@@ -34,7 +34,7 @@ const Landingslide = () => {
         </video>
       </div>
       <div className='grow'></div>
-      <ShapedWave />
+      {/* <ShapedWave /> */}
     </main>
   );
 };
