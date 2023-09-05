@@ -4,10 +4,20 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./Components/Home";
 import Loading from "./Components/Loading/Loading";
 import Footer from "./Components/Footer/Footer";
-import Navbarr from "./Components/navBar";
 import Navigation from './Components/NavBar/Navigation'
+import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
+import Eoffers from "./Components/E-Offers/E-Offers";
+import OfferDetails from "./Components/E-Offers/Offer-details/Offer-details";
+import { informatics } from "./Data/offers-details";
+import Background from "./Components/Background";
 
 function App() {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    // console.log(location);
+  }, [location]);
 
   const [loading, setLoading] = useState(false);
 
@@ -22,7 +32,19 @@ function App() {
           <Navigation />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/educational-offers" element={<Eoffers />} />
+            {informatics.map((info, index) => (
+              <Route
+                key={index}
+                exact
+                path={`/educational-offers${info.path}`}
+                element={<OfferDetails data={info} />}
+              />
+            ))}
           </Routes>
+          <Background className="particles" />
           <Footer />
         </div>
       )}

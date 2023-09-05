@@ -52,7 +52,10 @@ h1 {
   overflow: hidden;
 }
 /* PARTICLES */
-
+.paricles {
+  position: sticky;
+  width: 100%;
+}
 
 :root {
   --primary-color: #;

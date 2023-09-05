@@ -129,7 +129,7 @@ const Footer = () => {
           <div className="footer_social">
             <Link
               className="footer_social_links"
-              to="//www.linkedin.com/company/d-y-patil-robotics-ai-club"
+              to="#"
               target="_blank"
             >
               <img
