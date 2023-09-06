@@ -12,7 +12,7 @@ export const bachelors = [
     imgURL: eco,
     offer_duration:
       "DURATION: 3 Years",
-    offer_fees : "FEES: £ 3000",
+    offer_fees : "FEES: € 3000",
     githubURL: "https://www.linkedin.com/in/prathisupadhyay/",
     youtubeURl: "https://www.linkedin.com/in/prathisupadhyay/",
   },
@@ -22,7 +22,7 @@ export const bachelors = [
     imgURL: sports,
     offer_duration:
       "DURATION: 3 Years",
-    offer_fees : "FEES: £ 3000",
+    offer_fees : "FEES: € 3000",
     youtubeURl: "https://www.linkedin.com/in/prathisupadhyay/",
   },
 
@@ -32,7 +32,7 @@ export const bachelors = [
     imgURL: eduscience,
     offer_duration:
       "DURATION: 3 Years",
-    offer_fees : "FEES: £ 3000",
+    offer_fees : "FEES: € 3000",
     youtubeURl: "https://www.linkedin.com/in/prathisupadhyay/",
   },
   {
@@ -41,7 +41,7 @@ export const bachelors = [
     imgURL: civil,
     offer_duration:
       "DURATION: 3 Years",
-    offer_fees : "FEES: £ 3000",
+    offer_fees : "FEES: € 3000",
   },
 ];
 export const masters = [
@@ -51,7 +51,7 @@ export const masters = [
     imgURL: info,
     offer_duration:
       "DURATION: 1 Years",
-    offer_fees : "FEES: £ 3000",
+    offer_fees : "FEES: € 3000",
     offer_link: "/educational-offers/informatics",
   },
   {
@@ -60,7 +60,7 @@ export const masters = [
     imgURL: susdev,
     offer_duration:
       "DURATION: 1 Years",
-    offer_fees : "FEES: £ 4000",
+    offer_fees : "FEES: € 4000",
     offer_link: "/educational-offers/sustainable-developement"
   },
 ];

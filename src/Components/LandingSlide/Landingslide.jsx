@@ -4,9 +4,8 @@ import React, { useEffect, useRef, useState } from "react";
 import "./LandingSlide.css";
 import { Link } from "react-router-dom";
 import AOS from "aos";
-// import 'aos/dist/aos.css';
+import 'aos/dist/aos.css';
 import IntroVideo from "../../assets/video/SCENE_01.mp4"
-import ShapedWave from "../CustomWaveShape/ShapedWave";
 import Aos from "aos";
 
 const Landingslide = () => {

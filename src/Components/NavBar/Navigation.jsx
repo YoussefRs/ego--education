@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   return (
-   <section className='navbarr w-full mb-[5.6em] lg:mb-0'>
+   <section className='navbarr '>
         <div className="logo-container z-9">
         <a href='/'>
           <img src={Logo} alt="Logo" style={{height: 49}} href='/'/>
@@ -30,6 +30,15 @@ function Navbar() {
                 to="/"
           >
                 <div>Home</div>
+              </NavLink>
+          </li>
+          <li>
+                <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/news"
+          >
+                <div>News</div>
               </NavLink>
           </li>
           <li>

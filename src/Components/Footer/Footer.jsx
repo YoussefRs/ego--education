@@ -5,6 +5,7 @@ import "./Footer.css";
 import logo from "../../assets/logo/logo-ego-white.png";
 import Progetto from "../../assets/logo/Progetto-senza-titolo.png"
 import ShapedWave from "../CustomWaveShape/ShapedWave";
+import Accordian from "../accordian/accordian";
 
 const Footer = () => {
   const { setIsDarkMode } = useContext(ThemeContext)
@@ -15,6 +16,7 @@ const Footer = () => {
       <div className="footer_section">
       <ShapedWave rotate={'rotateX(180deg)'}/>
       <ShapedWave />
+      <Accordian />
         <div className="footer">
           <Link className="creator_link" to="/creators">
             <div className="footer_intro">
@@ -34,8 +36,8 @@ const Footer = () => {
               />
               <br/>
               {/* <h1>EGO EDUCATION</h1> */}
-              <p>A new vision of the world</p>
-              <p>A new opportunity for growth</p>
+              {/* <p>A new vision of the world</p>
+              <p>A new opportunity for growth</p> */}
             </div>
           </Link>
           <div className="footer_links_section">
@@ -51,13 +53,13 @@ const Footer = () => {
                 <li className="footer_link">
                   <NavLink className="footer_link" to="/project">
                     {" "}
-                    Projects{" "}
+                    News{" "}
                   </NavLink>
                 </li>
                 <li className="footer_link">
                   <NavLink className="footer_link" to="/achievements">
                     {" "}
-                    Achievements{" "}
+                    Offers{" "}
                   </NavLink>
                 </li>
                 <li className="footer_link">
@@ -70,12 +72,6 @@ const Footer = () => {
                   <NavLink className="footer_link" to="/contact">
                     {" "}
                     Contact{" "}
-                  </NavLink>
-                </li>
-                <li className="footer_link">
-                  <NavLink className="footer_link" to="/team">
-                    {" "}
-                    Team{" "}
                   </NavLink>
                 </li>
               </ul>
@@ -111,6 +107,7 @@ const Footer = () => {
               </ul>
             </div> */}
           </div>
+          <div>
           <div className="footer_address">
             <div className="footer_locate">
               <img
@@ -120,15 +117,38 @@ const Footer = () => {
                 className="footer_location_pin"
                 src="https://img.icons8.com/color-glass/48/4a90e2/google-maps-new.png"
               />
-              <h1 className="footer_locateus">Locate Us</h1>
+              <h1 className="footer_locateus">LOCATE US</h1>
             </div>
             <a
               rel="noopener noreferrer"
               className="footer_location"
             >
-              40, Villa Fairholme, Sir Augustus Bartolo Street, Ta’ Xbiex XBX 1095, Malta
+              40, Villa Fairholme, <br/> Sir Augustus Bartolo Street, <br/> Ta’ Xbiex XBX 1095, Malta
               <br />
             </a>
+          </div>
+          <div className="footer_address">
+            <div className="footer_locate">
+              <img
+                loading="lazy"
+                decoding="async"
+                alt=" "
+                className="footer_location_pin"
+                src="https://www.pngmart.com/files/7/E-Mail-PNG-Clipart.png"
+              />
+              <h1 className="footer_locateus">CONTACT US</h1>
+            </div>
+            <a
+              rel="noopener noreferrer"
+              className="footer_location"
+            >
+              info@ego-education.com
+              <br />
+            </a>
+            <p style={{width: "50%", marginTop: 20}}>The GDPR has been implemented through the Maltese Data Protection Act 2018 
+              (Chapter 586 of the Laws of Malta) <br/> (the “DPA”)  which took effect on 28 May 2018.
+            </p>
+          </div>
           </div>
           <div className="footer_social">
             <Link

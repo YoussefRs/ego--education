@@ -56,18 +56,24 @@
 }
 .footer_links {
   margin: 20px;
-  color: #046635;;
+  color: #046635;
 }
 .footer_link {
   font-size: 1rem;
   color: #046635;
   text-decoration: none;
   transition: all 0.3s ease-in;
+  z-index: 33333;
 }
 .footer_link:hover,
 .footer_location:hover {
   color: #ffffff;
 }
+
+.footer_links_section ul {
+  list-style-type:none;
+}
+
 .footer_links_name {
   font-size: 1.5rem;
   /* font-family: "Rowdies", cursive; */

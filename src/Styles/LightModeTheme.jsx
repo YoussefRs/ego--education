@@ -113,7 +113,16 @@ const LightModeTheme = () => {
     .neumeric-card-body {
       background-color: black;
     }
-
+//FAQ
+    .aboutusheading {
+      color: white
+    }
+    .lineaboutus1 {
+      background-color: white
+    }
+    .lineaboutus2 {
+      background-color: white
+    }
       `}
     />
   )

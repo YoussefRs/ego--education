@@ -49,13 +49,13 @@ const Contact = () => {
           >
             <div className="contact_fillform_div">
               <h3 className="contact_fillform fillform2">
-                Please fill the form to Join the Team{" "}
+                Please fill the form and try for free the platform{" "}
               </h3>
             </div>
             <div>
               <div className="contact_para">
                 <p>
-                  If you're interested in what we do and wanna join us,or have some queries, feel free to contact us by filling the form below!
+                  Feel free to contact us by filling the form below!
                 </p>
               </div>
             </div>
