@@ -1,8 +1,5 @@
 import React from "react";
 import "./card.css";
-// import immg from './photos/picc.jpg'
-// import { Link } from "react-router-dom";
-// import linkedin from "../../Assets/linkedin.svg";
 
 function Card(props) {
   const linkedIcon =

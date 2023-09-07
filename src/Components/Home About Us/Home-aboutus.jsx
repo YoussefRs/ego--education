@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import aboutusinfo from "../../Data/home-about-us";
 import "./Home-aboutus.css";
 import AOS from "aos";
 import { Link } from "react-router-dom";
 import ShapedWave from "../CustomWaveShape/ShapedWave";
-// import 'aos/dist/aos.css';
+
 
 function HomeAbout() {
   const [activeindex, setActiveIndex] = useState(0);
@@ -88,10 +88,10 @@ function HomeAbout() {
           ></div>
         </div>
       </div>
-      {aboutusinfo.map((card) => {
+      {aboutusinfo.map((card, i) => {
         return (
-          <>
-            <div className="secondrow">
+          <Fragment key={i}>
+            <div className="secondrow" >
               <div className="secondrowcol1">
                 <div className="our-college-slider">
                   <i className="home-about-arrow left" onClick={handleprev} />
@@ -182,7 +182,7 @@ function HomeAbout() {
                 <p className="paragraph1">{card.ourmission}</p>
               </div>
             </div>
-          </>
+          </Fragment>
         );
       })}
       <ShapedWave rotate={'rotateX(180deg)'}/>

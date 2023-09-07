@@ -3,11 +3,6 @@ import "./accordian.css";
 import ShapedWave from "../CustomWaveShape/ShapedWave";
 
 const data = [
-  // {
-  //   question: "What is DRAIC-DYPCOE?",
-  //   answer:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aut soluta perferendis! Distinctio eaque voluptates saepe recusandae nisi, illum ullam? Ducimus maiores earum pariatur nesciunt quae, quaerat quidem, laborum minima corrupti, voluptate adipisci repellendus?",
-  // },
   {
     question: "Who can join EGO-EDUCATION?",
     answer:
@@ -23,11 +18,6 @@ const data = [
     answer:
       "answer",
   },
-  // {
-  //   question: "What are our working hours?",
-  //   answer:
-  //     "answer",
-  // },
   {
     question: "Is there a fee requirement?",
     answer:
@@ -78,7 +68,7 @@ const Accordian = () => {
         <div className="wrapper">
           <div className="accordion">
             {data.map((item, i) => (
-              <div className="item">
+              <div className="item" key={i}>
                 <div className="ac_title" onClick={() => toggle(i)}>
                   <h2 className="faq_question">{item.question}</h2>
                   <span>{selected === i ? "-" : "+"}</span>

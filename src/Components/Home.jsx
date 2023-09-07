@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import Landingslide from "../Components/LandingSlide/Landingslide";
 import AOS from "aos";
 import "aos/dist/aos.css";

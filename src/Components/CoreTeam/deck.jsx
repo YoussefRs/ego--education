@@ -3,9 +3,7 @@ import Card from "./card";
 import "./deck.css";
 import Prathis from "../../assets/Core Team/Prahis.svg";
 import ShapedWave from "../CustomWaveShape/ShapedWave";
-// import arrow from "../../Assets/arrow.png";
 
-// import ourteaminfo from '../../Data/home-our-team';
 class Deck extends Component {
   constructor(props) {
     super(props);
@@ -76,6 +74,7 @@ class Deck extends Component {
           surname={surname[i]}
           dep={dep[i]}
           borderRadius={new_borderRadius}
+          key = {i}
         />
       );
     }

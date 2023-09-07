@@ -37,7 +37,7 @@ function Navbar() {
         <ul id="navBar" style={{ right: isOpen ? 0 : '-200px' }} onClick={toggleNav}>
           <li>
                 <NavLink
-                activeClassName="active"
+                activeclassname="active"
                 aria-current="page"
                 to="/"
           >
@@ -46,7 +46,7 @@ function Navbar() {
           </li>
           <li>
                 <NavLink
-                activeClassName="active"
+                activeclassname="active"
                 aria-current="page"
                 to="/news"
           >
@@ -55,7 +55,7 @@ function Navbar() {
           </li>
           <li>
                 <NavLink
-                activeClassName="active"
+                activeclassname="active"
                 aria-current="page"
                 to="/educational-offers"
           >
@@ -64,7 +64,7 @@ function Navbar() {
           </li>
           <li>
                 <NavLink
-                activeClassName="active"
+                activeclassname="active"
                 aria-current="page"
                 to="/about"
           >
@@ -73,7 +73,7 @@ function Navbar() {
           </li>
           <li>
                 <NavLink
-                activeClassName="active"
+                activeclassname="active"
                 aria-current="page"
                 to="/contact"
           >

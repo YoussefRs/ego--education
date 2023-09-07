@@ -110,7 +110,7 @@ const Footer = () => {
               <img
                 loading="lazy"
                 decoding="async"
-                alt=" "
+                alt="Google Location"
                 className="footer_location_pin"
                 src="https://img.icons8.com/color-glass/48/4a90e2/google-maps-new.png"
               />
@@ -129,7 +129,7 @@ const Footer = () => {
               <img
                 loading="lazy"
                 decoding="async"
-                alt=" "
+                alt="Gmail"
                 className="footer_location_pin"
                 src="https://www.pngmart.com/files/7/E-Mail-PNG-Clipart.png"
               />

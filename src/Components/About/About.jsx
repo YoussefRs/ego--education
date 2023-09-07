@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
-// import { NavLink } from 'react-router-dom';
 import InfoCard from "./components/InfoCard";
 import NeumericInfobox from "./components/NeumericInfobox";
 import "./about.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Dec2 from "../CoreTeam/deck2"
 import Background from "../Background";
 
 const card1Text =
@@ -106,7 +104,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* <Dec2 /> */}
     </div>
   );
 };

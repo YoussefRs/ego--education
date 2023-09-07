@@ -18,6 +18,7 @@ const LightModeTheme = () => {
 //About us SECTION
       .aboutsection1 {
           background-color: white;
+          transition: opacity 3s ease;
         }
       #lineaboutus2{
         background-color: black;

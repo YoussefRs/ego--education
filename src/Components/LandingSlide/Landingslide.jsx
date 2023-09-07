@@ -1,12 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
-// import draicimage from "../../Assets/logo_white.png";
-// import svg from "../../Assets/draic_logo.svg";
+import React, { useEffect, useState } from "react";
 import "./LandingSlide.css";
-import { Link } from "react-router-dom";
 import AOS from "aos";
 import 'aos/dist/aos.css';
-import IntroVideo from "../../assets/video/SCENE_01.mp4"
-import Aos from "aos";
 
 const Landingslide = () => {
   
@@ -20,13 +15,13 @@ const Landingslide = () => {
   }, []);
   return (
     <main className={`fade-in ${videoLoaded ? "show" : ""}`}>
-      <div class="video-container">
+      <div className="video-container">
         <video
           autoPlay
           muted
           loop
           id="video-background"
-          class="videoo"
+          className="videoo"
         >
           <source
             // src={IntroVideo}
@@ -36,7 +31,6 @@ const Landingslide = () => {
         </video>
       </div>
       <div className='grow'></div>
-      {/* <ShapedWave /> */}
     </main>
   );
 };

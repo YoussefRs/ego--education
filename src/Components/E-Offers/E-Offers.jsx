@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-
-// import { NavLink } from "react-router-dom";
 import "./E-Offers.css";
 import {bachelors, masters} from "../../Data/offers-list.js";
 import AOS from "aos";
@@ -122,7 +120,7 @@ const Eoffers = () => {
                 <div className="offer-decoration-line" />
                 <button className="offer_readmore_btn">
                   <NavLink
-                    activeClassName="active"
+                    activeclassname="active"
                     aria-current="page"
                     to={card.offer_link}                     >
                     <div>READ MORE</div>

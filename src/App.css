@@ -28,6 +28,7 @@
   box-sizing: border-box;
   font-family: "SansationBold",
     sans-serif;
+    font-display:inherit;
   /* background-color: linear-gradient(to right top, rgb(0, 1, 88), rgb(0, 0, 0)); */
   /* background-color: black; */
   

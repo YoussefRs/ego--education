@@ -22,8 +22,8 @@ const Event = () => {
     <>
       <Events>
         {data.map((event, i) => (
-          <CarouselItem>
-            <div className="event_container">
+          <CarouselItem key={i}>
+            <div className="event_container" >
               <div className="event_image_container">
                 <img className="event_img" src="https://instructor-academy.onlinecoursehost.com/content/images/2023/05/1-How-to-Create-an-Online-Course-Thumbnail.jpg" alt="" />
               </div>
