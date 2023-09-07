@@ -100,12 +100,15 @@ const LightModeTheme = () => {
     .table {
       color: black;
     }
-  .table th {
-    border: 1px solid black;
-  }
-  #td {
-    border: 1px solid black;
-  }
+    .table th {
+      border: 1px solid black;
+    }
+    #td {
+      border: 1px solid black;
+    }
+    .sub-title  {
+      color: #046635;
+    }
 
 //NAVIGATION BAR
     #navBar li {
