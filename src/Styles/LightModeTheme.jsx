@@ -14,6 +14,9 @@ const LightModeTheme = () => {
       .event_description {
         color: black;
       }
+      .aboutusheading {
+        color: black;
+      }
 
 //About us SECTION
       .aboutsection1 {
@@ -21,7 +24,7 @@ const LightModeTheme = () => {
         }
       .aboutusheading {
         color: black;
-      }
+      }gi
       .lineaboutus2 {
         background-color: black;
       }
