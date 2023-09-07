@@ -67,6 +67,9 @@ const LightModeTheme = () => {
     box-shadow 0.2s ease;
     }
 //OFFER PAGE 
+    .offer-details-hero-container {
+      background-color : white;
+    }
     .offer-page {
       background-color: white;
     }
@@ -85,6 +88,25 @@ const LightModeTheme = () => {
     .individual-offer-container {
       background-color: black;
     }
+    .offer-details-description {
+      color: black;
+    }
+    .offer-details-text-container h3 {
+      color: black;
+    }
+    #offer-details-description-list {
+      color: black;
+    }
+    .table {
+      color: black;
+    }
+  .table th {
+    border: 1px solid black;
+  }
+  #td {
+    border: 1px solid black;
+  }
+
 //NAVIGATION BAR
     #navBar li {
       background-color:black;
