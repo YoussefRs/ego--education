@@ -71,7 +71,7 @@ function HomeAbout() {
             <h1
               data-aos={"zoom-out"}
               data-aos-delay={"700"}
-              className="aboutusheading"
+              id="about"
             >
               ABOUT US
             </h1>
@@ -79,12 +79,12 @@ function HomeAbout() {
           <div
             data-aos={"fade-right"}
             data-aos-delay={"700"}
-            className="lineaboutus1"
+            id="lineaboutus1"
           ></div>
           <div
             data-aos={"fade-left"}
             data-aos-delay={"700"}
-            className="lineaboutus2"
+            id="lineaboutus2"
           ></div>
         </div>
       </div>

@@ -14,27 +14,23 @@ const LightModeTheme = () => {
       .event_description {
         color: black;
       }
-      .aboutusheading {
-        color: black;
-      }
 
 //About us SECTION
       .aboutsection1 {
           background-color: white;
         }
-      .aboutusheading {
-        color: black;
-      }gi
-      .lineaboutus2 {
+      #lineaboutus2{
         background-color: black;
       }
-      .lineaboutus1 {
+      #lineaboutus1 {
         background-color: black;
       }
       .paragraph1 {
         color: black;
       }
-
+      #about {
+        color: black;
+      }
 //DECK SECTION     
       .core-heading {
         color: black;

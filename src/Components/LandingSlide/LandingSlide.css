@@ -39,3 +39,12 @@
   /* background-image: linear-gradient(to top, white, transparent); */
 }
 
+.fade-in {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 3s ease; /* Transition property for opacity */
+}
+
+/* When the fade-in class is added, make it visible */
+.fade-in.show {
+  opacity: 1;
+}

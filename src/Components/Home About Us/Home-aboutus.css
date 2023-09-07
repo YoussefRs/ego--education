@@ -24,17 +24,28 @@
   color: #046635;
   letter-spacing: 0.5em;
 }
-.aboutusheading {
+/* .aboutusheading {
   font-size: 2.5rem;
   font-family: SansationBold;
   padding: 20px;
+  z-index: 555;
+} */
+
+#about {
+  /* font-family: "Rowdies", cursive; */
+  font-size: 2.5rem;
+  padding: 20px;
+  white-space: nowrap;
+  font-family: SansationBold;
+  color: white;
 }
+
 .seperator {
   display: flex;
   margin: auto;
 }
 
-.lineaboutus2 {
+#lineaboutus2 {
   height: 3px;
   width: 45%;
   color: white;
@@ -45,7 +56,7 @@
   margin-left: 0;
 }
 
-.lineaboutus1 {
+#lineaboutus1 {
   height: 3px;
   width: 35%;
   color: white;

@@ -57,7 +57,7 @@ const Events = ({ children }) => {
             <h1
               data-aos={"zoom-out"}
               data-aos-delay={"700"}
-              className="aboutusheading"
+              id="about"
             >
               LATEST COURSES 
             </h1>
@@ -65,12 +65,12 @@ const Events = ({ children }) => {
           <div
             data-aos={"fade-right"}
             data-aos-delay={"700"}
-            className="lineaboutus1"
+            id="lineaboutus1"
           ></div>
           <div
             data-aos={"fade-left"}
             data-aos-delay={"700"}
-            className="lineaboutus2"
+            id="lineaboutus2"
           ></div>
         </div>
       </div>

@@ -9,14 +9,17 @@ import IntroVideo from "../../assets/video/SCENE_01.mp4"
 import Aos from "aos";
 
 const Landingslide = () => {
+  
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
+    setVideoLoaded(true);
   }, []);
-
   return (
-    <main>
+    <main className={`fade-in ${videoLoaded ? "show" : ""}`}>
       <div class="video-container">
         <video
           autoPlay

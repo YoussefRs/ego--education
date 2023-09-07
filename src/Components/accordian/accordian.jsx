@@ -59,7 +59,7 @@ const Accordian = () => {
             <h1
               data-aos={"zoom-out"}
               data-aos-delay={"700"}
-              className="aboutusheading"
+              id="aboutFAQ"
             >
               FAQ
             </h1>
@@ -67,12 +67,12 @@ const Accordian = () => {
           <div
             data-aos={"fade-right"}
             data-aos-delay={"700"}
-            className="lineaboutus1"
+            id="lineaboutus1FAQ"
           ></div>
           <div
             data-aos={"fade-left"}
             data-aos-delay={"700"}
-            className="lineaboutus2"
+            id="lineaboutus2FAQ"
           ></div>
         </div>
         <div className="wrapper">
