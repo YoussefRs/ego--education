@@ -6,6 +6,7 @@ import {bachelors, masters} from "../../Data/offers-list.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { NavLink } from "react-router-dom";
+import Background from "../Background";
 
 const Eoffers = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const Eoffers = () => {
       <div className="offer-header">
         <div className="offer_headline_div">
           <h1 data-aos={"zoom-in-up"} className="offer-moto">
+          <Background />
             A GLIMPSE OF EDUCATIONAL OFFERS
           </h1>
         </div>

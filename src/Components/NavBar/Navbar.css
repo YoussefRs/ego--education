@@ -56,6 +56,31 @@
     z-index: 11111111;
     
  }
+ .light-mode-button {
+   position: fixed;
+   top: 10px; /* Adjust the position as needed */
+   right: 80px; /* Adjust the position as needed */
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   color: #fff;
+   font-weight: bold;
+   font-size: 14px;
+   font-family: SansationLight;
+   outline: none;
+   transition: 1 all ease-in;
+   height: 32px;
+   z-index: 5555555555;
+ }
+ 
+ .light-mode-button:hover {
+   color: #46b75b; /* Adjust the color as needed */
+ }
+
+ #icon {
+   font-size: 30px;
+ }
+
 #navBar li{
     padding:20px;
     border-bottom:1px #046635 solid;

@@ -46,7 +46,7 @@ function App() {
               />
             ))}
           </Routes>
-          <Background className="particles" />
+          {/* <Background className="particles" /> */}
           <Footer />
         </div>
         </ThemeProvider>

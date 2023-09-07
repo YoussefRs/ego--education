@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Contact.css";
 // import jointeam from './jointeam1.gif'
-
+import Background from "../Background";
 import AOS from "aos";
 // import { NavLink } from "react-router-dom";
 
@@ -17,6 +17,7 @@ const Contact = () => {
       <div className="contact_main_body">
         <div className="contact_headline_div">
           <h1 data-aos={"zoom-in-up"} className="contact_headline">
+            <Background />
             LET'S HAVE A CHAT !
           </h1>
         </div>

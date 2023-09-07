@@ -86,7 +86,7 @@ const LightModeTheme = () => {
       background-color: black;
     }
 //NAVIGATION BAR
-    ul li {
+    #navBar li {
       background-color:black;
       color: white;
       border-bottom:1px #fff solid;
@@ -118,11 +118,38 @@ const LightModeTheme = () => {
       color: white
     }
     .lineaboutus1 {
-      background-color: white
+      background-color: white;
     }
     .lineaboutus2 {
-      background-color: white
+      background-color: white;
     }
+//CONTACT PAGE 
+    .contact_main_body {
+      background-color: white;
+      z-index: -1;
+    }
+    .contact_para {
+      color: black;
+    }
+    .contactusheading {
+      color: black;
+    }
+    .contact_info_subhead {
+      color: black;
+    }
+    .contact_all_information {
+      color: black;
+    }
+    .contactusline1 {
+      background-color: black;
+    }
+    .contactusline2 {
+      background-color: black;
+    }
+    .fillform2 {
+      color: black;
+    }
+    
       `}
     />
   )

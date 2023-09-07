@@ -13,7 +13,7 @@ function particle() {
           },
         },
 
-        fpsLimit: 60,
+        fpsLimit: 30,
         interactivity: {
           detectsOn: "window",
           events: {
@@ -30,8 +30,8 @@ function particle() {
           },
           modes: {
             bubble: {
-              distance: 400,
-              duration: 1,
+              distance: 500,
+              duration: 5,
               opacity: 0.5,
               size: 20,
             },
@@ -71,7 +71,7 @@ function particle() {
               enable: true,
               value_area: 800,
             },
-            value: 80,
+            value: 200,
           },
           opacity: {
             value: 0.5,
