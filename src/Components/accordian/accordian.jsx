@@ -14,7 +14,7 @@ const data = [
       "answer ",
   },
   {
-    question: "how are PEGASO INTERNATIONAL?",
+    question: "Who are PEGASO INTERNATIONAL?",
     answer:
       "answer",
   },
