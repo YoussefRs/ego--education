@@ -91,9 +91,7 @@ const LightModeTheme = () => {
     .offer-details-description {
       color: black;
     }
-    .offer-details-text-container h3 {
-      color: black;
-    }
+    
     #offer-details-description-list {
       color: black;
     }

@@ -15,6 +15,7 @@ export const bachelors = [
     offer_fees : "FEES: € 3000",
     githubURL: "https://www.linkedin.com/in/prathisupadhyay/",
     youtubeURl: "https://www.linkedin.com/in/prathisupadhyay/",
+    offer_link: "/educational-offers/business-administartion"
   },
   {
     id: 2,

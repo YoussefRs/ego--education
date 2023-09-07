@@ -66,7 +66,14 @@ const Eoffers = () => {
                   <p className="offer-description">{card.offer_duration}</p>
                   <p className="offer-description">{card.offer_fees}</p>
                 <div className="offer-decoration-line" />
-                  <button className="offer_readmore_btn">READ MORE</button>
+                  <button className="offer_readmore_btn">
+                    <NavLink
+                      activeclassname="active"
+                      aria-current="page"
+                      to={card.offer_link}                     >
+                      <div>READ MORE</div>
+                    </NavLink>
+                  </button>
                 </div>
             </>
           );

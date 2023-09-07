@@ -37,13 +37,15 @@ function App() {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/educational-offers" element={<Eoffers />} />
-            {informatics.map((info, index) => (
-              <Route
-                key={index}
+            {informatics.map((info) => (
+              <>
+                <Route
+                key={info.title}
                 exact
                 path={`/educational-offers${info.path}`}
                 element={<OfferDetails data={info} />}
               />
+              </>
             ))}
           </Routes>
           {/* <Background className="particles" /> */}

@@ -42,19 +42,6 @@ function OfferDetails(props) {
                       </li>
                     ))}
                   </ul>
-                  {LearningOutcomes.subsubtitle && (
-                    <p className="offer-details-description">{LearningOutcomes.subsubtitle}</p>
-                  )}
-                  {LearningOutcomes.subsubtitle2 && (
-                    <p className="offer-details-description">{LearningOutcomes.subsubtitle2}</p>
-                  )}
-                   <ul>
-                    {LearningOutcomes?.Outcomes2?.map((outcome, index) => (
-                      <li key={index} id="offer-details-description-list">
-                        <p>{outcome}</p>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
                 <div className="content-right">
                   <h3 className="sub-title">{program_sub_title_1}</h3>
@@ -65,29 +52,49 @@ function OfferDetails(props) {
                   <p className="offer-details-description">
                     {JobOpportunities?.Description}
                   </p>
-                <h3 className="sub-title">{program_sub_title_4}</h3>
-                <p className="offer-details-description">
-                  {AdmissionRequirements?.Description}
-                </p>
-                <ul>
-                  {AdmissionRequirements?.Requirements?.map(
-                    (requirement, index) => (
-                      <li key={index} id="offer-details-description-list">
-                        <p>{requirement}</p>
-                      </li>
-                    )
-                  )}
-                </ul>
-                {AdmissionRequirements?.SecondDescription && (
-                  <p className="offer-details-description">
-                    {AdmissionRequirements.SecondDescription}
-                  </p>
-                )}
                 </div>
-             
               </div>
             )}
+              
 
+            {/* Learning Outcomes */}
+            {program_sub_title_2 && (
+              <div className="content-pair">
+                <div className="content-left">
+                  <h3 className="sub-title">{program_sub_title_2}</h3>
+                  <p className="offer-details-description">
+                    {LearningOutcomes?.Description}
+                  </p>
+                  <ul>
+                    {LearningOutcomes?.Outcomes?.map((outcome, index) => (
+                      <li key={index} id="offer-details-description-list">
+                        <p>{outcome}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="content-right">
+                  <h3 className="sub-title">{program_sub_title_4}</h3>
+                  <p className="offer-details-description">
+                    {AdmissionRequirements?.Description}
+                  </p>
+                  <ul>
+                    {AdmissionRequirements?.Requirements?.map(
+                      (requirement, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{requirement}</p>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                  {AdmissionRequirements?.SecondDescription && (
+                    <p className="offer-details-description">
+                      {AdmissionRequirements.SecondDescription}
+                    </p>
+                  )}
+                </div>
+              </div>
+            )}
 
             {/* Study Plan */}
             <h3 className="sub-title">Study Plan:</h3>
@@ -121,10 +128,6 @@ function OfferDetails(props) {
                   <h3 className="sub-title">
                     {Traineeship.program_sub_title_6}
                   </h3>
-                  <p className="offer-details-description">
-                    {Traineeship?.AdmissionRequirements.DescriptionOne}
-                  </p>
-                  
                   <ul>
                     {Traineeship.AdmissionRequirements.Requirements.map(
                       (requirement, index) => (
@@ -141,7 +144,7 @@ function OfferDetails(props) {
                     {Traineeship.AdmissionRequirements.Description}
                   </p>
                   <ul>
-                    {Traineeship?.ApplicationProcess?.DataToCommunicate?.map(
+                    {Traineeship.ApplicationProcess.DataToCommunicate.map(
                       (requirement, index) => (
                         <li
                           key={index}
