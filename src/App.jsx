@@ -11,7 +11,6 @@ import Contact from "./Components/Contact/Contact";
 import Eoffers from "./Components/E-Offers/E-Offers";
 import OfferDetails from "./Components/E-Offers/Offer-details/Offer-details";
 import { informatics } from "./Data/offers-details";
-import Background from "./Components/Background";
 
 function App() {
   const location = useLocation();

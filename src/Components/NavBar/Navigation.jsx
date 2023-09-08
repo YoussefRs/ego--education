@@ -54,13 +54,25 @@ function Navbar() {
               </NavLink>
           </li>
           <li>
-                <NavLink
-                activeclassname="active"
-                aria-current="page"
-                to="/educational-offers"
-          >
-                <div>Education Offers</div>
-              </NavLink>
+          <div className='nav-dropdown'>
+              <li className='nav-item' style={{padding: 0}}>
+                <NavLink activeclassname='active' aria-current='page' to='/educational-offers'>
+                  <div>Education Offers</div>
+                </NavLink>
+              </li>
+              <ul className='dropdown-content'>
+                <li>
+                  <NavLink activeclassname='active' aria-current='page' to='/bachelors'>
+                    BACHELORS
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink activeclassname='active' aria-current='page' to='/masters'>
+                    MASTERS
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
                 <NavLink

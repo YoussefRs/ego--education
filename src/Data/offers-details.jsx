@@ -299,6 +299,148 @@ export const informatics = [
     },
     
     {   
+        title : "EDUCATIONAL SCIENCES",
+        imgUrl: "https://media1.giphy.com/media/DMAgZmdpARZq8/giphy.gif?cid=ecf05e479l7yxeldqhtnb0c9rbqxoirc5gbvaw4kiudvysib&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+        description : "The 3-year bachelor degree course in Educational Sciences is aimed at acquiring the basic and methodological skills concerning pedagogical and didactic knowledge, along with well-structured competences related to philosophical, psychological, sociological and anthropological fields, focused on a general understanding of educational issues, under the theoretical and methodological points of view.",
+        program_sub_title_1: "Educational Objectives",
+        "EducationalObjectives" : {
+          "Description" : "The Course in Educational Sciences aims to provide knowledge and develop skills and competences in the fundamental fields of study and educational research, in both the theoretical and applied perspective, with a largely interdisciplinary approach. The degree course is divided into a three-year curriculum centred on methodological and general objectives in the sciences of education, also oriented on the teaching of human sciences in secondary education.The specific competencies provided by this course are ensured by the use of various evaluation methods that are adequate for the knowledge and skills to be certified, including the transversal competences that are an integral part of the outgoing profile. Internships are also envisaged, in the form of stays abroad for contact with the territory and work contexts in which educational/training professional skills are required, in order to practice under the guidance of tutors who check the ability of graduates in practice. The three-year course is aimed at acquiring educational knowledge and skills in Educational Sciences that enable the analysis of educational issues and management of the sector, together with teachings focused on historical grounds of the basic disciplines, as well as on the crucial and remarkable issues of diverse investigation sectors that constitute them. Particular attention is given to the appraisal of educational phenomena, by prioritising on the reflection on the diversity and distinction of the processes, the protagonists and the training demand, also in a design and operational sense. Furthermore, the student, following this curriculum, has the opportunity to acquire the necessary credits to access the specialisation for upper secondary education in Human Sciences."
+        },
+        program_sub_title_2: "Learning Outcomes",
+        "LearningOutcomes" : {
+         "Description" : "The learner will be able to: ",
+         "Outcomes" : [
+          "Manage educational moments, creating involvement among students, develop a sense of physical presence, group socialization and interaction, manage micro-communities of young children, youth, adolescents, adults and the elderly using standard educational equipment, art, new media, specific methods for adult and elderly education, and considering differences between genders.",
+          "Analyze emerging problems in educational situations through methods of discussion, reflexivity and professional writing, while paying attention to oral and written documentation of the experience.",
+          "Use adequate competences and instruments for communication and information management, also with online instruments and/or methods.",
+          "Have adequate knowledge and instruments for the communication and the management of information in a specific field of competence."
+         ] 
+        },
+        program_sub_title_3j: "Job Opportunities:",
+          "JobOpportunitiesj": {
+            "Description": "In addition to acquiring the necessary credits for access to the specialisation for teaching philosophy, education sciences, psychology and history in secondary schools, graduates will be eligible for employment in professional sectors requiring skills in the educational field and intervention in support of training processes, with particular reference to institutions, bodies and cooperatives operating in a network with the schools in targeted educational projects. The skills acquired may also be used in teaching and educational dissemination and communication, in the industry that operates in the production of educational tools, and in library services. Graduates will be eligible to undertake the role of operators in cultural services, in schools and educational structures, and other territorial activities connected to the third sector. They may also work as teachers, trainers, instructors or tutors in companies, schools, training centres and public administration. The areas and professional themes particularly typical for graduates in the field are the following:",
+            "JobOutcomes" : [
+              "The school systems and educational institutions for consultation and planning the updating of specific activities for teachers and for orientation activities.",
+              "Mentoring and orientation in the educational, training, extracurricular and teaching areas.",
+              "Having a knowledge in the disciplinary fields of the human sciences and the appropriate methodological-didactic skills and competences.",
+              "Local Authorities, cultural enterprises of a public and/or private nature, educational services in the territory distinguished by subjects, age and particular needs.",
+              "Policy-making, planning and animation of the socio-cultural activities of the territory.",
+              "Intercultural training, the management of intercultural relations, intercultural mediation in the context of local services for the reception and integration of immigrants, etc..",
+            ],
+            "SecondDescription" : "The course serves as preparation for the profession of:",
+            "JobOutcomes2": [
+              "Teachers in vocational training Library personnel."
+            ],
+          },
+          program_sub_title_4: "Knowledge and required abilities for the access:",
+          "AdmissionRequirements": {
+            "Description": "Admission to the course is open to all applicants who, upon enrolment, are in possession of the following qualifications:A valid and recognised high school diploma, irrespective of country of conferment, achieved after at least 12 years of schooling. It is also required a basic knowledge corresponding to the average level acquired through school education at upper secondary education level. The assessment of the basic knowledge will occur according to the methods indicated in the Academic Regulations of the course of reference.",
+          },"StudyPlan": [
+            {
+              "A.Y.": 1,
+              "Exam": "General Pedagogy",
+              "ECTS": 12
+            },
+            {
+              "A.Y.": 1,
+              "Exam": "General Didactics",
+              "ECTS": 12
+            },
+            {
+              "A.Y.": 1,
+              "Exam": "History of Educational Institutions",
+              "ECTS": 9
+            },
+            {
+              "A.Y.": 1,
+              "Exam": "Experimental Pedagogy",
+              "ECTS": 12
+            },
+            {
+              "A.Y.": 1,
+              "Exam": "Motor Skills-Theory and Methods",
+              "ECTS": 9
+            },
+            {
+              "A.Y.": 1,
+              "Exam": "English",
+              "ECTS": 6
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "Special Needs Education",
+              "ECTS": 9
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "General Psychology",
+              "ECTS": 12
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "Education for Adults",
+              "ECTS": 9
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "Administrative Law",
+              "ECTS": 10
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "Docimology",
+              "ECTS": 9
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "Intercultural Pedagogy",
+              "ECTS": 6
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "Theory And Techniques of Mass Communication",
+              "ECTS": 6
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "Electives",
+              "ECTS": 9
+            },
+            {
+              "A.Y.": 3,
+              "Exam": "Modern History",
+              "ECTS": 10
+            },
+            {
+              "A.Y.": 3,
+              "Exam": "Education Technology",
+              "ECTS": 10
+            },
+            {
+              "A.Y.": 3,
+              "Exam": "Communication and Language Philosophy",
+              "ECTS": 12
+            },
+            {
+              "A.Y.": 3,
+              "Exam": "Computer Skills",
+              "ECTS": 6
+            },
+            {
+              "A.Y.": 3,
+              "Exam": "Electives",
+              "ECTS": 10
+            },
+            {
+              "A.Y.": 3,
+              "Exam": "FINAL DISSERTATION",
+              "ECTS": 12
+            }
+          ],
+        path: "/educational-science",
+    },
+
+    {   
         title : "SUSTAINABLE DEVELOPEMENT",
         imgUrl: "https://media2.giphy.com/media/ZYR6BXtEgKiFdlppA0/giphy.gif?cid=ecf05e47uqnllhqfmieiq1oq64emy1ocrct06uw7037vxik2&ep=v1_gifs_search&rid=giphy.gif&ct=g",
         path: "/sustainable-developement",

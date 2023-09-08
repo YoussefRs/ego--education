@@ -9,11 +9,13 @@ function OfferDetails(props) {
     program_sub_title_1,
     program_sub_title_2,
     program_sub_title_3,
+    program_sub_title_3j,
     program_sub_title_4,
     program_sub_title_5,
     EducationalObjectives,
     LearningOutcomes,
     JobOpportunities,
+    JobOpportunitiesj,
     AdmissionRequirements,
     StudyPlan,
     Traineeship,
@@ -24,8 +26,17 @@ function OfferDetails(props) {
       <div className="offer-details-page">
         <div className="offer-details-hero-container">
           <div className="offer-details-text-container">
+
+            <div className="content-pair">
+              <div className="content-left">
             <h1 className="offer-details-title">{title}</h1>
             <p className="offer-details-description">{description}</p>
+
+              </div>
+              <div className="content-right">
+                
+              </div>
+            </div>
 
             {/* Educational Objectives */}
             {program_sub_title_1 && (
@@ -55,6 +66,29 @@ function OfferDetails(props) {
                       </li>
                     ))}
                   </ul>
+                  <h3 className="sub-title">{program_sub_title_3j}</h3>
+                  <p className="offer-details-description">
+                    {JobOpportunitiesj?.Description}
+                  </p>
+                  <ul>
+                    {JobOpportunitiesj?.JobOutcomes?.map(
+                      (requirement, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{requirement}</p>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                    <p className="offer-details-description">{JobOpportunitiesj?.SecondDescription}</p>
+                    <ul>
+                    {JobOpportunitiesj?.JobOutcomes2?.map(
+                      (requirement, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{requirement}</p>
+                        </li>
+                      )
+                    )}
+                  </ul>
                 </div>
                 <div className="content-right">
                   <h3 className="sub-title">{program_sub_title_1}</h3>
@@ -65,6 +99,16 @@ function OfferDetails(props) {
                   <p className="offer-details-description">
                     {JobOpportunities?.Description}
                   </p>
+                  <ul>
+                    {JobOpportunities?.JobOutcomes?.map(
+                      (requirement, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{requirement}</p>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                  
                 <h3 className="sub-title">{program_sub_title_4}</h3>
                 <p className="offer-details-description">
                   {AdmissionRequirements?.Description}
@@ -177,14 +221,14 @@ function OfferDetails(props) {
             )}
           </div>
           <div className="offer-details-image-container">
-            <img
-              loading="lazy"
-              decoding="async"
-              src={imgUrl}
-              className="offer-details-image"
-              alt="departimg"
-            ></img>
-          </div>
+                    <img
+                      loading="lazy"
+                      decoding="async"
+                      src={imgUrl}
+                      className="offer-details-image"
+                      alt="departimg"
+                    ></img>
+                </div>
         </div>
       </div>
     </>
