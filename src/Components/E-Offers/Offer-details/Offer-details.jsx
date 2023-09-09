@@ -5,17 +5,25 @@ function OfferDetails(props) {
   const {
     title,
     imgUrl,
+    CD,
     description,
     program_sub_title_1,
     program_sub_title_2,
     program_sub_title_3,
     program_sub_title_3j,
+    Sports_sub_title_1,
+    Sports_small_title,
+    Sports_small_title2,
+    BiohealthSpecialisation,
+    StandardSpecialisation,
     program_sub_title_4,
     program_sub_title_5,
     EducationalObjectives,
     LearningOutcomes,
     JobOpportunities,
     JobOpportunitiesj,
+    JobOpportunitiesS,
+    Sports_jobs_opp,
     AdmissionRequirements,
     StudyPlan,
     Traineeship,
@@ -39,8 +47,117 @@ function OfferDetails(props) {
               </div>
             </div>
 
+
+            {/* Sports science */}
+
+            {Sports_sub_title_1 && (
+              <div className="content-pair">
+                <div className="content-left">
+                  <h3 className="sub-title">{Sports_sub_title_1}</h3>
+                  <h4 className="sub-title">{Sports_small_title}</h4>
+                    <p className="offer-details-description">
+                      {StandardSpecialisation?.Description}
+                    </p>
+                    <ul>
+                      {StandardSpecialisation?.Outcomes?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="offer-details-description">
+                      {StandardSpecialisation?.Description2}
+                    </p>
+                    <ul>
+                      {StandardSpecialisation?.Outcomes2?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="offer-details-description">
+                      {StandardSpecialisation?.Description3}
+                    </p>
+                    <ul>
+                      {StandardSpecialisation?.Outcomes3?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="offer-details-description">
+                      {StandardSpecialisation?.Description4}
+                    </p>
+                     <h4 className="sub-title">{Sports_small_title2}</h4>
+                    <p className="offer-details-description">
+                      {BiohealthSpecialisation?.Description}
+                    </p>
+                    <ul>
+                      {BiohealthSpecialisation?.Outcomes?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
+                    </ul>
+                </div>
+
+                <div className="content-right">
+                 
+                    <h3 className="sub-title">{Sports_jobs_opp}</h3>
+                    <h4 className="sub-title">{JobOpportunitiesS?.small_title}</h4>
+                    <p className="offer-details-description">
+                      {JobOpportunitiesS?.Description}
+                    </p>
+                    <ul>
+                      {JobOpportunitiesS?.Outcomes?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="offer-details-description">
+                      {JobOpportunitiesS?.Description2}
+                    </p>
+                    <ul>
+                      {JobOpportunitiesS?.Outcomes2?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
+                    </ul>
+                    <h4 className="sub-title">{JobOpportunitiesS?.small_title2}</h4>
+                    <p className="offer-details-description">
+                      {JobOpportunitiesS?.Description3}
+                    </p>
+                    <ul>
+                      {JobOpportunitiesS?.Outcomes3?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
+                    </ul>
+                    <h4 className="sub-title">{JobOpportunitiesS?.small_title3}</h4>
+                    <p className="offer-details-description">
+                      {JobOpportunitiesS?.Description4}
+                    </p>
+                    <ul>
+                      {JobOpportunitiesS?.Outcomes4?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="offer-details-description">
+                      {JobOpportunitiesS?.Description5}
+                    </p>
+                </div>
+              </div>
+            )}
+
+
+
             {/* Educational Objectives */}
-            {program_sub_title_1 && (
+            {program_sub_title_1  && (
               <div className="content-pair">
                 <div className="content-left">
                 <h3 className="sub-title">{program_sub_title_2}</h3>
@@ -54,10 +171,10 @@ function OfferDetails(props) {
                       </li>
                     ))}
                   </ul>
-                  {LearningOutcomes.subsubtitle && (
+                  {LearningOutcomes?.subsubtitle && (
                     <p className="offer-details-description">{LearningOutcomes.subsubtitle}</p>
                   )}
-                  {LearningOutcomes.subsubtitle2 && (
+                  {LearningOutcomes?.subsubtitle2 && (
                     <p className="offer-details-description">{LearningOutcomes.subsubtitle2}</p>
                   )}
                    <ul>

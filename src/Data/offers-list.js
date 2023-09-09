@@ -22,6 +22,7 @@ export const bachelors = [
     offer_duration:
       "DURATION: 3 Years",
     offer_fees : "FEES: € 3000",
+    offer_link: "/educational-offers/sport-science"
   },
 
   {

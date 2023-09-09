@@ -1,6 +1,7 @@
 export const informatics = [
     {
         title : "INFORMATICS",
+        CD : "Course description",
         imgUrl : "https://media.giphy.com/media/bPCwGUF2sKjyE/giphy.gif",
         description : "Master of Science in Informatics is a 1-year master’s programme for those who wish to continue studying Informatics after completion of a bachelor’s degree programme. With the growing application of new technologies in the majority of industrial and non-industrial sectors, it is also growing the need of highly specialised profiles.The Master of Science in Informaticstrains students for approaching latest and emerging technologies in related to computer science, by deepening their theoretical knowledge and sharpening their soft skills. The curriculum is structured to provide the acquisition of a diverse set of skills that are applicable to a wide range of company departments and sectors.",
         program_sub_title_1 : "Educational Objectives",
@@ -440,6 +441,211 @@ export const informatics = [
         path: "/educational-science",
     },
 
+    {   
+        title : "SPORT SCIENCE",
+        imgUrl: "https://media2.giphy.com/media/ZYR6BXtEgKiFdlppA0/giphy.gif?cid=ecf05e47uqnllhqfmieiq1oq64emy1ocrct06uw7037vxik2&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+        description : "The 3-year Degree Course in Sport Sciences aims to provide students with knowledge and skills suitable for managing, performing and assessing sport individual and group activities of a compensatory, adapted, educational, recreational and playful nature. The course programme provides a first academic year aimed at the acquisition of anatomical, biochemical and physiological knowledge needed to understand how basically the human body in motion works. The second academic year is, instead, focused on the teaching of motor and sports activities, as well as the knowledge of sport sciences and its connections with health. The activities of the third academic year are aimed at understanding theoretical and practical aspects of sport training, as well as the functional and nutritional assessment of the athlete and the subject trained, or of the leisure-time motor and sport activities , the environmental quality and safety in sports facilities, of orthopedics and traumatology of sport and movement, and all the legal and economic foundations of the structure and sports organisations.",
+        Sports_sub_title_1: "Educational Objectives",
+        Sports_small_title: "Standard Specialisation",
+        "StandardSpecialisation" : {
+          "Description" : "It is believed that a graduate must basically be trained with strong competences in the field of assessment, managing and administration of physical activity, and with a solid grounding of biological, medical and psycho-pedagogical skills. It is well recognised that medical-clinical skills, while representing an important part of the cultural background of the graduate in Sport sciences, should not however misrepresent the his/her professional profile and relevant duties, that are not focused on diagnostic-prescriptive skills but rather pertain to: physical and aptitude planning, methods of administration of the appropriate intensity and duration of the physical-activity load, with the purpose of maintaining and improving human health. The course is structured in a way that enable the graduate to be self-sufficient in applying any training technique they choose, – among others: the bio-medical, psycho-pedagogical and communication aspects of sports and health. In order to achieve such results and considering a solid biomedical grounding and additional skills related to different areas , it was considered of fundamental importance to provide a consistent technical fundamentals in order to specifically train a graduate profile in line with as that of a technician, who is able to evaluate, plan, request and manage the most suitable physical exercise as requrired for the subject. In such a perspective, the course curriculum managed to balance biomedical and medical-clinical disciplines, by structuring a course of studies aimed at training of a professional in the fields of maintenance and improvement of human health. Graduates will achieve skills related to the understanding, operation and management of sport activities of an educational, adaptive, recreational or sporting nature, aimed at developing, maintaining and recovering motor skills and related psychophysical well-being. Moreover, the graduate will be able to:",
+          "Outcomes" : [
+            "To effectively use, both in written and oral form, at least one official language of the European Union, in addition to Italian, for the exchange of general information in the field of competence.",
+            "Achieve adequate skills and tools for communication",
+            "work both in a team and independently, and to quickly enter in the workplace.",
+          ],
+          "Description2" : "For the above-mentioned purposes, the curriculum of this degree course:",
+          "Outcomes2" : [
+            "Includes teachings and activities in the biomedical, psycho-pedagogical and organizational fields, both in their basic aspects and through disciplines characterized in relation to specific course objectives.",
+            "Is further characterized by teachings directly related to motor and sports activities.",
+            "Provides, in line with its specific objectives, the in-depth study of some the modules and activities planned and internships at: sports facilities and organisations, companies, public administration entities and laboratories, as well at Italian and foreign Institutions, of affiliated by the stipulation of international agreements.",
+          ],
+          "Description3" : "In order to manage internships and traineeships aimed at carrying out physical exercises and practical technical activities, the Institution has signed agreements with affiliated associations and companies, such as:",
+          "Outcomes3" : [
+            "CONI (The Italian National Olympic Committee)",
+            "NEUROMED (Mediterranean Neurological Institute), a leading medical-scientific-hospital and research group, for research and activities in the medical-scientific areas.",
+          ],
+          "Description4" : "Such agreements have been entered into order to support the Institution in the activities related to highly specialised laboratories, IT and technological systems, personalised study plans, as well as traineeships and internships.",
+        },
+        Sports_small_title2 : "Bio-health Specialisation",
+        "BiohealthSpecialisation" : {
+          "Description" : "The objective is to train professionals with an adequate mastery of general and specific methods and contents, able to understand and manage technological innovation, by adapting to the scientific and methodological evolution related to the field of sport activities, potentially performed by subjects belonging to different age groups and with particular physio- pathological conditions. The learner will be able to:",
+          "Outcomes" : [
+            "Achieve all the knowledge and the competences used for the development of a wild range professional activities connected to the sport sector.",
+            "Develop appropriate organization and managerial capabilities together with the communicative and relational ones.",
+            "Demonstrate understanding of global, societal, environmental, and sustainability issues related to sport sector.",
+            "Exhibit effective communication, teamwork, entrepreneurial, and leadership skill.",
+            "Achieve all the adequate competences for the organization and the management of scientific, cultural and sporting events and public performances of local national and international level.",
+            "Have adequate knowledge and instruments for the communication and the management of information in a specific field of competence",
+          ],
+        },
+        Sports_jobs_opp : "Job Opportunities",
+        "JobOpportunitiesS" : {
+          "small_title" : "Standard Specialisation",
+          "Description" : "The main career opportunities provided by the degree courses consist of professional activities in the motor and sports field, both in public and private structures, in sports organisations and social associations, with particular reference to:",
+          "Outcomes" : [
+            "Management, conduction and evaluation of individual and group motor activities of a compensatory, adaptive, educational, recreational and sports nature aimed at maintaining psycho-physical well-being through the promotion of active lifestyles",
+            "Management, conduction and evaluation of individual and group fitness activities.",
+          ],
+          "Description2" : "The course trains students for the profession of:",
+          "Outcomes2" : [
+            "Trainers of non-competitive sport disciplines.",
+            "Organizers of events and sports facilities.",
+            "Sports observers.",
+            "Sport coaches and technicians.",
+          ],
+          "small_title2" : "Bio-health specialisation",
+          "Description3" : "Graduates in Sports sciences, who have chosen the bio-health specialisation, will be able to enter the job market with the following professional profiles:",
+          "Outcomes3" : [
+            "Operator in education for the prevention of common health risk factors, such as sedentary lifestyle, overweight and obesity.",
+            "Manager of physical, sports and leisure activities, divided by various age groups (young, adult, elder).",
+            "Trainer expert in planning and managing personalised training programs.",
+            "Technical-sports educator for activities aimed at achieving and maintaining the efficiency of physical and psychophysical measurement.",
+            "Technical-sports educator in the management of motor and sport activities, supported and enhanced by the use of specific equipment (fitness – wellness).",
+            "Personal and team trainer.",
+            "Operator in sports communication and information management.",
+            "Consultant and Manager of both private and public sports clubs, wellness centres and gyms. Consultant for facilities and sport facilities in the area.",
+          ],
+          "small_title3" : "Knowledge and required abilities for the access",
+          "Description4" : "Admission to the course is open to all applicants who, upon enrolment, are in possession of the following qualifications:",
+          "Outcomes4" : [
+            "A valid and recognised high school diploma, irrespective of country of conferment, achieved after at least 12 years of schooling.",
+          ],
+          "Description5" : "It is also required a basic knowledge corresponding to the average level acquired through school education at upper secondary education level. The assessment of the basic knowledge will occur according to the methods indicated in the Academic Regulations of the course of reference."
+        },"StudyPlan": [
+          {
+            "A.Y.": 1,
+            "Exam": "Human Anatomy",
+            "ECTS": 10
+          },
+          {
+            "A.Y.": 1,
+            "Exam": "Promotion of Physical Activity",
+            "ECTS": 10
+          },
+          {
+            "A.Y.": 1,
+            "Exam": "Economics and Management of Sport Enterprises",
+            "ECTS": 6
+          },
+          {
+            "A.Y.": 1,
+            "Exam": "Methodologies and technologies for the didactic and sporting research",
+            "ECTS": 6
+          },
+          {
+            "A.Y.": 1,
+            "Exam": "Training Theories and Methodologies",
+            "ECTS": 6
+          },
+          {
+            "A.Y.": 1,
+            "Exam": "General and applied hygiene",
+            "ECTS": 5
+          },
+          {
+            "A.Y.": 1,
+            "Exam": "General and Sports Sociology",
+            "ECTS": 6
+          },
+          {
+            "A.Y.": 1,
+            "Exam": "English Language",
+            "ECTS": 3
+          },
+          {
+            "A.Y.": 1,
+            "Exam": "Computer Skills",
+            "ECTS": 3
+          },
+          {
+            "A.Y.": 1,
+            "Exam": "Introduction to Sports Psychology",
+            "ECTS": 5
+          },
+          {
+            "A.Y.": 2,
+            "Exam": "Physiology of Human Movement",
+            "ECTS": 9
+          },
+          {
+            "A.Y.": 2,
+            "Exam": "Body and Sports Pedagogy",
+            "ECTS": 6
+          },
+          {
+            "A.Y.": 2,
+            "Exam": "Industrial Medicine",
+            "ECTS": 9
+          },
+          {
+            "A.Y.": 2,
+            "Exam": "Methods and didactics of individual and team sports",
+            "ECTS": 5
+          },
+          {
+            "A.Y.": 2,
+            "Exam": "Biomechanical basis of human movements",
+            "ECTS": 12
+          },
+          {
+            "A.Y.": 2,
+            "Exam": "Advanced Sports Psychology",
+            "ECTS": 5
+          },
+          {
+            "A.Y.": 2,
+            "Exam": "Applied dietary technical sciences",
+            "ECTS": 9
+          },
+          {
+            "A.Y.": 2,
+            "Exam": "Internships in companies, public or private bodies, professional orders",
+            "ECTS": 5
+          },
+          {
+            "A.Y.": 3,
+            "Exam": "Didactics, sports activities and functional re-education",
+            "ECTS": 10
+          },
+          {
+            "A.Y.": 3,
+            "Exam": "Methodology of sports evaluation",
+            "ECTS": 6
+          },
+          {
+            "A.Y.": 3,
+            "Exam": "Community Law",
+            "ECTS": 6
+          },
+          {
+            "A.Y.": 3,
+            "Exam": "Methods and didactics of motor activity",
+            "ECTS": 7
+          },
+          {
+            "A.Y.": 3,
+            "Exam": "Second Language",
+            "ECTS": 3
+          },
+          {
+            "A.Y.": 3,
+            "Exam": "Applied Sports Psychology",
+            "ECTS": 5
+          },
+          {
+            "A.Y.": 3,
+            "Exam": "Internship",
+            "ECTS": 13
+          },
+          {
+            "A.Y.": 3,
+            "Exam": "Final Dissertation",
+            "ECTS": 10
+          },
+        ],
+        path: "/sport-science",
+    },
     {   
         title : "SUSTAINABLE DEVELOPEMENT",
         imgUrl: "https://media2.giphy.com/media/ZYR6BXtEgKiFdlppA0/giphy.gif?cid=ecf05e47uqnllhqfmieiq1oq64emy1ocrct06uw7037vxik2&ep=v1_gifs_search&rid=giphy.gif&ct=g",

@@ -27,10 +27,6 @@
     padding-left: 7rem;
   }
  
-  .doubl-or{
-    color: #03a9f4;
-    font-size: medium;
-  }
   .card--text{
     display: flex;
   }
@@ -54,6 +50,7 @@
   
   .offer-details-image-container {
     width: 50%;
+    height: 300px;
     padding-left: 5rem;
   }
   .offer-details-title {
@@ -72,7 +69,7 @@
   
   .offer-details-image {
     margin: auto;
-    height: 200px;
+    height: 100%;
     position: relative;
     top: 3rem;
     width: 80%;
