@@ -178,12 +178,6 @@ const LightModeTheme = () => {
       color: black;
     }
 //DECK
-    .namee {
-      color: white;
-    }
-    .deck: {
-      transform: "translate(-50%,20%)",
-    },
       `}
     />
   )

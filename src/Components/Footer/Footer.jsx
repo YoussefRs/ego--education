@@ -142,7 +142,7 @@ const Footer = () => {
               info@ego-education.com
               <br />
             </a>
-            <p style={{width: "50%", marginTop: 20}}>The GDPR has been implemented through the Maltese Data Protection Act 2018 
+            <p style={{width: "100%", textAlign: "left", marginTop: 20}}>The GDPR has been implemented through the Maltese Data Protection Act 2018 
               (Chapter 586 of the Laws of Malta) <br/> (the “DPA”)  which took effect on 28 May 2018.
             </p>
           </div>

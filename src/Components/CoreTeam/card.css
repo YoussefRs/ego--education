@@ -11,8 +11,13 @@
   top: -100px;
   text-align: left;
   padding-left: 20px;
-  text-shadow: 2px 2px 20px  #000000;
+  text-shadow: 2px 2px 20px  #000;
+  background: linear-gradient(to right, rgb(255, 254, 254), rgba(0, 0, 0, 0.2));
+  border-radius: 2rem;
+  color: black;
+  
 }
+
 
 .ll {
   height: 4px;

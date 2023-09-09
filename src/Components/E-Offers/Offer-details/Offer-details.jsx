@@ -29,9 +29,10 @@ function OfferDetails(props) {
 
             <div className="content-pair">
               <div className="content-left">
-            <h1 className="offer-details-title">{title}</h1>
-            <p className="offer-details-description">{description}</p>
-
+              <h1 className="offer-details-title">
+                {title}
+                </h1>
+              <p className="offer-details-description">{description}</p>
               </div>
               <div className="content-right">
                 

@@ -54,7 +54,7 @@ const Contact = () => {
             <div>
               <div className="contact_para">
                 <p>
-                  Feel free to contact us by filling the form below!
+                  Feel free to try the platform by filling the form below!
                 </p>
               </div>
             </div>
