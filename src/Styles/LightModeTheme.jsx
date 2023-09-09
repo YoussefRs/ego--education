@@ -138,9 +138,7 @@ const LightModeTheme = () => {
           border-bottom: 2px solid black;
       }
     }
-    .divs1 {
-      border-right: 2px solid black;
-    }
+    
 //FAQ
     .aboutusheading {
       color: white
