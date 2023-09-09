@@ -1,11 +1,18 @@
 // import college1 from '../Assets/Home About Us Images/college/college1.jpeg'
 import college1 from "../assets/Home About Us Images/Courses/college1.jpg";
+import civil from "../assets/offers Images/civil.jpg";
+import eco from "../assets/offers Images/eco.jpg";
+import eduscience from "../assets/offers Images/eduscience.jpg";
+import sports from "../assets/offers Images/sports.jpg";
+
+import susdev from "../assets/offers Images/susdev.jpg";
+import info from "../assets/offers Images/info.jpg";
 
 const aboutusinfo = [
   {
-    ourcollegeimages: [college1, college1, college1,],
+    ourcollegeimages: [civil, eco, eduscience, sports],
     // ourteamimages: [team1],
-    // ourworkshopimages: [workshop1, workshop2, workshop1,workshop2],
+    ourmastersimages: [susdev, info],
     whoweare:
       " Ieli is in the process of being accredited by Malta Further and Higher Education Authority (MFHEA) to obtain a High Education Institution license for its brand eGO.",
     whatwedo:

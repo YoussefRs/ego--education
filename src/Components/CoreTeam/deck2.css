@@ -1,6 +1,6 @@
 .deckback{
     position: relative;
-    background-color: #000;
+    background-color: #0F0F0F;
     /* background-color: rgba(10, 25, 49, 0.9); */
     z-index: 100;
     border-radius: 50px;

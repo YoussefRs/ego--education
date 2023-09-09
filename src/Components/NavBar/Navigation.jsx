@@ -7,14 +7,25 @@ import { ThemeContext } from "../../Context/themeProvider";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); 
+  const [isBachelorsOpen, setIsBachelorsOpen] = useState(false);
+  const [isMastersOpen, setIsMastersOpen] = useState(false);
 
   const toggleNav = () => {
     setIsOpen(prevState => !prevState);
     setIsDropdownOpen(false); 
+    setIsBachelorsOpen(false);
+    setIsMastersOpen(false);
   };
 
   const toggleDropdown = () => {
     setIsDropdownOpen((prevState) => !prevState); 
+  };
+
+  const toggleBachelors = () => {
+    setIsBachelorsOpen(prevState => !prevState);
+  };
+  const toggleMasters = () => {
+    setIsMastersOpen(prevState => !prevState);
   };
 
   const { setIsDarkMode } = useContext(ThemeContext)
@@ -70,15 +81,31 @@ function Navbar() {
                 {isDropdownOpen && (
                   <ul className='dropdown-content'>
                   <li>
-                    <div activeclassname='active'>
+                    <div activeclassname='active' style={{padding: 0, display: 'flex',alignItems: "center", gap: 10,}} onClick={toggleBachelors}>
                       BACHELORS
+                      <button style={{height: 30, width: 30, cursor: "pointer"}}>v</button>
                     </div>
                   </li>
+                    {isBachelorsOpen && (
+                      <ul onClick={toggleNav}>
+                        <li><NavLink to='/educational-offers/educational-science'>Educational Sciences</NavLink></li>
+                        <li><NavLink to='/educational-offers/business-administartion'>Business Administration</NavLink></li>
+                        <li><NavLink to='/sports'>Civil Engineering</NavLink></li>
+                        <li><NavLink to='/educational-offers/sport-science'>Sport Sciences</NavLink></li>
+                      </ul>
+                    )}
                   <li>
-                    <div activeclassname='active'>
+                    <div activeclassname='active' style={{padding: 0, display: 'flex',alignItems: "center", gap: 10,}} onClick={toggleMasters}>
                       MASTERS
+                      <button style={{height: 30, width: 30, cursor: "pointer"}}>v</button>
                     </div>
                   </li>
+                  {isMastersOpen && (
+                      <ul onClick={toggleNav}>
+                        <li><NavLink to='/educational-offers/informatics'>Informatics</NavLink></li>
+                        <li><NavLink to='/educational-offers/sustainable-developement'>Sustainable Developement</NavLink></li>
+                      </ul>
+                    )}
                 </ul>
                 )}
               </div>

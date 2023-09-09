@@ -18,6 +18,14 @@
   font-family: draic;
   src: url(./assets/fonts/GothamMedium.ttf);
 }
+@font-face {
+  font-family: thinn;
+  src: url(./assets/fonts/Gotham-Thin.otf);
+}
+@font-face {
+  font-family: mediumm;
+  src: url(./assets/fonts/GothamMedium_1.ttf);
+}
 ::-webkit-scrollbar {
   display: none;
 }
@@ -47,7 +55,7 @@ h1 {
 .App {
   position: sticky;
   /* background: linear-gradient(to right top, rgb(0, 1, 88), rgb(0, 0, 0)); */
-  background-color: black;
+  background-color: #0F0F0F;
   transition: 0.5s ease;
   scroll-behavior: smooth;
   overflow: hidden;

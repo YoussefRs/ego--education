@@ -8,7 +8,7 @@ import ShapedWave from "../CustomWaveShape/ShapedWave";
 
 function HomeAbout() {
   const [activeindex, setActiveIndex] = useState(0);
-  const [previndex, setPrevIndex] = useState(2);
+  const [previndex, setPrevIndex] = useState(3);
   const [nextindex, setNextIndex] = useState(1);
   const [move, setMove] = useState("right");
 
@@ -35,21 +35,21 @@ function HomeAbout() {
 
   const handlenext = () => {
     setPrevIndex(activeindex);
-    setActiveIndex((activeindex + 1) % 3);
-    setNextIndex((activeindex + 2) % 3);
+    setActiveIndex((activeindex + 1) % 4);
+    setNextIndex((activeindex + 2) % 4);
     setMove("right");
   };
   const handleprev = () => {
-    setPrevIndex(previndex - 1 < 0 ? 2 : previndex - 1);
-    setActiveIndex(activeindex - 1 < 0 ? 2 : activeindex - 1);
+    setPrevIndex((previndex + 3) % 4); 
+    setActiveIndex((activeindex + 3) % 4); 
     setNextIndex(activeindex);
     setMove("left");
   };
 
   const handlenext2 = () => {
     setPrevIndex2(activeindex2);
-    setActiveIndex2((activeindex2 + 1) % 3);
-    setNextIndex2((activeindex2 + 2) % 3);
+    setActiveIndex2((activeindex2 + 1) % 2);
+    setNextIndex2((activeindex2 + 2) % 2);
     setMove2("right");
   };
   const handleprev2 = () => {
@@ -130,41 +130,41 @@ function HomeAbout() {
               </div>
 
               <div className="secondrowcol1">
-              <div className="our-college-slider">
-                <i className="home-about-arrow left" onClick={handleprev2} />
-                <div className="slider-content">
-                  {card.ourcollegeimages.map((image, index) => (
-                    <img
-                      loading="lazy"
-                      decoding="async"
-                      className={`ourcollegeimg 
-                      ${index === activeindex2
-                          ? "active"
-                          : index === previndex2
-                            ? "prev"
-                            : index === nextindex2
-                              ? "next"
+                <div className="our-college-slider">
+                  <i className="home-about-arrow left" onClick={handleprev2} />
+                  <div className="slider-content">
+                    {card.ourmastersimages.map((image, index) => (
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        className={`ourcollegeimg 
+                        ${index === activeindex2
+                            ? "active"
+                            : index === previndex2
+                              ? "prev"
+                              : index === nextindex2
+                                ? "next"
+                                : ""
+                          } 
+                        ${move2 === "left"
+                            ? "left"
+                            : move2 === "right"
+                              ? "right"
                               : ""
-                        } 
-                      ${move2 === "left"
-                          ? "left"
-                          : move2 === "right"
-                            ? "right"
-                            : ""
-                        }
-                    `}
-                      src={image}
-                      alt="collegepic"
-                      key={index}
-                    />
-                  ))}
+                          }
+                      `}
+                        src={image}
+                        alt="collegepic"
+                        key={index}
+                      />
+                    ))}
+                  </div>
+                  <i className="home-about-arrow right" onClick={handlenext2} />
                 </div>
-                <i className="home-about-arrow right" onClick={handlenext2} />
-              </div>
-              <Link to="#" target="_blank" className="home-about-slider-image-container" >
-                <h1 className="imagetext">MASTER'S DEGREES</h1>
-              </Link>
-</div>
+                <Link to="#" target="_blank" className="home-about-slider-image-container" >
+                  <h1 className="imagetext">MASTER'S DEGREES</h1>
+                </Link>
+             </div>
 
               
             </div>

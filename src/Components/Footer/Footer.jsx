@@ -194,7 +194,7 @@ const Footer = () => {
         <div className="footer_copyrights">
           <div className="footer_ruler"></div>
           <p className="footer_copyright">
-          Copyright © 2022. All rights reserved | ego-education.com <br />
+          Copyright © 2022. All rights reserved. <br/> www.ego-education.com <br />
           Powered by The Digital 
           </p>
         </div>

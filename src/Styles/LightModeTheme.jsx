@@ -55,7 +55,7 @@ const LightModeTheme = () => {
         background-color : transparent;
       }
       .custom-shape-divider-top-1693867662 .shape-fill {
-        fill: #000;
+        fill: #0F0F0F;
         z-index: -1;
         background-color: transparent;
     }
