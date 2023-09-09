@@ -72,13 +72,14 @@ const styles = {
       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
     boxSizing: "border-box",
     borderRadius: "10px",
+    background: "black"
   },
   image: {
-    width: "300px",
-    height: "400px",
+    width: "150px",
+    height: "250px",
     borderRadius: "5px",
     zIndex: "3",
-    objectFit: "cover",
+    objectFit: "contain",
   },
   department: {
     color: "white",

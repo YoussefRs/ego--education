@@ -4,9 +4,8 @@
   z-index: 18;
 }
 .namee {
-  font-family: "Montserrat", sans-serif;
-  padding: 0.3rem;
-  font-size: 1.7rem;
+  font-family: SansationLight;
+  font-size: 1.4rem;
   z-index: 5;
   position: relative;
   top: -100px;
@@ -14,6 +13,7 @@
   padding-left: 20px;
   text-shadow: 2px 2px 20px  #000000;
 }
+
 .ll {
   height: 4px;
   width: 30px;
@@ -23,16 +23,17 @@
   left: 21px;
 }
 .pos {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.1rem;
+  font-family: SansationBold;
+  font-size: 1.2rem;
   padding: 0.3rem;
   position: relative;
   top: -220px;
   text-align: left;
   padding-left: 20px;
-  color: white;
+  color: #046635;
   text-shadow: 2px 2px 20px  #000000;
-
+  background: linear-gradient(to right, rgb(255, 254, 254), rgba(0, 0, 0, 0.2));
+  border-radius: 2rem;
 }
 
 .core_team_social_img {

@@ -46,9 +46,6 @@ const LightModeTheme = () => {
           background-color: white;
           
         }
-      .pos {
-        color: black;
-      }
       .namee {
         color: black;
       }
@@ -136,6 +133,14 @@ const LightModeTheme = () => {
     .neumeric-card-body {
       background-color: black;
     }
+    @media (max-width: 768px) {
+      .divs1 {
+          border-bottom: 2px solid black;
+      }
+    }
+    .divs1 {
+      border-right: 2px solid black;
+    }
 //FAQ
     .aboutusheading {
       color: white
@@ -172,7 +177,13 @@ const LightModeTheme = () => {
     .fillform2 {
       color: black;
     }
-    
+//DECK
+    .namee {
+      color: white;
+    }
+    .deck: {
+      transform: "translate(-50%,20%)",
+    },
       `}
     />
   )

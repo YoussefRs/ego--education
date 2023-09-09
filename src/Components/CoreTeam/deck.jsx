@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Card from "./card";
 import "./deck.css";
-import Prathis from "../../assets/Core Team/Prahis.svg";
+import Prathis from "../../assets/logo/logo-ego-white-2.png";
 import ShapedWave from "../CustomWaveShape/ShapedWave";
 
 class Deck extends Component {
@@ -240,23 +240,24 @@ class Deck extends Component {
 
 const imgarray = [Prathis,Prathis,Prathis,Prathis,Prathis,Prathis,Prathis,Prathis,Prathis,Prathis,Prathis,Prathis, ];
 
-const name = ["A","B", "C", "D", "E", "F", "G","H","I","J", "K", "L"];
+const name = ["Fiorini","Sangrioli","Angotzi","LTD", "Cecconi", "Pallota","Pallota", "Xuereb", "Lyczkowska", "Grech","Scardina", "Rouissi"];
 
-const surname = ["U", "M","S", "W","K" ];
+const surname = ["Alan","Dario","Simona","Credence","Marco","Agostino Daniele", "Ernesto","Damian", "Kasia","Maria","Mirella","Youssef" ];
 
 
 const dep = [
-  "FOUNDER & RECTOR",
-  "ADMINISTRATIVE DIRECTOR",
-  "GENERAL DIRECTOR",
+  "AUDITOR",
   "COMPANY SECRETARY",
   "CORPORATE EXECUTIVE",
   "FINANCE, ACCOUNTING & COPORATE AFFAIRS",
-  "AUDITOR",
   "STUDENT OFFICE & SUPPORT",
+  "GENERAL DIRECTOR",
+  "FOUNDER & RECTOR",
+  "ADMINISTRATIVE DIRECTOR",
   "PROGRAMME DEVELOPER & QUALITY",
   "LEGAL AFFAIRS",
-  "",
+  "SECRETARIAL OFFICE AND RECTORATE",
+  "IT DIRECTOR"
 ];
 
 const link=[
