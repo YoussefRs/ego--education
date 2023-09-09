@@ -443,7 +443,7 @@ export const informatics = [
 
     {   
         title : "SPORT SCIENCE",
-        imgUrl: "https://media2.giphy.com/media/ZYR6BXtEgKiFdlppA0/giphy.gif?cid=ecf05e47uqnllhqfmieiq1oq64emy1ocrct06uw7037vxik2&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+        imgUrl: "https://media4.giphy.com/media/3rgXBrLlRs4ZlpnVDO/giphy.gif?cid=ecf05e47uzbsz7ibplxpdfjdw4h2ut9fny291r5xf4pnduzj&ep=v1_gifs_search&rid=giphy.gif&ct=g",
         description : "The 3-year Degree Course in Sport Sciences aims to provide students with knowledge and skills suitable for managing, performing and assessing sport individual and group activities of a compensatory, adapted, educational, recreational and playful nature. The course programme provides a first academic year aimed at the acquisition of anatomical, biochemical and physiological knowledge needed to understand how basically the human body in motion works. The second academic year is, instead, focused on the teaching of motor and sports activities, as well as the knowledge of sport sciences and its connections with health. The activities of the third academic year are aimed at understanding theoretical and practical aspects of sport training, as well as the functional and nutritional assessment of the athlete and the subject trained, or of the leisure-time motor and sport activities , the environmental quality and safety in sports facilities, of orthopedics and traumatology of sport and movement, and all the legal and economic foundations of the structure and sports organisations.",
         Sports_sub_title_1: "Educational Objectives",
         Sports_small_title: "Standard Specialisation",
