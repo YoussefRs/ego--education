@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import Event from "./Courses/Event";
 import HomeAbout from "./Home About Us/Home-aboutus";
 import Dec2 from "./CoreTeam/deck2"
+import MetaData from "../Data/MetaData";
 
 const Home = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const Home = () => {
   }, []);
   return (
     <div>
+      <MetaData title="Ego Education" />
       <Landingslide />
       <Event />
       <HomeAbout />

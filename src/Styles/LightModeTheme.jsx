@@ -92,15 +92,7 @@ const LightModeTheme = () => {
     #offer-details-description-list {
       color: black;
     }
-    .table {
-      color: black;
-    }
-    .table th {
-      border: 1px solid black;
-    }
-    #td {
-      border: 1px solid black;
-    }
+    
     .sub-title  {
       color: #046635;
     }

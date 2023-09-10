@@ -1,5 +1,6 @@
 import React from "react";
 import "./Offer-details.css";
+import MetaData from "../../../Data/MetaData";
 
 function OfferDetails(props) {
   const {
@@ -27,10 +28,12 @@ function OfferDetails(props) {
     AdmissionRequirements,
     StudyPlan,
     Traineeship,
+    Meta
   } = props?.data;
 
   return (
     <>
+    <MetaData title={Meta}/>
       <div className="offer-details-page">
         <div className="offer-details-hero-container">
           <div className="offer-details-text-container">

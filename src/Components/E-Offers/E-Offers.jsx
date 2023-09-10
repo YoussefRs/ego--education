@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import "./E-Offers.css";
 import {bachelors, masters} from "../../Data/offers-list.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { NavLink } from "react-router-dom";
 import Background from "../Background";
+import MetaData from "../../Data/MetaData";
 
 const Eoffers = () => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const Eoffers = () => {
 
   return (
     <div className="offer-page">
+      <MetaData title="Educational Offers | Ego Education" />
       <div className="offer-header">
         <div className="offer_headline_div">
           <h1 data-aos={"zoom-in-up"} className="offer-moto">
@@ -48,7 +50,7 @@ const Eoffers = () => {
       <div className="offers-container">
         {bachelors.map((card, i) => {
           return (
-            <>
+            <Fragment key={i}>
               <div
                 data-aos={"zoom-in-up"}
                 data-aos-delay={`${i > 2 ? "0" : "700"}`}
@@ -75,7 +77,7 @@ const Eoffers = () => {
                     </NavLink>
                   </button>
                 </div>
-            </>
+            </Fragment>
           );
         })}
       </div>
@@ -106,7 +108,7 @@ const Eoffers = () => {
       <div className="offers-container">
         {masters.map((card, i) => {
           return (
-            <>
+            <Fragment key={i}>
               <div
                 data-aos={"zoom-in-up"}
                 data-aos-delay={`${i > 2 ? "0" : "700"}`}
@@ -134,7 +136,7 @@ const Eoffers = () => {
                   </NavLink>
                 </button>
               </div>
-            </>
+            </Fragment>
           );
         })}
       </div>

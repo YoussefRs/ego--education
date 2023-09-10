@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Contact.css";
 import Background from "../Background";
 import AOS from "aos";
+import MetaData from "../../Data/MetaData";
 
 const Contact = () => {
   useEffect(() => {
@@ -12,6 +13,7 @@ const Contact = () => {
 
   return (
     <>
+    <MetaData title="Contact | Ego Education" />
       <div className="contact_main_body">
         <div className="contact_headline_div">
           <h1 data-aos={"zoom-in-up"} className="contact_headline">

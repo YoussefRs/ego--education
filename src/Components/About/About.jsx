@@ -5,6 +5,8 @@ import "./about.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Background from "../Background";
+import MetaData from "../../Data/MetaData";
+
 
 const card1Text =
   "The International E-Learning Institute Ltd (IELI) is a company established since October 23rd, 2017 in Malta, by deed C83113, created by a decennial experience of its founders in the field of university education.";
@@ -32,6 +34,7 @@ const About = () => {
   }, []);
   return (
     <div className="about-body">
+      <MetaData title="About us | Ego Education" />
       <div className="aboutmain">
         <div className="about-title-body">
           <h1 data-aos={"zoom-in-up"} className="about-subheading">
