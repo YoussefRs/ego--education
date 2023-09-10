@@ -97,6 +97,7 @@
 .nav-dropdown {
   position: relative;
   display: inline-block;
+  
 }
 
 /* Style for the nested ul (dropdown content) */
@@ -109,8 +110,9 @@
   z-index: 1;
   color: black;
   list-style: none;
-  right: 175px;
+  right: 181px;
   top: -20px;
+  
 }
 
 /* Show the dropdown content when hovering over the nav item */

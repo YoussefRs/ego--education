@@ -29,6 +29,7 @@
   margin: 20px 0;
   background-color: transparent;
   color: #fff;
+  /* margin-right: 100px; */
 }
 .events-upcoming-events {
   white-space: nowrap;
@@ -79,6 +80,9 @@ button:hover {
     white-space: normal;
     font-size: 0.9rem;
     padding: 20px 0;
+  }
+  .carousel-item {
+    width: 100%;
   }
 }
 

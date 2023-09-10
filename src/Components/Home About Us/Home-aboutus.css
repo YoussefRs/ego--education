@@ -33,7 +33,7 @@
 
 #about {
   /* font-family: "Rowdies", cursive; */
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 20px;
   white-space: nowrap;
   font-family: SansationBold;
@@ -347,7 +347,7 @@
   position: relative;
   top: -70px;
   text-align: left;
-  left: 30px;
+  left: 5px;
   z-index: 1000;
   font-family: draic;
   text-shadow: 2px 2px 20px #000000;

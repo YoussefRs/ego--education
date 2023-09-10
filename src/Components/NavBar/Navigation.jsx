@@ -72,12 +72,12 @@ function Navbar() {
           </li>
           <li>
             <div className='nav-dropdown'>
-                <li className='nav-item' style={{padding: 0, display: 'flex',alignItems: "center", gap: 10, border: "none", background:"transparent"}}>
+                <div className='nav-item' style={{padding: 0, display: 'flex',alignItems: "center", gap: 10, border: "none", background:"transparent"}}>
                   <button onClick={toggleDropdown} style={{height: 30, width: 30, cursor: "pointer"}}>&lt;</button>
                   <NavLink activeclassname='active' aria-current='page' to='/educational-offers'>
                   <div onClick={toggleNav}>Educational Offers</div>
                   </NavLink>
-                </li>
+                </div>
                 {isDropdownOpen && (
                   <ul className='dropdown-content'>
                   <li>

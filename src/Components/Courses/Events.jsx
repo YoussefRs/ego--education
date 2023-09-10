@@ -87,7 +87,7 @@ const Events = ({ children }) => {
           style={{ transform: `translateX(-${activeIndex * 100}%)` }}
         >
           {React.Children.map(children, (child, index) => {
-            return React.cloneElement(child, { key: index, width: "100%" });
+            return React.cloneElement(child, { key: index, width: "100%",  });
           })}
         </div>
         <div className="indicators">
