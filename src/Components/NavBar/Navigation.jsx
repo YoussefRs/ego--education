@@ -83,11 +83,11 @@ function Navbar() {
                   <li>
                     <div activeclassname='active' style={{padding: 0, display: 'flex',alignItems: "center", gap: 10,}} onClick={toggleBachelors}>
                       BACHELORS
-                      <button style={{height: 30, width: 30, cursor: "pointer"}}>v</button>
+                      {/* <button style={{height: 30, width: 30, cursor: "pointer"}}>v</button> */}
                     </div>
                   </li>
                     {isBachelorsOpen && (
-                      <ul onClick={toggleNav}>
+                      <ul onClick={toggleNav} style={{listStyle: 'none'}}>
                         <li><NavLink to='/educational-offers/educational-science'>Educational Sciences</NavLink></li>
                         <li><NavLink to='/educational-offers/business-administartion'>Business Administration</NavLink></li>
                         <li><NavLink to='/sports'>Civil Engineering</NavLink></li>
@@ -97,11 +97,11 @@ function Navbar() {
                   <li>
                     <div activeclassname='active' style={{padding: 0, display: 'flex',alignItems: "center", gap: 10,}} onClick={toggleMasters}>
                       MASTERS
-                      <button style={{height: 30, width: 30, cursor: "pointer"}}>v</button>
+                      {/* <button style={{height: 30, width: 30, cursor: "pointer"}}>v</button> */}
                     </div>
                   </li>
                   {isMastersOpen && (
-                      <ul onClick={toggleNav}>
+                      <ul onClick={toggleNav} style={{listStyle: 'none'}}>
                         <li><NavLink to='/educational-offers/informatics'>Informatics</NavLink></li>
                         <li><NavLink to='/educational-offers/sustainable-developement'>Sustainable Developement</NavLink></li>
                       </ul>

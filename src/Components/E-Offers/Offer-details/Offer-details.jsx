@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Offer-details.css";
 import MetaData from "../../../Data/MetaData";
+import AOS from "aos";
 
 function OfferDetails(props) {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
   const {
     title,
     imgUrl,
@@ -39,23 +47,33 @@ function OfferDetails(props) {
           <div className="offer-details-text-container">
 
             <div className="content-pair">
-              <div className="content-left">
-              <h1 className="offer-details-title">
+              <div  id="contentleft">
+              <h1 className="offer-details-title" data-aos={"zoom-out"}
+              >
                 {title}
                 </h1>
-              <p className="offer-details-description">{description}</p>
+              <p className="offer-details-description" data-aos={"zoom-out"}>{description}</p>
               </div>
-              <div className="content-right">
+              {/* <div  > */}
+              <div id="contentright" className="offer-details-image-container">
+                    <img
+                      loading="lazy"
+                      decoding="async"
+                      src={imgUrl}
+                      className="offer-details-image"
+                      alt="departimg"
+                    ></img>
+                </div> 
                 
-              </div>
+              {/* </div> */}
             </div>
 
 
             {/* Sports science */}
 
             {Sports_sub_title_1 && (
-              <div className="content-pair">
-                <div className="content-left">
+              <div className="content-pair" >
+                <div className="content-left" data-aos={"fade-left"}>
                   <h3 className="sub-title">{Sports_sub_title_1}</h3>
                   <h4 className="sub-title">{Sports_small_title}</h4>
                     <p className="offer-details-description">
@@ -104,7 +122,7 @@ function OfferDetails(props) {
                     </ul>
                 </div>
 
-                <div className="content-right">
+                <div className="content-right" data-aos={"fade-right"}>
                  
                     <h3 className="sub-title">{Sports_jobs_opp}</h3>
                     <h4 className="sub-title">{JobOpportunitiesS?.small_title}</h4>
@@ -162,7 +180,7 @@ function OfferDetails(props) {
             {/* Educational Objectives */}
             {program_sub_title_1  && (
               <div className="content-pair">
-                <div className="content-left">
+                <div className="content-left" data-aos={"fade-left"}>
                 <h3 className="sub-title">{program_sub_title_2}</h3>
                   <p className="offer-details-description">
                     {LearningOutcomes?.Description}
@@ -211,7 +229,7 @@ function OfferDetails(props) {
                     )}
                   </ul>
                 </div>
-                <div className="content-right">
+                <div className="content-right" data-aos={"fade-right"}>
                   <h3 className="sub-title">{program_sub_title_1}</h3>
                   <p className="offer-details-description">
                     {EducationalObjectives?.Description}
@@ -256,7 +274,7 @@ function OfferDetails(props) {
 
             {/* Study Plan */}
             <h3 className="sub-title">Study Plan:</h3>
-            <table className="table">
+            <table className="table" data-aos={"zoom-out"}>
               <thead>
                 <tr>
                   <th>A.Y.</th>
@@ -278,7 +296,7 @@ function OfferDetails(props) {
             {/* Traineeship */}
             {program_sub_title_5 && Traineeship && (
               <div className="content-pair">
-                <div className="content-left">
+                <div className="content-left" data-aos={"fade-left"}>
                   <h3 className="sub-title">{program_sub_title_5}</h3>
                   <p className="offer-details-description">
                     {Traineeship?.Description}
@@ -318,7 +336,7 @@ function OfferDetails(props) {
                     )}
                   </ul>
                 </div>
-                <div className="content-right">
+                <div className="content-right" data-aos={"fade-right"}>
                   <h3 className="sub-title">
                     {Traineeship.program_sub_title_7}
                   </h3>
@@ -341,7 +359,7 @@ function OfferDetails(props) {
               </div>
             )}
           </div>
-          <div className="offer-details-image-container">
+          {/* <div className="offer-details-image-container">
                     <img
                       loading="lazy"
                       decoding="async"
@@ -349,7 +367,7 @@ function OfferDetails(props) {
                       className="offer-details-image"
                       alt="departimg"
                     ></img>
-                </div>
+                </div> */}
         </div>
       </div>
     </>
