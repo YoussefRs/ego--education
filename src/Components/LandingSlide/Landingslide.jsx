@@ -15,7 +15,7 @@ const Landingslide = () => {
     setVideoLoaded(true);
   }, []);
   return (
-    <main className={`fade-in ${videoLoaded ? "show" : ""}`}>
+    <main className={`fade-in ${videoLoaded ? "show" : ""} main` }>
       <div className="video-container">
         <video
           autoPlay

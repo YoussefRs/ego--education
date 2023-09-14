@@ -11,6 +11,7 @@ import Contact from "./Components/Contact/Contact";
 import Eoffers from "./Components/E-Offers/E-Offers";
 import OfferDetails from "./Components/E-Offers/Offer-details/Offer-details";
 import { informatics } from "./Data/offers-details";
+import News from "./Components/News/News";
 
 function App() {
   const location = useLocation();
@@ -34,6 +35,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
+            <Route exact path="/news" element={<News />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/educational-offers" element={<Eoffers />} />
             {informatics.map((info) => (

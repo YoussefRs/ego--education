@@ -82,7 +82,7 @@ const Accordian = () => {
         </div>
       </div>
     </div>
-    <ShapedWave />
+    {/* <ShapedWave /> */}
     </>
   );
 };

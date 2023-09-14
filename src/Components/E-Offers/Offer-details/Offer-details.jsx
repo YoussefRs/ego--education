@@ -54,8 +54,7 @@ function OfferDetails(props) {
                 </h1>
               <p className="offer-details-description" data-aos={"zoom-out"}>{description}</p>
               </div>
-              {/* <div  > */}
-              <div id="contentright" className="offer-details-image-container">
+              {/* <div id="contentright" className="offer-details-image-container">
                     <img
                       loading="lazy"
                       decoding="async"
@@ -63,9 +62,7 @@ function OfferDetails(props) {
                       className="offer-details-image"
                       alt="departimg"
                     ></img>
-                </div> 
-                
-              {/* </div> */}
+                </div>  */}
             </div>
 
 

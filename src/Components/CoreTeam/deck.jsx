@@ -181,7 +181,7 @@ class Deck extends Component {
     return (
       <div>
         
-        <ShapedWave />
+        {/* <ShapedWave /> */}
         <div className="space"></div>
         <div className="core-firstrow">
           <h1 data-aos={"zoom-out"} className="core-subheading">

@@ -61,7 +61,7 @@ function HomeAbout() {
   
   return (
     <div className="aboutsection1">
-      <ShapedWave />
+      {/* <ShapedWave /> */}
       <div className="firstrow">
         <h1 data-aos={"zoom-out"} className="wheredowe">
           WHERE DO WE COME FROM
@@ -185,7 +185,7 @@ function HomeAbout() {
           </Fragment>
         );
       })}
-      <ShapedWave rotate={'rotateX(180deg)'}/>
+      {/* <ShapedWave rotate={'rotateX(180deg)'}/> */}
     </div>
   );
 }

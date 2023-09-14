@@ -104,7 +104,7 @@ const LightModeTheme = () => {
       border-bottom:1px #fff solid;
     }
     .tog{
-      background: white;
+      
     }
 //ABOUT US PAGE
     .about-body {
