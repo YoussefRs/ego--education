@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import "./Offers.css";
-import achievements from "../../Data/achievements";
 import AOS from "aos";
+import {achievements, master, English} from '../../Data/achievements'
 import "aos/dist/aos.css";
+import { NavLink } from "react-router-dom";
 
 const Main = () => {
   useEffect(() => {
@@ -45,62 +46,133 @@ const Main = () => {
         </div>
       </div>
       <div className="achievements_timeline">
+        <h1 className="title" 
+          data-aos={"zoom-out"}
+          data-aos-delay={"1600"}
+          >BACHELOR'S DEGREES
+        </h1>
         {achievements.map((a, i) => {
-              // return a.align === 0 ? (
                 return (
-                <div className="cc" style={{display: "flex", justifyContent: "space-between", flexDirection: "row"}}>
-             {a.align === 0 && ( <div className="achievement_container right">
-                <div
-                  data-aos-delay={"0"}
-                  data-aos={"fade-right"}
-                  className="achievement_content_container"
-                >
-                  <div className="achievements_contents">
-                    <h2>{a.name}</h2>
-                    <div className="achievement_devicer"></div>
-                    <p>{a.description}</p>
-                    <div className="achievement_devicer"></div>
-                    <p>{a.offer_duration}</p>
-                    <p>{a.offer_fees}</p>
-                  </div>
-                  <div className="achievement_image_conainer">
-                    <img
-                      loading="lazy"
-                      decoding="async"
-                      className="achievement_image"
-                      src={a.img}
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-             )}
-            {a.align === 1 && ( <div className="achievement_container right">
-              <div
-                data-aos-delay={"0"}
-                data-aos={"fade-left"}
-                className="achievement_content_container"
-              >
-                <div className="achievement_image_conainer">
-                  <img
-                    loading="lazy"
-                    decoding="async"
-                    className="achievement_image"
-                    src={a.img}
-                    alt=""
-                  />
-                </div>
-                <div className="achievements_contents">
-                  <h2>{a.name}</h2>
-                  <div className="achievement_devicer"></div>
-                  <p>{a.description}</p>
-                </div>
-              </div>
-            </div>)}
-            </div>)
-          // ) : (
-          // );
-        })}
+                  <div className="achievement_container right">
+                      <div
+                        data-aos-delay={"0"}
+                        data-aos={"fade-left"}
+                        className="achievement_content_container"
+                      >
+                        <div className="achievements_contents">
+                          <h2>{a.name}</h2>
+                          <div className="achievement_devicer"></div>
+                          <p>{a.description}</p>
+                          <div className="achievement_devicer"></div>
+                          <p>{a.offer_duration}</p>
+                          <p>{a.offer_fees}</p>
+                          <button className="offer_readmore_btn">
+                            <NavLink
+                              activeclassname="active"
+                              aria-current="page"
+                              to={a.offer_link}                     >
+                              <div>READ MORE</div>
+                            </NavLink>
+                          </button>
+                        </div>
+                        <div className="achievement_image_conainer">
+                          <img
+                            loading="lazy"
+                            decoding="async"
+                            className="achievement_image"
+                            src={a.img}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+              )})}
+      </div>
+      <div className="achievements_timeline">
+        <h1 className="title" 
+          data-aos={"zoom-out"}
+          data-aos-delay={"0"}
+          >MASTER DEGREES
+        </h1>
+        {master.map((a, i) => {
+                return (
+                  <div className="achievement_container right">
+                      <div
+                        data-aos-delay={"0"}
+                        data-aos={"fade-left"}
+                        className="achievement_content_container"
+                      >
+                        <div className="achievements_contents">
+                          <h2>{a.name}</h2>
+                          <div className="achievement_devicer"></div>
+                          <p>{a.description}</p>
+                          <div className="achievement_devicer"></div>
+                          <p>{a.offer_duration}</p>
+                          <p>{a.offer_fees}</p>
+                          <button className="offer_readmore_btn">
+                            <NavLink
+                              activeclassname="active"
+                              aria-current="page"
+                              to={a.offer_link}                     >
+                              <div>READ MORE</div>
+                            </NavLink>
+                          </button>
+                        </div>
+                        <div className="achievement_image_conainer">
+                          <img
+                            loading="lazy"
+                            decoding="async"
+                            className="achievement_image"
+                            src={a.img}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+              )})}
+      </div>
+      <div className="achievements_timeline">
+        <h1 className="title" 
+          data-aos={"zoom-out"}
+          data-aos-delay={"0"}
+          >ENGLISH LANGUAGE COURSES
+        </h1>
+        {English.map((a, i) => {
+                return (
+                  <div className="achievement_container right">
+                      <div
+                        data-aos-delay={"0"}
+                        data-aos={"fade-left"}
+                        className="achievement_content_container"
+                      >
+                        <div className="achievements_contents">
+                          <h2>{a.name}</h2>
+                          <div className="achievement_devicer"></div>
+                          <p>{a.description}</p>
+                          <div className="achievement_devicer"></div>
+                          <p>{a.offer_duration}</p>
+                          <p>{a.offer_fees}</p>
+                          <button className="offer_readmore_btn">
+                            <NavLink
+                              activeclassname="active"
+                              aria-current="page"
+                              to={a.offer_link}                     >
+                              <div>READ MORE</div>
+                            </NavLink>
+                          </button>
+                        </div>
+                        <div className="achievement_image_conainer">
+                          <img
+                            loading="lazy"
+                            decoding="async"
+                            className="achievement_image"
+                            src={a.img}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+              )})}
       </div>
     </div>
   );

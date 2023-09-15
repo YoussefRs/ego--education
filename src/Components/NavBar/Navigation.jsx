@@ -100,6 +100,12 @@ function Navbar() {
                       {/* <button style={{height: 30, width: 30, cursor: "pointer"}}>v</button> */}
                     </div>
                   </li>
+                  <li>
+                    <div activeclassname='active' style={{padding: 0, display: 'flex',alignItems: "center", gap: 10,}} onClick={toggleMasters}>
+                      ENGLISH COURSES
+                      {/* <button style={{height: 30, width: 30, cursor: "pointer"}}>v</button> */}
+                    </div>
+                  </li>
                   {isMastersOpen && (
                       <ul onClick={toggleNav} style={{listStyle: 'none'}}>
                         <li><NavLink to='/educational-offers/informatics'>Informatics</NavLink></li>

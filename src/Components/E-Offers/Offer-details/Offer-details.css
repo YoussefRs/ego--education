@@ -61,7 +61,7 @@
     width: auto; 
   }
   .offer-details-title {
-    font-family: "Rowdies", cursive;
+    /* font-family: "Rowdies", cursive; */
     font-size: 2.5rem;
     color: #046635;
     padding-bottom: 2rem;
@@ -75,6 +75,7 @@
     padding: 2rem;
     border-radius: 10px; */
     width: 500px;
+    font-family: SansationLight;
   }
   #offer-details-description-list {
     list-style: circle;
@@ -85,6 +86,9 @@
     padding-top: 15px;
     padding-bottom: 10px;
     
+  }
+  #offer-details-description-list p{
+    font-family: SansationLight;
   }
   
   .offer-details-image {
@@ -128,15 +132,17 @@
     background-color: #17202e;
     padding: 2rem;
     border-radius: 10px;
+    
   }
   .table th {
     padding: 15px 15px 15px 0px;
     border: 1px solid white;
-    
+    font-family: SansationLight;
   }
   #td {
     padding: 15px 15px 15px 0px;
     border: 1px solid white;
+    font-family: SansationLight;
   }
   
   @media screen and (max-width: 800px) {
@@ -207,12 +213,12 @@
       margin: auto;
     }
     .sub-title{
-      font-size: 0.9rem;
+      font-size: 1rem;
       padding-top: 0px;
     }
     
     .offer-details-title {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       width: 100%;
       margin: auto;
       white-space: nowrap;
@@ -239,8 +245,13 @@
       /* text-align: center; */
       text-align: left;
     }
+    #offer-details-description-list p{
+      
+      font-size: 12px;
+    }
     .offer-details-description {
-      font-size: 11px;
+      font-size: 13px;
+      line-height: 18px;
       margin: auto;
       margin-bottom: 0.5rem;
       width: 90%;
