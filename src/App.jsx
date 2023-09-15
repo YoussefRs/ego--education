@@ -12,6 +12,7 @@ import Eoffers from "./Components/E-Offers/E-Offers";
 import OfferDetails from "./Components/E-Offers/Offer-details/Offer-details";
 import { informatics } from "./Data/offers-details";
 import News from "./Components/News/News";
+import Main from "./Components/Offers/Offers";
 
 function App() {
   const location = useLocation();
@@ -37,7 +38,7 @@ function App() {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/news" element={<News />} />
             <Route exact path="/contact" element={<Contact />} />
-            <Route exact path="/educational-offers" element={<Eoffers />} />
+            <Route exact path="/educational-offers" element={<Main />} />
             {informatics.map((info) => (
               <>
                 <Route
