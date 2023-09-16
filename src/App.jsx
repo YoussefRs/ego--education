@@ -25,6 +25,25 @@ function App() {
 
   setTimeout(() => setLoading(false), 3900);
 
+  function renderSitemap() {
+  return (
+      <>
+        {`<?xml version="1.0" encoding="UTF-8"?>
+        <urlset
+          xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+          <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+          <url>
+            <loc>https://www.ego-education.eu/</loc>
+            <lastmod>2023-09-16T14:50:09+00:00</lastmod>
+          </url>
+        </urlset>`}
+      </>
+    );
+  }
+
   return (
     <>
       {loading ? (
@@ -34,6 +53,7 @@ function App() {
           <div className="App">
           <Navigation />
           <Routes>
+            <Route path="/sitemap.xml" element={renderSitemap} />
             <Route path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/news" element={<News />} />
