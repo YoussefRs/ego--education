@@ -11,7 +11,7 @@ function Card(props) {
       className="maincard"
       style={{
         ...styles.card,
-        backgroundColor: props.color,
+        backgroundColor: "#0F0F0F",
         left: `${props.x}px`,
         top: `${props.y}px`,
         zIndex: props.z_index,

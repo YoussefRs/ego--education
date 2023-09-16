@@ -53,10 +53,12 @@
 }
 .footer_links_section {
   display: flex;
+  
 }
 .footer_links {
   margin: 20px;
   color: #046635;
+  
 }
 .footer_link {
   font-size: 1rem;
@@ -64,6 +66,7 @@
   text-decoration: none;
   transition: all 0.3s ease-in;
   z-index: 33333;
+  font-family: sansationLight;
 }
 .footer_link:hover,
 .footer_location:hover {
@@ -105,6 +108,7 @@
   color: #046635;;
   text-decoration: none;
   transition: all 0.3s ease-in;
+  font-family: sansationLight;
 }
 
 .footer_social {

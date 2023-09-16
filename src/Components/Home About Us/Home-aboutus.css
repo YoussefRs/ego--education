@@ -350,7 +350,7 @@
   text-align: left;
   left: 5px;
   z-index: 1000;
-  font-family: draic;
+  font-family: sansationLight;
   text-shadow: 2px 2px 20px #000000;
 }
 
@@ -382,7 +382,7 @@
   color: #e7f2f8;
   font-size: 1rem;
   padding: 20px 0;
-  font-family: draic;
+  font-family: sansationLight;
 }
 
 .slider-content {

@@ -6,7 +6,7 @@ const LightModeTheme = () => {
       styles={css`
 //COURSES SECTION
       .outer-event {
-        background-color: white;
+        background-color:  #ECEFF1;
       }
       .event_name {
         color: #046635;
@@ -17,7 +17,7 @@ const LightModeTheme = () => {
 
 //About us SECTION
       .aboutsection1 {
-          background-color: white;
+          background-color:  #ECEFF1;
           transition: opacity 3s ease;
         }
       #lineaboutus2{
@@ -43,7 +43,7 @@ const LightModeTheme = () => {
         background-color : black;
       }
       .deckback {
-          background-color: white;
+          background-color:  #ECEFF1;
           
         }
       .namee {
@@ -65,10 +65,10 @@ const LightModeTheme = () => {
     }
 //OFFER PAGE 
     .offer-details-hero-container {
-      background-color : white;
+      background-color :  #ECEFF1;
     }
     .offer-page {
-      background-color: white;
+      background-color: #ECEFF1;
     }
     .offer-page-title {
       color: black;
@@ -99,16 +99,14 @@ const LightModeTheme = () => {
 
 //NAVIGATION BAR
     #navBar li {
-      background-color:black;
-      color: white;
+      background-color:#0F0F0F;
+      color:  #ECEFF1;
       border-bottom:1px #fff solid;
     }
-    .tog{
-      
-    }
+    
 //ABOUT US PAGE
     .about-body {
-      background-color: white;
+      background-color:  #ECEFF1;
     }
     .about-heading {
       color: black;
@@ -143,7 +141,7 @@ const LightModeTheme = () => {
     }
 //CONTACT PAGE 
     .contact_main_body {
-      background-color: white;
+      background-color:  #ECEFF1;
       z-index: -1;
     }
     .contact_para {
