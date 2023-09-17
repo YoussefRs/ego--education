@@ -26,7 +26,7 @@ function App() {
   setTimeout(() => setLoading(false), 3900);
 
   function renderSitemap() {
-    return fetch('/sitemap.xml')
+    return fetch('/site.xml')
       .then((response) => response.text())
       .then((xml) => new window.DOMParser().parseFromString(xml, 'text/xml'));
   }

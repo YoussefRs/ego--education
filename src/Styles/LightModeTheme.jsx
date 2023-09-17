@@ -1,6 +1,7 @@
 import { css, Global } from '@emotion/react'
 
 const LightModeTheme = () => {
+  
   return (
     <Global
       styles={css`
@@ -31,6 +32,9 @@ const LightModeTheme = () => {
       }
       #about {
         color: black;
+      }
+      .divs1 {
+        border-right: 2px solid #0F0F0F;
       }
 //DECK SECTION     
       .core-heading {

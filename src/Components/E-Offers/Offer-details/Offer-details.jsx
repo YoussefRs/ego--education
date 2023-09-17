@@ -45,15 +45,15 @@ function OfferDetails(props) {
       <div className="offer-details-page">
         <div className="offer-details-hero-container">
           <div className="offer-details-text-container">
-
-            <div className="content-pair">
+          
               <div  id="contentleft">
               <h1 className="offer-details-title" data-aos={"zoom-out"}
               >
                 {title}
                 </h1>
-              <p className="offer-details-description" data-aos={"zoom-out"}>{description}</p>
+              <p className="offer-detailsdescription"  data-aos={"zoom-out"}>{description}</p>
               </div>
+            <div className="content-pair">
               {/* <div id="contentright" className="offer-details-image-container">
                     <img
                       loading="lazy"

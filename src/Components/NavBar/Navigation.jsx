@@ -108,7 +108,7 @@ function Navbar() {
                       </ul>
                     )}
                     <li>
-                    <div activeclassname='active' style={{padding: 0, display: 'flex',alignItems: "center", gap: 10,}} onClick={toggleMasters}>
+                    <div activeclassname='active' style={{padding: 0, display: 'flex',alignItems: "center", gap: 10,}} >
                       ENGLISH COURSES
                       {/* <button style={{height: 30, width: 30, cursor: "pointer"}}>v</button> */}
                     </div>
