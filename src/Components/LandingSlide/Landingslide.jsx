@@ -26,7 +26,6 @@ const Landingslide = () => {
         >
           <source
             src={IntroVideo}
-            // src="https://ligaeducacional.com.br/images/uploads/posts/liga-educacional-reduzido-1.mp4"
             type="video/mp4"
           />
         </video>

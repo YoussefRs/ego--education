@@ -89,8 +89,11 @@ const LightModeTheme = () => {
     .individual-offer-container {
       background-color: black;
     }
+    .offer-detailsdescription {
+      color: #0F0F0F;
+    }
     .offer-details-description {
-      color: black;
+      color: #0F0F0F;
     }
     
     #offer-details-description-list {

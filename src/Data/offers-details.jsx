@@ -1,5 +1,5 @@
 export const informatics = [
-    {
+    { 
         title : "INFORMATICS",
         CD : "Course description",
         imgUrl : "https://media.giphy.com/media/bPCwGUF2sKjyE/giphy.gif",
@@ -649,10 +649,169 @@ export const informatics = [
         ],
         Meta : "Sport Science | Ego Education",
         path: "/sport-science",
-    },
+    }, 
     {   
-        title : "SUSTAINABLE DEVELOPEMENT",
+        title : "CIVIL ENGENEERING",
         imgUrl: "https://media2.giphy.com/media/ZYR6BXtEgKiFdlppA0/giphy.gif?cid=ecf05e47uqnllhqfmieiq1oq64emy1ocrct06uw7037vxik2&ep=v1_gifs_search&rid=giphy.gif&ct=g",
-        path: "/sustainable-developement",
+        description : "The areas of interest related to this 3-year bachelor Degree course in Civil Engineering are: construction (civil and industrial buildings, remarkable construction projects such as bridges, dams, tunnels, etc.) and infrastructures (roads and transportation, supply, distribution and water supply systems, etc.). In this context, the Civil Engineer deals with the design and construction of works and handles with their operation, maintenance, detection and control. In recent years, with regard to the Civil Engineering sector, has been increasingly developing the demand for specialised professional profiles such as, for example, the environmental and land Engineer or the Construction Engineer, who are now provided with dedicated training offers. The study course in Civil Engineering finds its applicability in the continuous request of professional profiles with a solid and wide knowledge flexibility and updating skills, essential to face the diverse matters and the continuous development of technologies related to the world of buildings and civil infrastructures",
+        Sports_sub_title_1: "Educational Objectives",
+        "StandardSpecialisation" : {
+          "Description" : "The main educational objectives of the Degree course in Civil Engineering are:",
+          "Outcomes" : [
+            "Provide students with an adequate command of general and basic scientific methods and contents, with particular reference to the ability to use this knowledge to interpret and describe matters related to the field of Civil Engineering.",
+            "Provide students with specific professional knowledge required for graduates to enter the job market.",
+          ],
+          "Description2" : "The professional profile is that of a Civil Engineer who is able to operate in one of the areas of traditional competence (architectural design, design of structures and infrastructures, design and management of hydraulic works and for sanitary engineering). The educational offer, while being fully in line with the general objectives of the Civil Engineering Degrees curriculum is more specifically aimed at training emerging professionals in the Civil Engineering field. To this end, the didactic organisation aims to ensure the acquisition of updated methods, techniques and tools, that enable to:",
+          "Outcomes2" : [
+            "Design and construction of medium-small size structures.",
+            "Design and manage medium-small sized Hydraulic Engineering structures.",
+            "Design and manage Environmental Health Engineering facilities.",
+            "Design and construction of transport infrastructures.",
+            "Have the fundamentals for the delivery of geometric surveys."
+          ],
+          "Description3" : "The educational path of the graduate in Civil Engineering is divided into three levels:",
+          "Outcomes3" : [
+            "Basic general training in mathematics, physics, statistics and engineering.",
+            "Characterizing learning training in the disciplines related to structural engineering, with particular reference to Science and Construction Techniques.",
+            "Characterizing learning training, aimed at creating professional profiles by means of educational activities mainly focused on appraisal and geology sectors."
+          ],
+        },
+        Cv_sub_title: "Environmental Specialisation",
+        "EnvironmentalSpecialisation" : {
+          "Description" : "The aim of this specialisation is to train a graduate with a solid basic engineering background acquired in the first year of the course to which is added a high level of competence on environmental issues through the specific teachings conducted in the subsequent two academic years. More specifically, the graduate in Civil Engineering – Environmental specialisation will be able to:",
+          "Outcomes" : [
+            "Understand the interactions between anthropic and environmental factors, with particular reference to the issues of reproducibility of natural resources, energy consumption, air, water and soil pollution, waste disposal.",
+            "Understand the principles and methods of urban and environmental regeneration intended as guidelines for interventions on cities and the territory.",
+            "Employ technical tools in order to prevent or reduce the degenerative processes of ecosystems as well as to addressing adaptation actions in human settlements and natural environments in terms of sustainability."
+          ],
+          "Description2" : "To this end, during the second and third year of the course, alongside with the traditional disciplines, students will deepen modules related to soil protection, environmental appraisal, hydrology, transport systems and geomorphological risks. Furthermore, the student will be able to choose among various elective modules, such as urban planning, environmental assessment procedures and urban and environmental law, through which the student may specifically outline his/her training path.",
+        },
+        cv_sub_title_2: "Learning Outcomes",
+        "LearningOutcomes" : {
+         "Description" : "The learner will be able to: ",
+         "Outcomes" : [
+          "Apply technical proficiency in the principles and methods essential to modern civil engineering practice.",
+          "Analyze emerging problems in educational situations through methods of discussion, reflexivity and professional writing, while paying attention to oral and written documentation of the experience.",
+          "Demonstrate understanding of global, societal, environmental, and sustainability issues related to civil engineering.",
+          "Exhibit effective communication, teamwork, entrepreneurial, and leadership skill.",
+          "Engage in ethical and responsible practice while pursuing professional growth.",
+          "Support the principles of sustainability.",
+         ] 
+        },
+        cv_sub_title_3j: "Job Opportunities:",
+          "JobOpportunitiescv": {
+            "Description": "The employment opportunities are linked to those working fields, in which products and systems are planned and developed with regard to the Civil Engineering field, such as:",
+            "JobOutcomes" : [
+              "Technical offices of public institutions ; (Municipalities, Provinces, Regions).",
+              "construction companies.",
+              "Having a knowledge in the disciplinary fields of the human sciences and the appropriate methodological-didactic skills and competences.",
+              "professional firms and engineering; companies.",
+              "material testing laboratories.",
+            ],
+            "SecondDescription" : "Furthermore, the course knowledge aims at preparing students interested in continuing their studies and successfully pursue a master degree programme in Civil Engineering. In addition, to access to higher study levels, this course provides sufficient knowledge so that to allow students to participate the exam to get licensed as a professional engineer. The course trains for the profession of:",
+            "JobOutcomes2": [
+              "Civil construction technicians and similar.",
+              "Water systems and other fluids Technicians."
+            ],
+            "small_title3" : "Knowledge and required abilities for the access",
+            "Description4" : "Admission to the course is open to all applicants who, upon enrolment, are in possession of the following qualifications:",
+            "Outcomes4" : [
+              "A valid and recognised high school diploma, irrespective of country of conferment, achieved after at least 12 years of schooling.",
+            ],
+            "Description5" : "It is also required a basic knowledge corresponding to the average level acquired through school education at upper secondary education level. The assessment of the basic knowledge will occur according to the methods indicated in the Academic Regulations of the course of reference."
+          },
+          "StudyPlan": [
+            {
+              "A.Y.": 1,
+              "Exam": "Mathematics",
+              "ECTS": 15
+            },
+            {
+              "A.Y.": 1,
+              "Exam": "Materials and Structural Analysis",
+              "ECTS": 15
+            },
+            {
+              "A.Y.": 1,
+              "Exam": "Technical Drawings",
+              "ECTS": 10
+            },
+            {
+              "A.Y.": 1,
+              "Exam": "Experimental Physics",
+              "ECTS": 15
+            },
+            {
+              "A.Y.": 1,
+              "Exam": "Geomorphology and Physical Geography",
+              "ECTS": 5
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "Economics and Valuation Technology",
+              "ECTS": 15
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "Applied Geology",
+              "ECTS": 5
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "Introduction to Structural Design",
+              "ECTS": 10
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "Building Design",
+              "ECTS": 10
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "Electrical Installation Safety",
+              "ECTS": 5
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "Statistics",
+              "ECTS": 5
+            },
+            {
+              "A.Y.": 2,
+              "Exam": "Building Physics",
+              "ECTS": 10
+            },
+            {
+              "A.Y.": 3,
+              "Exam": "Structural Analysis and Design",
+              "ECTS": 10
+            },
+            {
+              "A.Y.": 3,
+              "Exam": "Construction and Production Logistics",
+              "ECTS": 10
+            },
+            {
+              "A.Y.": 3,
+              "Exam": "Environmental Engineering",
+              "ECTS": 10
+            },
+            {
+              "A.Y.": 3,
+              "Exam": "Geotechnics",
+              "ECTS": 10
+            },
+            {
+              "A.Y.": 3,
+              "Exam": "Urban Planning and Techniques",
+              "ECTS": 10
+            },
+            {
+              "A.Y.": 3,
+              "Exam": "Final dissertation",
+              "ECTS": 10
+            },
+          ],
+        path: "/civil-engeneering",
     }
 ]

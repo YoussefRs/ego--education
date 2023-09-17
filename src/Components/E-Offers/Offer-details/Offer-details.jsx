@@ -36,7 +36,12 @@ function OfferDetails(props) {
     AdmissionRequirements,
     StudyPlan,
     Traineeship,
-    Meta
+    EnvironmentalSpecialisation,
+    Meta,
+    Cv_sub_title,
+    cv_sub_title_2,
+    cv_sub_title_3j,
+    JobOpportunitiescv
   } = props?.data;
 
   return (
@@ -117,6 +122,46 @@ function OfferDetails(props) {
                         </li>
                       ))}
                     </ul>
+                    <h4 className="sub-title">{JobOpportunitiesS?.small_title}</h4>
+                    <p className="offer-details-description">
+                      {JobOpportunitiesS?.Description}
+                    </p>
+                    <ul>
+                      {JobOpportunitiesS?.Outcomes?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="offer-details-description">
+                      {JobOpportunitiesS?.Description2}
+                    </p>
+                    <ul>
+                      {JobOpportunitiesS?.Outcomes2?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
+                    </ul>
+                    <h4 className="sub-title">{cv_sub_title_3j}</h4>
+                    <p className="offer-details-description">
+                      {JobOpportunitiescv?.Description}
+                    </p>
+                    <ul>
+                      {JobOpportunitiescv?.JobOutcomes?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="offer-details-description">
+                      {JobOpportunitiescv?.SecondDescription}
+                    </p>
+                      {JobOpportunitiescv?.JobOutcomes2?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
                 </div>
 
                 <div className="content-right" data-aos={"fade-right"}>
@@ -165,9 +210,49 @@ function OfferDetails(props) {
                         </li>
                       ))}
                     </ul>
+                    <h4 className="sub-title">{Cv_sub_title}</h4>
+                    <p className="offer-details-description">
+                      {EnvironmentalSpecialisation?.Description}
+                    </p>
+                    <ul>
+                      {EnvironmentalSpecialisation?.Outcomes?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="offer-details-description">
+                      {EnvironmentalSpecialisation?.Description2}
+                    </p>
+                    <h4 className="sub-title">{cv_sub_title_2}</h4>
+                    <p className="offer-details-description">
+                      {LearningOutcomes?.Description}
+                    </p>
+                    <ul>
+                      {LearningOutcomes?.Outcomes?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
+                    </ul>
                     <p className="offer-details-description">
                       {JobOpportunitiesS?.Description5}
                     </p>
+                    <h4 className="sub-title">{JobOpportunitiescv?.small_title3}</h4>
+                    <p className="offer-details-description">
+                      {JobOpportunitiescv?.Description4}
+                    </p>
+                    <ul>
+                      {JobOpportunitiescv?.Outcomes4?.map((outcome, index) => (
+                        <li key={index} id="offer-details-description-list">
+                          <p>{outcome}</p>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="offer-details-description">
+                      {JobOpportunitiescv?.Description5}
+                    </p>
+                   
                 </div>
               </div>
             )}

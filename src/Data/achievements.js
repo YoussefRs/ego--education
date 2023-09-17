@@ -54,6 +54,7 @@ const achievements = [
       "DURATION: 3 Years",
     offer_fees : "FEES: € 3000",
     align: 0,
+    offer_link: "/educational-offers/civil-engineering",
     delay: "1000",
   },
   // {
@@ -75,6 +76,7 @@ const master = [
       "DURATION: 1 Year",
     offer_fees : "FEES: € 3000",
     align: 0,
+    offer_link: "/educational-offers/informatics",
     delay: "1000",
   },
   {
@@ -86,6 +88,7 @@ const master = [
       "DURATION: 1 Year",
     offer_fees : "FEES: € 4000",
     align: 0,
+    offer_link: "/educational-offers/sustainable-developement",
     delay: "1000",
   },
 ];
@@ -96,6 +99,7 @@ const English = [
       "Pegaso International provides language training through its internal Language Centre, a multilingual environment that offers a range of English courses.",
     img: english,
     align: 0,
+    offer_link: "/educational-offers/english-courses",
     delay: "1000",
   },
 ]

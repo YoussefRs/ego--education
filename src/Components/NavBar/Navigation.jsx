@@ -91,7 +91,7 @@ function Navbar() {
                       <ul onClick={toggleNav} style={{listStyle: 'none'}}>
                         <li><NavLink to='/educational-offers/educational-science'>Educational Sciences</NavLink></li>
                         <li><NavLink to='/educational-offers/business-administartion'>Business Administration</NavLink></li>
-                        <li><NavLink to='/sports'>Civil Engineering</NavLink></li>
+                        <li><NavLink to='/educational-offers/civil-engeneering'>Civil Engineering</NavLink></li>
                         <li><NavLink to='/educational-offers/sport-science'>Sport Sciences</NavLink></li>
                       </ul>
                     )}
