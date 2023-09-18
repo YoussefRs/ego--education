@@ -4,7 +4,7 @@ import ShapedWave from "../CustomWaveShape/ShapedWave";
 
 const data = [
   {
-    question: "Who can join EGO-EDUCATION?",
+    question: "Who can join eGO Education?",
     answer:
       "answer ",
   },
@@ -14,7 +14,7 @@ const data = [
       "answer",
   },
   {
-    question: "What can you expect from EGO-EDUCATION?",
+    question: "What can you expect from eGO Education?",
     answer:
       "answer",
   },

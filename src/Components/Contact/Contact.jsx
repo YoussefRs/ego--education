@@ -13,7 +13,7 @@ const Contact = () => {
 
   return (
     <>
-    <MetaData title="Contact | Ego Education" />
+    <MetaData title="Contact | eGO Education" />
       <div className="contact_main_body">
         <div className="contact_headline_div">
           <h1 data-aos={"zoom-in-up"} className="contact_headline">

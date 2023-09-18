@@ -126,7 +126,7 @@ export const informatics = [
                 ]
                 }
             },
-            Meta : "Informatics | Ego Education",
+            Meta : "Informatics | eGO Education",
         path : "/informatics"
     },
 
@@ -297,7 +297,7 @@ export const informatics = [
                ]
                }
            },
-           Meta : "Business Administration | Ego Education",
+           Meta : "Business Administration | eGO Education",
         path: "/business-administartion",
     },
     
@@ -440,7 +440,7 @@ export const informatics = [
               "ECTS": 12
             }
           ],
-          Meta : "Educational Sciences | Ego Education",
+          Meta : "Educational Sciences | eGO Education",
         path: "/educational-science",
     },
 
@@ -647,7 +647,7 @@ export const informatics = [
             "ECTS": 10
           },
         ],
-        Meta : "Sport Science | Ego Education",
+        Meta : "Sport Science | eGO Education",
         path: "/sport-science",
     }, 
     {   
@@ -812,6 +812,7 @@ export const informatics = [
               "ECTS": 10
             },
           ],
+          Meta : "Civil Engineering | eGO Education",
         path: "/civil-engeneering",
     }
 ]

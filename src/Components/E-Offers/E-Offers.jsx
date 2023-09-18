@@ -17,7 +17,7 @@ const Eoffers = () => {
 
   return (
     <div className="offer-page">
-      <MetaData title="Educational Offers | Ego Education" />
+      <MetaData title="Educational Offers | eGO Education" />
       <div className="offer-header">
         <div className="offer_headline_div">
           <h1 data-aos={"zoom-in-up"} className="offer-moto">

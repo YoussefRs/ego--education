@@ -16,7 +16,7 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <MetaData title="Ego Education" />
+      <MetaData title="eGO Education" />
       <Landingslide />
       <Event />
       <HomeAbout />

@@ -34,7 +34,7 @@ const About = () => {
   }, []);
   return (
     <div className="about-body">
-      <MetaData title="About us | Ego Education" />
+      <MetaData title="About us | eGO Education" />
       <div className="aboutmain">
         <div className="about-title-body">
           <h1 data-aos={"zoom-in-up"} className="about-subheading">
