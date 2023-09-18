@@ -11,11 +11,11 @@ const Footer = () => {
   return (
     <>
       <div className="footer_section">
-      <ShapedWave rotate={'rotateX(180deg)'}/>
+      {/* <ShapedWave rotate={'rotateX(180deg)'}/> */}
       <ShapedWave />
       <Accordian />
         <div className="footer">
-          <Link className="creator_link" to="/creators">
+          <Link className="creator_link" to="/">
             <div className="footer_intro">
               <img
                 loading="lazy"
@@ -116,13 +116,13 @@ const Footer = () => {
               />
               <h1 className="footer_locateus">LOCATE US</h1>
             </div>
-            <a
+            <h5
               rel="noopener noreferrer"
               className="footer_location"
             >
               40, Villa Fairholme, <br/> Sir Augustus Bartolo Street, <br/> Ta’ Xbiex XBX 1095, Malta
               <br />
-            </a>
+            </h5>
           </div>
           <div className="footer_address">
             <div className="footer_locate">
@@ -135,13 +135,13 @@ const Footer = () => {
               />
               <h1 className="footer_locateus">CONTACT US</h1>
             </div>
-            <a
+            <h5
               rel="noopener noreferrer"
               className="footer_location"
             >
               info@ego-education.com
               <br />
-            </a>
+            </h5>
             <p style={{width: "100%", textAlign: "left", marginTop: 20}}>The GDPR has been implemented through the Maltese Data Protection Act 2018 
               (Chapter 586 of the Laws of Malta) <br/> (the “DPA”)  which took effect on 28 May 2018.
             </p>

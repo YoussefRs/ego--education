@@ -36,7 +36,7 @@
   box-sizing: border-box;
   font-family: "SansationBold",
     sans-serif;
-    font-display:inherit;
+  font-display:inherit;
   /* background-color: linear-gradient(to right top, rgb(0, 1, 88), rgb(0, 0, 0)); */
   /* background-color: black; */
   
@@ -45,7 +45,7 @@ html,
 body {
   /* background-color: linear-gradient(to right top, rgb(0, 1, 88), rgb(0, 0, 0)); */
   /* background-color: black; */
-  
+  font-display:inherit;
 }
 
 h1 {
