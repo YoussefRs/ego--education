@@ -38,7 +38,7 @@ function Card(props) {
       </h1>
       <div className="ll"></div>
       <h4 className="pos">{props.dep} </h4>
-      <a
+      {/* <a
         className="footer_social_links"
         // href={props.linkedin}
         rel="noreferrer"
@@ -51,7 +51,7 @@ function Card(props) {
           // src={linkedin}
           alt=""
         />
-      </a>
+      </a> */}
     </div>
   );
 }
