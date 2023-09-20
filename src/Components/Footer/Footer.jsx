@@ -147,10 +147,10 @@ const Footer = () => {
             </p>
           </div>
           </div>
-          <div className="footer_social">
+          {/* <div className="footer_social">
             <Link
               className="footer_social_links"
-              to="#"
+              to="www.linkedin.com"
               target="_blank"
             >
               <img
@@ -163,7 +163,7 @@ const Footer = () => {
             </Link>
             <a
               className="footer_social_links"
-              href=""
+              href="www.instagram.com"
               target="_blank"
               rel="noreferrer"
             >
@@ -177,7 +177,7 @@ const Footer = () => {
             </a>
             <a
               className="footer_social_links"
-              href=""
+              href="www.twitter.com"
               target="_blank"
               rel="noreferrer"
             >
@@ -189,7 +189,7 @@ const Footer = () => {
                 alt="Twitter"
               />
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="footer_copyrights">
           <div className="footer_ruler"></div>

@@ -10,8 +10,8 @@
   }
   .event_img {
     object-fit: cover;
-    /* height: 500px; */
-    width: 100%;
+    height: 400px;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,5 +72,6 @@
     }
     .event_img {
       height: 100%;
+      width: 100%;
     }
   }

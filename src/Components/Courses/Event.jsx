@@ -6,17 +6,17 @@ const data = [
   {
     name: "COURSE TITLE",
     description: "COURSE DESCRIPTION",
-    img : "https://instructor-academy.onlinecoursehost.com/content/images/2023/05/1-How-to-Create-an-Online-Course-Thumbnail.jpg"
+    img : "https://www.concentrix.com/wp-content/uploads/2023/06/home-insights-forrester-thumb-1.webp"
   },
   {
     name: "COURSE TITLE",
     description: "COURSE DESCRIPTION",
-    img : "https://instructor-academy.onlinecoursehost.com/content/images/2023/05/1-How-to-Create-an-Online-Course-Thumbnail.jpg"
+    img : "https://www.concentrix.com/wp-content/uploads/2023/06/home-insights-forrester-thumb-1.webp"
   },
   {
     name: "COURSE TITLE",
     description: "COURSE DESCRIPTION",
-    img : "https://instructor-academy.onlinecoursehost.com/content/images/2023/05/1-How-to-Create-an-Online-Course-Thumbnail.jpg"
+    img : "https://www.concentrix.com/wp-content/uploads/2023/06/home-insights-forrester-thumb-1.webp"
   },
 ];
 
