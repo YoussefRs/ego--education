@@ -17,8 +17,7 @@ function Card(props) {
         zIndex: props.z_index,
         opacity: props.opacity,
         transform: `translate(-50%,-50%) scale(${props.scale})`,
-        borderRadius: `${props.borderRadius}px`,
-        // display:'${props.new_display}';
+        // display:'${props.new_display}',
       }}
     >
       <img
@@ -71,7 +70,6 @@ const styles = {
     boxShadow:
       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
     boxSizing: "border-box",
-    borderRadius: "10px",
     background: "black"
   },
   image: {

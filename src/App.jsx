@@ -3,16 +3,16 @@ import './App.css'
 import { Route, Routes, useLocation } from "react-router-dom";
 import ThemeProvider from "./Context/themeProvider";
 import Home from "./Components/Home";
-import Loading from "./Components/Loading/Loading";
+
 import Footer from "./Components/Footer/Footer";
 import Navigation from './Components/NavBar/Navigation'
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
-import Eoffers from "./Components/E-Offers/E-Offers";
 import OfferDetails from "./Components/E-Offers/Offer-details/Offer-details";
 import { informatics } from "./Data/offers-details";
 import News from "./Components/News/News";
 import Main from "./Components/Offers/Offers";
+import Loader from "./Components/Loader/Loader";
 
 function App() {
   const location = useLocation();
@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       {loading ? (
-        <Loading />
+        <Loader/>
       ) : (
         <ThemeProvider>
           <div className="App">

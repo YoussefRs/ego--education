@@ -45,7 +45,7 @@ const Main = () => {
           ></div>
         </div>
       </div>
-      <div className="achievements_timeline">
+      <div >
         <h1 className="title" 
           data-aos={"zoom-out"}
           data-aos-delay={"1600"}
@@ -88,7 +88,7 @@ const Main = () => {
                     </div>
               )})}
       </div>
-      <div className="achievements_timeline">
+      <div >
         <h1 className="title" 
           data-aos={"zoom-out"}
           data-aos-delay={"0"}
@@ -131,7 +131,7 @@ const Main = () => {
                     </div>
               )})}
       </div>
-      <div className="achievements_timeline">
+      <div >
         <h1 className="title" 
           data-aos={"zoom-out"}
           data-aos-delay={"0"}

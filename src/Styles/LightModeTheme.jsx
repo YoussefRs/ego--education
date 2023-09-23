@@ -5,6 +5,8 @@ const LightModeTheme = () => {
   return (
     <Global
       styles={css`
+
+      
 //COURSES SECTION
       .outer-event {
         background-color:  #ECEFF1;
@@ -15,6 +17,8 @@ const LightModeTheme = () => {
       .event_description {
         color: black;
       }
+      
+      
 
 //About us SECTION
       .aboutsection1 {

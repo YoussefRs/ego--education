@@ -1,6 +1,46 @@
 import React from "react";
 import "./Event.css";
-import Events, { CarouselItem } from "./Events";
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplaySpeed: 2000,
+  className: 'sample',
+  autoplay: true,
+  arrows: true,
+  responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+};
 
 const data = [
   {
@@ -20,13 +60,41 @@ const data = [
   },
 ];
 
+
+
 const Event = () => {
   return (
     <>
-      <Events>
+      <div className="outer-event">    <div className="firstrow">
+        <h1 data-aos={"zoom-out"} className="wheredowe">
+          WHAT DO WE PROVIDE
+        </h1>
+        <div className="seperator">
+          <div className="events-upcoming-events">
+            <h1
+              data-aos={"zoom-out"}
+              data-aos-delay={"700"}
+              id="about"
+            >
+              LATEST COURSES 
+            </h1>
+          </div>
+          <div
+            data-aos={"fade-right"}
+            data-aos-delay={"700"}
+            id="lineaboutus1"
+          ></div>
+          <div
+            data-aos={"fade-left"}
+            data-aos-delay={"700"}
+            id="lineaboutus2"
+          ></div>
+        </div>
+      </div>
+          </div>
+        <Slider {...settings}>
         {data.map((event, i) => (
-          <CarouselItem key={i}>
-            <div className="event_container" >
+            <div className="event_container" key={i} data-aos={"zoom-out"}>
               <div className="event_image_container">
                 <img className="event_img" src={event.img} alt="" />
               </div>
@@ -37,9 +105,8 @@ const Event = () => {
                 <button className="event_btn">Apply</button>
               </div>
             </div>
-          </CarouselItem>
         ))}
-      </Events>
+        </Slider>
     </>
   );
 };
