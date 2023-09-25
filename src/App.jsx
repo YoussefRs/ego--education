@@ -37,13 +37,13 @@ function App() {
       {loading ? (
         <Loader/>
       ) : (
-          <div className="App">
         <ThemeProvider>
+          <div className="App">
           <Navigation />
           <Routes>
             <Route path="/sitemap.xml" element={renderSitemap} />
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route exact path="/about" element={<About />} />
             <Route exact path="/news" element={<News />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/educational-offers" element={<Main />} />
@@ -59,8 +59,8 @@ function App() {
             ))}
           </Routes>
           <Footer />
-        </ThemeProvider>
         </div>
+        </ThemeProvider>
       )}
     </>
   );

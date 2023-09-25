@@ -40,6 +40,11 @@ const LightModeTheme = () => {
       .divs1 {
         border-right: 2px solid #0F0F0F;
       }
+      @media (max-width: 768px) {
+        .divs1 {
+          border-right: 2px solid #ECEFF1;
+        }
+      }
 //DECK SECTION     
       .core-heading {
         color: black;
