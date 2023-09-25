@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Card from "./card";
 import "./deck.css";
 import Prathis from "../../assets/logo/logo-ego-white-2.png";
-import ShapedWave from "../CustomWaveShape/ShapedWave";
 
 class Deck extends Component {
   constructor(props) {
@@ -181,9 +180,8 @@ class Deck extends Component {
     return (
       <div>
         
-        {/* <ShapedWave /> */}
         <div className="space"></div>
-        <div className="core-firstrow">
+        <div className="core-firstrow" >
           <h1 data-aos={"zoom-out"} className="core-subheading">
             FINDING INSPIRATION IN EVERY TURN
           </h1>
@@ -210,7 +208,8 @@ class Deck extends Component {
           </div>
         </div>
 
-        <div ref={(ref_id) => (this.deck = ref_id)} style={styles.deck}>
+        <div ref={(ref_id) => (this.deck = ref_id)} style={styles.deck} 
+      data-aos={"zoom-out"}>
           {this.state.cards}
         </div>
         <div className="deck-button">

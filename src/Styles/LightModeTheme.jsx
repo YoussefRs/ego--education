@@ -132,7 +132,7 @@ const LightModeTheme = () => {
       background-color: black;
     }
     .neumeric-card-body {
-      background-color: black;
+      background-color: #0F0F0F;
     }
     @media (max-width: 768px) {
       .divs1 {

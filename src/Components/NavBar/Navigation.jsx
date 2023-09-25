@@ -52,7 +52,8 @@ function Navbar() {
         <div className="light-mode-button" onClick={handleChangeTheme}>
           <ion-icon id='icon' name={isLightMode ? 'sunny' : 'moon'}></ion-icon>
         </div>
-        <ul id="navBar" style={{ right: isOpen ? 0 : '-200px' }} >
+        <ul id="navBar" style={{ right: isOpen ? 0 : '-200px' }} 
+      >
           <li onClick={toggleNav}>
                 <NavLink
                 activeclassname="active"
@@ -80,7 +81,7 @@ function Navbar() {
                   </NavLink>
                 </div>
                 {isDropdownOpen && (
-                  <ul className='dropdown-content'>
+                  <ul className='dropdown-content' data-aos={"fade-left"}>
                   <li>
                     <div activeclassname='active' style={{padding: 0, display: 'flex',alignItems: "center", gap: 10,}} onClick={toggleBachelors}>
                       BACHELORS
@@ -88,7 +89,7 @@ function Navbar() {
                     </div>
                   </li>
                     {isBachelorsOpen && (
-                      <ul onClick={toggleNav} style={{listStyle: 'none'}}>
+                      <ul onClick={toggleNav} style={{listStyle: 'none'}} >
                         <li><NavLink to='/educational-offers/educational-science'>Educational Sciences</NavLink></li>
                         <li><NavLink to='/educational-offers/business-administartion'>Business Administration</NavLink></li>
                         <li><NavLink to='/educational-offers/civil-engeneering'>Civil Engineering</NavLink></li>

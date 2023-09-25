@@ -2,10 +2,6 @@ import React from "react";
 import "./card.css";
 
 function Card(props) {
-  const linkedIcon =
-    props.display === "show"
-      ? "core_team_social_img show"
-      : "core_team_social_img";
   return (
     <div
       className="maincard"
@@ -21,7 +17,7 @@ function Card(props) {
       }}
     >
       <img
-        data-aos={"zoom-out"}
+        data-aos={"flip-left"}
         data-aos-delay={"100"}
         loading="lazy"
         decoding="async"
@@ -37,20 +33,6 @@ function Card(props) {
       </h1>
       <div className="ll"></div>
       <h4 className="pos">{props.dep} </h4>
-      {/* <a
-        className="footer_social_links"
-        // href={props.linkedin}
-        rel="noreferrer"
-        target="_blank"
-      >
-        <img
-          loading="lazy"
-          decoding="async"
-          // className={linkedIcon}
-          // src={linkedin}
-          alt=""
-        />
-      </a> */}
     </div>
   );
 }

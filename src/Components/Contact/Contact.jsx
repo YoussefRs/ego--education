@@ -3,6 +3,7 @@ import "./Contact.css";
 import Background from "../Background";
 import AOS from "aos";
 import MetaData from "../../Data/MetaData";
+import  { NavLink } from 'react-router-dom';
 
 const Contact = () => {
   useEffect(() => {
@@ -62,13 +63,11 @@ const Contact = () => {
             </div>
             <div className="contact_joinnow_div">
               <a
-                href="GooGleDOc"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf-Bja69pPMSrK48ARFjWI3yJRe0WSIzdDMCMaYv6spkSI4yw/viewform"
                 rel="noreferrer"
                 target="_blank"
               >
-                {/* <NavLink to="https://docs.google.com/forms/d/e/1FAIpQLSehFE3hKyx7Shkl2x72KWDIsheS1TgHENWEueiYNj53h8kuhw/viewform?usp=sf_link" > */}
                 <button className="contact_joinnowbtn">JOIN NOW</button>
-                {/* </NavLink> */}
               </a>
             </div>
           </div>

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import InfoCard from "./components/InfoCard";
-import NeumericInfobox from "./components/NeumericInfobox";
 import "./about.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -94,7 +93,7 @@ const About = () => {
               cardTitle={card3Title}
               key={card3Title}
             />
-            <div className="neumeric-info-boxes">
+            {/* <div className="neumeric-info-boxes">
               <div className="neumeric-info-row-1">
                 <NeumericInfobox NeumericTitle={"Graduate"} />
                 <NeumericInfobox NeumericTitle={"Postgraduate"}  />
@@ -103,7 +102,7 @@ const About = () => {
                 <NeumericInfobox NeumericTitle={"Professional Training"}  />
                 <NeumericInfobox NeumericTitle={"Orienteering"}  />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
