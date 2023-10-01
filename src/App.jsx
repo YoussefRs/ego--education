@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import './App.css'
 import { Route, Routes, useLocation } from "react-router-dom";
-import ThemeProvider from "./Context/themeProvider";
 import Home from "./Components/Home";
 
 import Footer from "./Components/Footer/Footer";
@@ -37,7 +36,6 @@ function App() {
       {loading ? (
         <Loader/>
       ) : (
-        <ThemeProvider>
           <div className="App">
           <Navigation />
           <Routes>
@@ -60,7 +58,6 @@ function App() {
           </Routes>
           <Footer />
         </div>
-        </ThemeProvider>
       )}
     </>
   );

@@ -11,7 +11,6 @@ const Footer = () => {
   return (
     <>
       <div className="footer_section">
-      {/* <ShapedWave rotate={'rotateX(180deg)'}/> */}
       <ShapedWave />
       <Accordian />
         <div className="footer">
@@ -32,9 +31,6 @@ const Footer = () => {
                 alt="Pegaso-international"
               />
               <br/>
-              {/* <h1>EGO EDUCATION</h1> */}
-              {/* <p>A new vision of the world</p>
-              <p>A new opportunity for growth</p> */}
             </div>
           </Link>
           <div className="footer_links_section">
@@ -48,13 +44,13 @@ const Footer = () => {
                   </NavLink>
                 </li>
                 <li className="footer_link">
-                  <NavLink className="footer_link" to="/project">
+                  <NavLink className="footer_link" to="/news">
                     {" "}
                     News{" "}
                   </NavLink>
                 </li>
                 <li className="footer_link">
-                  <NavLink className="footer_link" to="/achievements">
+                  <NavLink className="footer_link" to="/educational-offers">
                     {" "}
                     Offers{" "}
                   </NavLink>
@@ -73,36 +69,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            {/* <div className="footer_links">
-              <h1 className="footer_links_name">DEPARTMENTS</h1>
-              <ul>
-                <li className="footer_link">
-                  <NavLink className="footer_link" to="/progammingDepartment">
-                    Programming
-                  </NavLink>
-                </li>
-                <li className="footer_link">
-                  <NavLink className="footer_link" to="/MechenicalDepartment">
-                    Mechanical
-                  </NavLink>
-                </li>
-                <li className="footer_link">
-                  <NavLink className="footer_link" to="/ElectricalDepartment">
-                    Electronics
-                  </NavLink>
-                </li>
-                <li className="footer_link">
-                  <NavLink className="footer_link" to="/PublicRelations">
-                    Public Relations
-                  </NavLink>
-                </li>
-                <li className="footer_link">
-                  <NavLink className="footer_link" to="/Creators">
-                    Creators
-                  </NavLink>
-                </li>
-              </ul>
-            </div> */}
           </div>
           <div>
           <div className="footer_address">
@@ -147,49 +113,6 @@ const Footer = () => {
             </p>
           </div>
           </div>
-          {/* <div className="footer_social">
-            <Link
-              className="footer_social_links"
-              to="www.linkedin.com"
-              target="_blank"
-            >
-              <img
-                loading="lazy"
-                decoding="async"
-                className="footer_social_img"
-                src="https://img.icons8.com/color/48/000000/linkedin.png"
-                alt="Linkedin"
-              />
-            </Link>
-            <a
-              className="footer_social_links"
-              href="www.instagram.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                loading="lazy"
-                decoding="async"
-                className="footer_social_img"
-                src="https://img.icons8.com/fluency/48/000000/instagram-new.png"
-                alt="Instagram"
-              />
-            </a>
-            <a
-              className="footer_social_links"
-              href="www.twitter.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                loading="lazy"
-                decoding="async"
-                className="footer_social_img"
-                src="https://img.icons8.com/color/48/000000/twitter-squared.png"
-                alt="Twitter"
-              />
-            </a>
-          </div> */}
         </div>
         <div className="footer_copyrights">
           <div className="footer_ruler"></div>
