@@ -65,14 +65,16 @@ function Navbar() {
           </li>
           <li>
             <div className='nav-dropdown'>
-                <div className='nav-item' style={{padding: 0, display: 'flex',alignItems: "center", gap: 10, border: "none", background:"transparent"}}>
-                  <button onClick={toggleDropdown} style={{height: 30, width: 30, cursor: "pointer"}}>&lt;</button>
-                  <NavLink activeclassname='active' aria-current='page' to='/educational-offers'>
-                  <div onClick={toggleNav}>Educational Offers</div>
+                <div className='nav-item' style={{padding: 0, display: 'flex',alignItems: "center", gap: 5, border: "none", background:"transparent"}}
+              
+                >
+                  {/* <button onClick={toggleDropdown} style={{height: 30, width: 30, cursor: "pointer"}}>&lt;</button> */}
+                  <NavLink activeclassname='active' aria-current='page' to='/educational-offers' onMouseEnter={toggleDropdown}>
+                  <div  >Educational Offers</div>
                   </NavLink>
                 </div>
                 {isDropdownOpen && (
-                  <ul className='dropdown-content' data-aos={"fade-left"}>
+                  <ul className='dropdown-content' >
                   <li>
                     <div activeclassname='active' style={{padding: 0, display: 'flex',alignItems: "center", gap: 10,}} onClick={toggleBachelors}>
                       BACHELORS
