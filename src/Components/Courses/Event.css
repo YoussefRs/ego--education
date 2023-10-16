@@ -44,9 +44,6 @@
     color: white;
     border: 2px solid #046635;
     transition: all 0.3s ease;
-
-    /* border-color: #00a0ff; */
-    border-radius: 5px;
     cursor: pointer;
   }
 
@@ -136,6 +133,28 @@
 }
 .events-upcoming-events {
   white-space: nowrap;
+}
+
+.offer_readmore_btn_home {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #046635;
+  color: white;
+  font-size: 1.1rem;
+  border: 2px solid #046635;
+  width: 15%;
+  height: 3rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  
+}
+
+@media (max-width: 767.98px) {
+  .offer_readmore_btn_home {
+    margin-left: -20px;
+    font-size: 15px;
+  }
+  
 }
 
 

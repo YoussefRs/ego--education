@@ -2,6 +2,8 @@ import React, { useState, useContext } from 'react';
 import './Navbar.css';
 import Logo from '../../assets/logo/logo-ego-white.png'
 import  { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesome library
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,10 +40,17 @@ function Navbar() {
           <img src={Logo} alt="Logo" style={{height: 49}} href='/'/>
         </a>
         </div>
-        <div id="toggler" onClick={toggleNav}>
-          <span className={`tog a ${isOpen ? 'open' : ''}`}></span>
-          <span className={`tog b ${isOpen ? 'open' : ''}`}></span>
-          <span className={`tog c ${isOpen ? 'open' : ''}`}></span>
+        <div className="block-nav">
+          <div id="toggler" onClick={toggleNav}>
+            <span className={`tog a ${isOpen ? 'open' : ''}`}></span>
+            <span className={`tog b ${isOpen ? 'open' : ''}`}></span>
+            <span className={`tog c ${isOpen ? 'open' : ''}`}></span>
+          </div>
+          <div>
+          <a href='https://ego-education.ispringlearn.eu/login' style={{fontSize: 25, color: 'white'}} target="_blank"> 
+            <FontAwesomeIcon icon={faUser} /> 
+          </a>
+          </div>
         </div>
         <ul id="navBar" style={{ right: isOpen ? 0 : '-200px' }} 
       >
@@ -110,6 +119,25 @@ function Navbar() {
                 </ul>
                 )}
               </div>
+          </li>
+          <li onClick={toggleNav}>
+                <NavLink
+                activeclassname="active"
+                aria-current="page"
+                to="/courses"
+          >
+                <div>Courses</div>
+              </NavLink>
+          </li>
+          <li onClick={toggleNav}>
+                <NavLink
+                target="_blank"
+                activeclassname="active"
+                aria-current="page"
+                to="https://ego-education.ispringlearn.eu/signup/kDuZZhxbaZMhMNY5cUqoh5aX8xM"
+          >
+                <div>Platform Trial</div>
+              </NavLink>
           </li>
           <li onClick={toggleNav}>
                 <NavLink

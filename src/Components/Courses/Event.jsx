@@ -3,7 +3,7 @@ import "./Event.css";
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { NavLink } from "react-router-dom";
 
 const settings = {
   dots: true,
@@ -89,6 +89,13 @@ const Event = () => {
             data-aos-delay={"700"}
             id="lineaboutus2"
           ></div>
+        <button className="offer_readmore_btn_home">
+            <NavLink
+            data-aos={"zoom-out"}
+              to="/courses">
+            <div>VIEW MORE</div>
+          </NavLink>
+        </button>
         </div>
       </div>
           </div>

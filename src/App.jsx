@@ -12,6 +12,7 @@ import { informatics } from "./Data/offers-details";
 import News from "./Components/News/News";
 import Main from "./Components/Offers/Offers";
 import Loader from "./Components/Loader/Loader";
+import Eoffers from "./Components/E-Offers/E-Offers";
 
 function App() {
   const location = useLocation();
@@ -55,6 +56,7 @@ function App() {
               />
               </>
             ))}
+            <Route path="/courses" element={ <Eoffers /> }/>
           </Routes>
           <Footer />
         </div>

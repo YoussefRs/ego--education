@@ -8,40 +8,40 @@ import susdev from "../assets/offers Images/susdev.jpg";
 export const bachelors = [
   {
     id: 1,
-    offer_name: "BUSINESS ADMINISTRATION",
+    offer_name: "COURSE 1",
     imgURL: eco,
     offer_duration:
-      "DURATION: 3 Years",
-    offer_fees : "FEES: € 3000",
-    offer_link: "/educational-offers/business-administartion"
+      "description",
+    // offer_fees : "FEES: € 3000",
+    offer_link: "/"
   },
   {
     id: 2,
-    offer_name: "SPORT SCIENCE",
+    offer_name: "COURSE 2",
     imgURL: sports,
     offer_duration:
-      "DURATION: 3 Years",
-    offer_fees : "FEES: € 3000",
-    offer_link: "/educational-offers/sport-science"
+      "description",
+    // offer_fees : "FEES: € 3000",
+    offer_link: "/"
   },
 
   {
     id: 3,
-    offer_name: "EDUCATIONAL SCIENCES",
+    offer_name: "COURSE 3",
     imgURL: eduscience,
     offer_duration:
-      "DURATION: 3 Years",
-    offer_fees : "FEES: € 3000",
-    offer_link: "/educational-offers/educational-science"
+      "description",
+    // offer_fees : "FEES: € 3000",
+    offer_link: "/"
   },
   {
     id: 4,
-    offer_name: "CIVIL ENGENEERING",
+    offer_name: "COURSE 4",
     imgURL: civil,
     offer_duration:
-      "DURATION: 3 Years",
-    offer_fees : "FEES: € 3000",
-    offer_link : "/educational-offers/civil-engeneering"
+      "description",
+    // offer_fees : "FEES: € 3000",
+    offer_link : "/"
   },
 ];
 export const masters = [
