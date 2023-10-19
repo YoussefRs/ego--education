@@ -13,6 +13,7 @@ import News from "./Components/News/News";
 import Main from "./Components/Offers/Offers";
 import Loader from "./Components/Loader/Loader";
 import Eoffers from "./Components/E-Offers/E-Offers";
+import ChatBot from "./Components/ChatBot/ChatBot";
 
 function App() {
   const location = useLocation();
@@ -39,6 +40,7 @@ function App() {
       ) : (
           <div className="App">
           <Navigation />
+          <ChatBot />
           <Routes>
             <Route path="/sitemap.xml" element={renderSitemap} />
             <Route path="/" element={<Home />} />
