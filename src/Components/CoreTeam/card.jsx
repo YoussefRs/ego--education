@@ -13,6 +13,7 @@ function Card(props) {
         zIndex: props.z_index,
         opacity: props.opacity,
         transform: `translate(-50%,-50%) scale(${props.scale})`,
+        border: "1px solid #046635"
         // display:'${props.new_display}',
       }}
     >
@@ -27,9 +28,9 @@ function Card(props) {
       ></img>
 
       <h1 className="namee">
-        {props.name}
-        <br></br>
         {props.surname}
+        <br></br>
+        {props.name}
       </h1>
       <div className="ll"></div>
       <h4 className="pos">{props.dep} </h4>

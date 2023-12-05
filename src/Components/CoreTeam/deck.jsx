@@ -69,8 +69,8 @@ class Deck extends Component {
           scale={new_scale}
           display={middle_card_index ? "show" : "not-show"}
           picsum_img={imgarray[i]}
-          name={name[i]}
           surname={surname[i]}
+          name={name[i]}
           dep={dep[i]}
           borderRadius={new_borderRadius}
           key = {i}
@@ -239,7 +239,7 @@ class Deck extends Component {
 
 const imgarray = [Prathis,Prathis,Prathis,Prathis,Prathis,Prathis,Prathis,Prathis,Prathis,Prathis,Prathis,Prathis, ];
 
-const name = ["Fiorini","Sangrioli","Angotzi","LTD", "Cecconi", "Pallota","Pallota", "Xuereb", "Lyczkowska", "Grech","Scardina", "Rouissi"];
+const name = ["Fiorini","Sangrioli","Angotzi","LTD", "Cecconi", "Pallotta","Pallotta", "Xuereb", "Lyczkowska", "Grech","Scardina", "Rouissi"];
 
 const surname = ["Alan","Dario","Simona","Credence","Marco","Agostino Daniele", "Ernesto","Damian", "Kasia","Maria","Mirella","Youssef" ];
 

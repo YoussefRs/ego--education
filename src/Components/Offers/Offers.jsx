@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Offers.css";
 import AOS from "aos";
-import {achievements, master, English} from '../../Data/achievements'
+import { achievements, master, English } from "../../Data/achievements";
 import "aos/dist/aos.css";
 import { NavLink } from "react-router-dom";
 
@@ -12,7 +12,6 @@ const Main = () => {
       duration: 1000,
     });
   }, []);
-  
 
   return (
     <div className="achievements_section">
@@ -45,134 +44,134 @@ const Main = () => {
           ></div>
         </div>
       </div>
-      <div >
-        <h1 className="title" 
-          data-aos={"zoom-out"}
-          data-aos-delay={"1600"}
-          >BACHELOR'S DEGREES
+      <div>
+        <h1 className="title" data-aos={"zoom-out"} data-aos-delay={"1600"}>
+          BACHELOR'S DEGREES
         </h1>
         {achievements.map((a, i) => {
-                return (
-                  <div className="achievement_container right">
-                      <div
-                        data-aos-delay={"0"}
-                        data-aos={"fade-left"}
-                        className="achievement_content_container"
-                      >
-                        <div className="achievements_contents">
-                          <h2>{a.name}</h2>
-                          <div className="achievement_devicer"></div>
-                          <p>{a.description}</p>
-                          <div className="achievement_devicer"></div>
-                          <p>{a.offer_duration}</p>
-                          <p>{a.offer_fees}</p>
-                          <button className="offer_readmore_btn">
-                            <NavLink
-                              activeclassname="active"
-                              aria-current="page"
-                              to={a.offer_link}                     >
-                              <div>READ MORE</div>
-                            </NavLink>
-                          </button>
-                        </div>
-                        <div className="achievement_image_conainer">
-                          <img
-                            loading="lazy"
-                            decoding="async"
-                            className="achievement_image"
-                            src={a.img}
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-              )})}
+          return (
+            <div className="achievement_container right">
+              <div
+                data-aos-delay={"0"}
+                data-aos={"fade-left"}
+                className="achievement_content_container"
+              >
+                <div className="achievements_contents">
+                  <h2>{a.name}</h2>
+                  <div className="achievement_devicer"></div>
+                  <p>{a.description}</p>
+                  <div className="achievement_devicer"></div>
+                  <p>{a.offer_duration}</p>
+                  <p>{a.offer_fees}</p>
+                  <button className="offer_readmore_btn">
+                    <NavLink
+                      activeclassname="active"
+                      aria-current="page"
+                      to={a.offer_link}
+                    >
+                      <div>READ MORE</div>
+                    </NavLink>
+                  </button>
+                </div>
+                <div className="achievement_image_conainer">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    className="achievement_image"
+                    src={a.img}
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
-      <div >
-        <h1 className="title" 
-          data-aos={"zoom-out"}
-          data-aos-delay={"0"}
-          >MASTER DEGREES
+      <div>
+        <h1 className="title" data-aos={"zoom-out"} data-aos-delay={"0"}>
+          MASTER DEGREES
         </h1>
         {master.map((a, i) => {
-                return (
-                  <div className="achievement_container right">
-                      <div
-                        data-aos-delay={"0"}
-                        data-aos={"fade-left"}
-                        className="achievement_content_container"
-                      >
-                        <div className="achievements_contents">
-                          <h2>{a.name}</h2>
-                          <div className="achievement_devicer"></div>
-                          <p>{a.description}</p>
-                          <div className="achievement_devicer"></div>
-                          <p>{a.offer_duration}</p>
-                          <p>{a.offer_fees}</p>
-                          <button className="offer_readmore_btn">
-                            <NavLink
-                              activeclassname="active"
-                              aria-current="page"
-                              to={a.offer_link}                     >
-                              <div>READ MORE</div>
-                            </NavLink>
-                          </button>
-                        </div>
-                        <div className="achievement_image_conainer">
-                          <img
-                            loading="lazy"
-                            decoding="async"
-                            className="achievement_image"
-                            src={a.img}
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-              )})}
+          return (
+            <div className="achievement_container right">
+              <div
+                data-aos-delay={"0"}
+                data-aos={"fade-left"}
+                className="achievement_content_container"
+              >
+                <div className="achievements_contents">
+                  <h2>{a.name}</h2>
+                  <div className="achievement_devicer"></div>
+                  <p>{a.description}</p>
+                  <div className="achievement_devicer"></div>
+                  <p>{a.offer_duration}</p>
+                  <p>{a.offer_fees}</p>
+                  <button className="offer_readmore_btn">
+                    <NavLink
+                      activeclassname="active"
+                      aria-current="page"
+                      to={a.offer_link}
+                    >
+                      <div>READ MORE</div>
+                    </NavLink>
+                  </button>
+                </div>
+                <div className="achievement_image_conainer">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    className="achievement_image"
+                    src={a.img}
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
-      <div >
-        <h1 className="title" 
-          data-aos={"zoom-out"}
-          data-aos-delay={"0"}
-          >ENGLISH LANGUAGE COURSES
+      <div>
+        <h1 className="title" data-aos={"zoom-out"} data-aos-delay={"0"}>
+          ENGLISH LANGUAGE COURSES
         </h1>
         {English.map((a, i) => {
-                return (
-                  <div className="achievement_container right">
-                      <div
-                        data-aos-delay={"0"}
-                        data-aos={"fade-left"}
-                        className="achievement_content_container"
-                      >
-                        <div className="achievements_contents">
-                          <h2>{a.name}</h2>
-                          <div className="achievement_devicer"></div>
-                          <p>{a.description}</p>
-                          <div className="achievement_devicer"></div>
-                          <p>{a.offer_duration}</p>
-                          <p>{a.offer_fees}</p>
-                          <button className="offer_readmore_btn">
-                            <NavLink
-                              activeclassname="active"
-                              aria-current="page"
-                              to={a.offer_link}                     >
-                              <div>READ MORE</div>
-                            </NavLink>
-                          </button>
-                        </div>
-                        <div className="achievement_image_conainer">
-                          <img
-                            loading="lazy"
-                            decoding="async"
-                            className="achievement_image"
-                            src={a.img}
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-              )})}
+          return (
+            <div className="achievement_container right">
+              <div
+                data-aos-delay={"0"}
+                data-aos={"fade-left"}
+                className="achievement_content_container"
+              >
+                <div className="achievements_contents">
+                  <h2>{a.name}</h2>
+                  <div className="achievement_devicer"></div>
+                  <p>{a.description}</p>
+                  <div className="achievement_devicer"></div>
+                  <p>{a.offer_duration}</p>
+                  <p>{a.offer_fees}</p>
+                  <button className="offer_readmore_btn">
+                    <NavLink
+                      activeclassname="active"
+                      aria-current="page"
+                      to={a.offer_link}
+                    >
+                      <div>READ MORE</div>
+                    </NavLink>
+                  </button>
+                </div>
+                <div className="achievement_image_conainer">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    className="achievement_image"
+                    src={a.img}
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

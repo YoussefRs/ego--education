@@ -6,14 +6,14 @@ import "slick-carousel/slick/slick-theme.css";
 import { NavLink } from "react-router-dom";
 
 const settings = {
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplaySpeed: 2000,
   className: 'sample',
-  autoplay: true,
+  autoplay: false,
   arrows: true,
   responsive: [
       {
@@ -45,17 +45,14 @@ const settings = {
 const data = [
   {
     name: "COURSE TITLE",
-    description: "COURSE DESCRIPTION",
     img : "https://www.concentrix.com/wp-content/uploads/2023/06/home-insights-forrester-thumb-1.webp"
   },
   {
     name: "COURSE TITLE",
-    description: "COURSE DESCRIPTION",
     img : "https://www.concentrix.com/wp-content/uploads/2023/06/home-insights-forrester-thumb-1.webp"
   },
   {
     name: "COURSE TITLE",
-    description: "COURSE DESCRIPTION",
     img : "https://www.concentrix.com/wp-content/uploads/2023/06/home-insights-forrester-thumb-1.webp"
   },
 ];
@@ -107,8 +104,6 @@ const Event = () => {
               </div>
               <div className="event_content_container">
                 <h1 className="event_name">{event.name}</h1>
-                <p className="event_description">{event.description}</p>
-                <div className="event_separator"></div>
                 <button className="event_btn">Apply</button>
               </div>
             </div>

@@ -63,15 +63,6 @@ function Navbar() {
                 <div>Home</div>
               </NavLink>
           </li>
-          <li onClick={toggleNav}>
-                <NavLink
-                activeclassname="active"
-                aria-current="page"
-                to="/news"
-          >
-                <div>News</div>
-              </NavLink>
-          </li>
           <li>
             <div className='nav-dropdown'>
                 <div className='nav-item' style={{padding: 0, display: 'flex',alignItems: "center", gap: 5, border: "none", background:"transparent"}}
