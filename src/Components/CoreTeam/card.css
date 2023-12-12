@@ -16,16 +16,6 @@
   color: black;
   
 }
-
-
-.ll {
-  height: 4px;
-  width: 30px;
-  background-color: #5a6f91;
-  position: relative;
-  top: -185px;
-  left: 21px;
-}
 .pos {
   font-family: SansationBold;
   font-size: 1.2rem;
@@ -37,7 +27,7 @@
   color: #046635;
   text-shadow: 2px 2px 20px  #000000;
   background: linear-gradient(to right, rgb(255, 254, 254), rgba(0, 0, 0, 0.2));
-  border-radius: 2rem;
+ 
 }
 
 .core_team_social_img {

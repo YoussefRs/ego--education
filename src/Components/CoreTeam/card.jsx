@@ -32,7 +32,6 @@ function Card(props) {
         <br></br>
         {props.name}
       </h1>
-      <div className="ll"></div>
       <h4 className="pos">{props.dep} </h4>
     </div>
   );

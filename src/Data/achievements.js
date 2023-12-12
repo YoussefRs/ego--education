@@ -17,7 +17,8 @@ const achievements = [
     offer_duration:
       "DURATION: 3 Years",
     offer_fees : "FEES: € 3000",
-    offer_link: "/educational-offers/business-administartion",
+    offer_link: "/courses/business-administartion",
+    course_link : "/course",
     align: 0,
     delay: "1000",
   },
@@ -29,7 +30,8 @@ const achievements = [
     offer_duration:
       "DURATION: 3 Years",
     offer_fees : "FEES: € 3000",
-    offer_link: "/educational-offers/sport-science",
+    offer_link: "/courses/sport-science",
+    course_link : "/course",
     align: 0,
     delay: "1000",
   },
@@ -41,7 +43,8 @@ const achievements = [
     offer_duration:
       "DURATION: 3 Years",
     offer_fees : "FEES: € 3000",
-    offer_link: "/educational-offers/educational-science",
+    offer_link: "/courses/educational-science",
+    course_link : "/course",
     align: 0,
     delay: "1000",
   },
@@ -54,7 +57,8 @@ const achievements = [
       "DURATION: 3 Years",
     offer_fees : "FEES: € 3000",
     align: 0,
-    offer_link: "/educational-offers/civil-engineering",
+    offer_link: "/courses/civil-engineering",
+    course_link : "/course",
     delay: "1000",
   },
   // {
@@ -76,7 +80,8 @@ const master = [
       "DURATION: 1 Year",
     offer_fees : "FEES: € 3000",
     align: 0,
-    offer_link: "/educational-offers/informatics",
+    offer_link: "/courses/informatics",
+    course_link : "/course",
     delay: "1000",
   },
   {
@@ -88,7 +93,8 @@ const master = [
       "DURATION: 1 Year",
     offer_fees : "FEES: € 4000",
     align: 0,
-    offer_link: "/educational-offers/sustainable-developement",
+    offer_link: "/courses/sustainable-developement",
+    course_link : "/course",
     delay: "1000",
   },
 ];
@@ -99,7 +105,8 @@ const English = [
       "Pegaso International provides language training through its internal Language Centre, a multilingual environment that offers a range of English courses.",
     img: english,
     align: 0,
-    offer_link: "/educational-offers/english-courses",
+    offer_link: "/courses/english-courses",
+    course_link : "/course",
     delay: "1000",
   },
 ]

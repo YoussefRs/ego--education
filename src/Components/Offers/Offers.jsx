@@ -64,24 +64,24 @@ const Main = () => {
                   <p>{a.offer_duration}</p>
                   <p>{a.offer_fees}</p>
                   <div className="achievement_buttons">
-                  <button className="offer_readmore_btn">
-                    <NavLink
-                      activeclassname="active"
-                      aria-current="page"
-                      to={a.offer_link}
-                    >
-                      <div>READ MORE</div>
-                    </NavLink>
-                  </button>
-                  <button className="offer_readmore_btn">
-                    <NavLink
-                      activeclassname="active"
-                      aria-current="page"
-                      to={a.offer_link}
-                    >
-                      <div>COURSES</div>
-                    </NavLink>
-                  </button>
+                    <button className="offer_readmore_btn">
+                      <NavLink
+                        activeclassname="active"
+                        aria-current="page"
+                        to={a.offer_link}
+                      >
+                        <div>READ MORE</div>
+                      </NavLink>
+                    </button>
+                    <button className="offer_readmore_btn">
+                      <NavLink
+                        activeclassname="active"
+                        aria-current="page"
+                        to={a.course_link}
+                      >
+                        <div>COURSES</div>
+                      </NavLink>
+                    </button>
                   </div>
                 </div>
                 <div className="achievement_image_conainer">
@@ -117,15 +117,26 @@ const Main = () => {
                   <div className="achievement_devicer"></div>
                   <p>{a.offer_duration}</p>
                   <p>{a.offer_fees}</p>
-                  <button className="offer_readmore_btn">
-                    <NavLink
-                      activeclassname="active"
-                      aria-current="page"
-                      to={a.offer_link}
-                    >
-                      <div>READ MORE</div>
-                    </NavLink>
-                  </button>
+                  <div className="achievement_buttons">
+                    <button className="offer_readmore_btn">
+                      <NavLink
+                        activeclassname="active"
+                        aria-current="page"
+                        to={a.offer_link}
+                      >
+                        <div>READ MORE</div>
+                      </NavLink>
+                    </button>
+                    <button className="offer_readmore_btn">
+                      <NavLink
+                        activeclassname="active"
+                        aria-current="page"
+                        to={a.course_link}
+                      >
+                        <div>COURSES</div>
+                      </NavLink>
+                    </button>
+                  </div>
                 </div>
                 <div className="achievement_image_conainer">
                   <img
@@ -160,15 +171,26 @@ const Main = () => {
                   <div className="achievement_devicer"></div>
                   <p>{a.offer_duration}</p>
                   <p>{a.offer_fees}</p>
-                  <button className="offer_readmore_btn">
-                    <NavLink
-                      activeclassname="active"
-                      aria-current="page"
-                      to={a.offer_link}
-                    >
-                      <div>READ MORE</div>
-                    </NavLink>
-                  </button>
+                  <div className="achievement_buttons">
+                    <button className="offer_readmore_btn">
+                      <NavLink
+                        activeclassname="active"
+                        aria-current="page"
+                        to={a.offer_link}
+                      >
+                        <div>READ MORE</div>
+                      </NavLink>
+                    </button>
+                    <button className="offer_readmore_btn">
+                      <NavLink
+                        activeclassname="active"
+                        aria-current="page"
+                        to={a.course_link}
+                      >
+                        <div>COURSES</div>
+                      </NavLink>
+                    </button>
+                  </div>
                 </div>
                 <div className="achievement_image_conainer">
                   <img

@@ -27,58 +27,66 @@ export default function WorldMap() {
           ></div>
         </div>
       </div>
-        <div class="distribution-map">
+        <div className="distribution-map">
           <img src={map} alt="" />
 
-          <button class="map-point" style={{ top: "15%", left: "35%" }}>
-            <div class="content">
-              <div class="centered-y">
-                <h2>A Place</h2>
+          <button className="map-point" style={{ top: "15%", left: "35%" }}>
+            <div className="map-content">
+              <div className="centered-y">
+                <h2>Country</h2>
                 <p>
-                  You can put plenty of details in here. In the original, I
-                  listed contact information and linked phone numbers and email
-                  addresses.
+                  Description
                 </p>
               </div>
             </div>
           </button>
-          <button class="map-point" style={{ top: "35%", left: "50%" }}>
-            <div class="content">
-              <div class="centered-y">
-                <h2>Another Place</h2>
-                <p>Lorem ipsum something something</p>
+          <button className="map-point" style={{ top: "35%", left: "50%" }}>
+            <div className="map-content">
+              <div className="centered-y">
+              <h2>Country</h2>
+                <p>
+                  Description
+                </p>
               </div>
             </div>
           </button>
-          <button class="map-point" style={{ top: "76%", left: "82.5%" }}>
-            <div class="content">
-              <div class="centered-y">
-                <h2>Marauder Town</h2>
-                <p>I solemnly swear that I am up to no good</p>
+          <button className="map-point" style={{ top: "76%", left: "82.5%" }}>
+            <div className="map-content">
+              <div className="centered-y">
+              <h2>Country</h2>
+                <p>
+                  Description
+                </p>
               </div>
             </div>
           </button>
-          <button class="map-point" style={{ top: "45%", left: "16%" }}>
-            <div class="content">
-              <div class="centered-y">
-                <h2>Logan's Mum</h2>
-                <p>I’m a marshmallow</p>
+          <button className="map-point" style={{ top: "45%", left: "16%" }}>
+            <div className="map-content">
+              <div className="centered-y">
+              <h2>Country</h2>
+                <p>
+                  Description
+                </p>
               </div>
             </div>
           </button>
-          <button class="map-point" style={{ top: "60%", left: "53%" }}>
-            <div class="content">
-              <div class="centered-y">
-                <h2>Toto</h2>
-                <p>I bless the rains</p>
+          <button className="map-point" style={{ top: "60%", left: "53%" }}>
+            <div className="map-content">
+              <div className="centered-y">
+              <h2>Country</h2>
+                <p>
+                  Description
+                </p>
               </div>
             </div>
           </button>
-          <button class="map-point" style={{ top: "25%", left: "70%" }}>
-            <div class="content">
-              <div class="centered-y">
-                <h2>With Love</h2>
-                <p>— 007</p>
+          <button className="map-point" style={{ top: "25%", left: "70%" }}>
+            <div className="map-content">
+              <div className="centered-y">
+              <h2>Country</h2>
+                <p>
+                  Description
+                </p>
               </div>
             </div>
           </button>

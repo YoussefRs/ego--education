@@ -58,7 +58,7 @@ function App() {
               />
               </>
             ))}
-            {/* <Route path="/courses" element={ <Eoffers /> }/> */}
+            <Route path="/course" element={ <Eoffers /> }/>
           </Routes>
           <Footer />
         </div>
