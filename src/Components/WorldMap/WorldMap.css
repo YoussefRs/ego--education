@@ -1,0 +1,94 @@
+.map {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.distribution-map {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .distribution-map > img {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .distribution-map .map-point {
+    cursor: pointer;
+    outline: none;
+    z-index: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    -moz-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    -o-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    -webkit-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out, z-index 0.25s ease-in-out;
+    -webkit-transition-delay: 0.25s, 0.25s, 0.25s, 0.25s;
+    transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    /* background: rgba(26, 26, 26, 0.85); */
+    background: url(../../assets/logo/logo-ego-white-2.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 5px solid black;
+  }
+  .distribution-map .map-point .content {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: overlay;
+  }
+  .distribution-map .map-point:active, .distribution-map .map-point:focus {
+    margin: 0;
+    padding: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    width: 300px;
+    height: 220px;
+    color: #e5e5e5;
+    z-index: 1;
+    transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
+    background: white;
+  }
+  .distribution-map .map-point:active .content, .distribution-map .map-point:focus .content {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    -moz-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -webkit-transition: opacity 0.25s ease-in-out, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -webkit-transition-delay: 0.25s, 0s, 0s;
+    transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    overflow: hidden;
+  }
+  .distribution-map .map-point:active .content a:hover, .distribution-map .map-point:active .content a:active, .distribution-map .map-point:focus .content a:hover, .distribution-map .map-point:focus .content a:active {
+    color: #afe1fa;
+  }
+  .description {
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgba(229, 229, 229, 0.7);
+  }
+/*    
+  div, img, footer {
+    position: relative;
+    box-sizing: border-box;
+  }
+   
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-weight: 300;
+  } */

@@ -19,6 +19,11 @@ const data = [
       "answer",
   },
   {
+    question: "where can i use my degree?",
+    answer:
+      "answer",
+  },
+  {
     question: "Is there a fee requirement?",
     answer:
       "answer",

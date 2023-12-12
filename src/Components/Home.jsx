@@ -6,6 +6,7 @@ import Event from "./Courses/Event";
 import HomeAbout from "./Home About Us/Home-aboutus";
 import Dec2 from "./CoreTeam/deck2"
 import MetaData from "../Data/MetaData";
+import WorldMap from "./WorldMap/WorldMap";
 
 const Home = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const Home = () => {
       <Landingslide />
       <Event />
       <HomeAbout />
+      <WorldMap />
       <Dec2 />
     </div>
   );

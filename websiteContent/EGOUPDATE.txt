@@ -1,0 +1,29 @@
+
+
+ ego education : outside click closes the menu 
+merge course and educ offers , place it after home 
+delete news 
+
+courses home carousel :
+delete desc -- done
+corners down title (--done) , bottom apply(--done); apply redirects to the course page 
+get rid of the paganation --done
+squared video -- done
+TEam sectio, :
+reverse name : pallotta (--done)
+try background color website (--done)
+add question: where can i use my degree (--done)
+MASTER : Masters degrees in java programming 
+gert rid of pegassooo in the footer (--done)
+add a layer black for images in edu
+https://www.ehea.info/page-full_members
+under the about us left image, right swiper for countries
+the box mtaa countries esmou : internatinal degree
+https://codeconvey.com/interactive-world-map-css/
+https://codepen.io/meldm/pen/WmXejd
+
+
+ 
+
+
+
