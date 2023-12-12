@@ -47,18 +47,18 @@ function App() {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/news" element={<News />} />
             <Route exact path="/contact" element={<Contact />} />
-            <Route exact path="/educational-offers" element={<Main />} />
+            <Route exact path="/courses" element={<Main />} />
             {informatics.map((info) => (
               <>
                 <Route
                 key={info.title}
                 exact
-                path={`/educational-offers${info.path}`}
+                path={`/courses${info.path}`}
                 element={<OfferDetails data={info} />}
               />
               </>
             ))}
-            <Route path="/courses" element={ <Eoffers /> }/>
+            {/* <Route path="/courses" element={ <Eoffers /> }/> */}
           </Routes>
           <Footer />
         </div>

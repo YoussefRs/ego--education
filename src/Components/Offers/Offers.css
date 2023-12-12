@@ -114,6 +114,7 @@
   /* background: #17202e; */
   position: relative;
   display: flex;
+  gap: 1rem;
   z-index: 5;
   display: flex;
   justify-content: center;
@@ -156,6 +157,17 @@
   height: auto;
   background-size: cover;
   z-index: 100;
+  position: relative;
+}
+.achievement_image_conainer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, transparent, black);
+  pointer-events: none;
 }
 .achievement_image {
   width: 100%;
@@ -172,6 +184,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: ce;
+}
+.achievement_buttons {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
 }
 .title {
   font-size: 27px;
