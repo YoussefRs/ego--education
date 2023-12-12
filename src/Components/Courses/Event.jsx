@@ -86,13 +86,6 @@ const Event = () => {
             data-aos-delay={"700"}
             id="lineaboutus2"
           ></div>
-        <button className="offer_readmore_btn_home">
-            <NavLink
-            data-aos={"zoom-out"}
-              to="/courses">
-            <div>VIEW MORE</div>
-          </NavLink>
-        </button>
         </div>
       </div>
           </div>
@@ -104,7 +97,7 @@ const Event = () => {
               </div>
               <div className="event_content_container">
                 <h1 className="event_name">{event.name}</h1>
-                <button className="event_btn">Apply</button>
+                <button className="event_btn" >Apply</button>
               </div>
             </div>
         ))}

@@ -69,8 +69,8 @@ function Navbar() {
               
                 >
                   {/* <button onClick={toggleDropdown} style={{height: 30, width: 30, cursor: "pointer"}}>&lt;</button> */}
-                  <NavLink activeclassname='active' aria-current='page' to='/educational-offers' onMouseEnter={toggleDropdown}>
-                  <div  >Educational Offers</div>
+                  <NavLink activeclassname='active' aria-current='page' to='/courses' onMouseEnter={toggleDropdown}>
+                  <div  >Courses</div>
                   </NavLink>
                 </div>
                 {isDropdownOpen && (
@@ -83,10 +83,10 @@ function Navbar() {
                   </li>
                     {isBachelorsOpen && (
                       <ul onClick={toggleNav} style={{listStyle: 'none'}} >
-                        <li><NavLink to='/educational-offers/educational-science'>Educational Sciences</NavLink></li>
-                        <li><NavLink to='/educational-offers/business-administartion'>Business Administration</NavLink></li>
-                        <li><NavLink to='/educational-offers/civil-engeneering'>Civil Engineering</NavLink></li>
-                        <li><NavLink to='/educational-offers/sport-science'>Sport Sciences</NavLink></li>
+                        <li><NavLink to='/courses/educational-science'>Educational Sciences</NavLink></li>
+                        <li><NavLink to='/courses/business-administartion'>Business Administration</NavLink></li>
+                        <li><NavLink to='/courses/civil-engeneering'>Civil Engineering</NavLink></li>
+                        <li><NavLink to='/courses/sport-science'>Sport Sciences</NavLink></li>
                       </ul>
                     )}
                   <li>
@@ -97,8 +97,8 @@ function Navbar() {
                   </li>
                   {isMastersOpen && (
                       <ul onClick={toggleNav} style={{listStyle: 'none'}}>
-                        <li><NavLink to='/educational-offers/informatics'>Informatics</NavLink></li>
-                        <li><NavLink to='/educational-offers/sustainable-developement'>Sustainable Developement</NavLink></li>
+                        <li><NavLink to='/courses/informatics'>Informatics</NavLink></li>
+                        <li><NavLink to='/courses/sustainable-developement'>Sustainable Developement</NavLink></li>
                       </ul>
                     )}
                     <li>
@@ -111,7 +111,7 @@ function Navbar() {
                 )}
               </div>
           </li>
-          <li onClick={toggleNav}>
+          {/* <li onClick={toggleNav}>
                 <NavLink
                 activeclassname="active"
                 aria-current="page"
@@ -119,7 +119,7 @@ function Navbar() {
           >
                 <div>Courses</div>
               </NavLink>
-          </li>
+          </li> */}
           <li onClick={toggleNav}>
                 <NavLink
                 target="_blank"
