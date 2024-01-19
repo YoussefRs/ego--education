@@ -40,7 +40,7 @@ function App() {
       ) : (
           <div className="App">
           <Navigation />
-          <ChatBot />
+          {/* <ChatBot /> */}
           <Routes>
             <Route path="/sitemap.xml" element={renderSitemap} />
             <Route path="/" element={<Home />} />
@@ -48,10 +48,10 @@ function App() {
             <Route exact path="/news" element={<News />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/courses" element={<Main />} />
-            {informatics.map((info) => (
+            {informatics.map((info, i) => (
               <>
                 <Route
-                key={info.title}
+                key={i}
                 exact
                 path={`/courses${info.path}`}
                 element={<OfferDetails data={info} />}
