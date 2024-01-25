@@ -55,6 +55,7 @@
   padding: 20px;
   white-space: nowrap;
   font-family: SansationBold;
+  color: white;
 }
 
 
@@ -72,7 +73,14 @@
 .achievement_container.right {
   left: 0%;
 }
-
+.featured_courses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.featured_courses img {
+  height: 80px;
+}
 /* .achievement_container::before {
   content: "";
   position: absolute;
@@ -191,10 +199,16 @@
   gap: 2rem;
 }
 .title {
+  margin-top: 2rem;
   font-size: 27px;
   text-decoration: underline;
   font-family: sansationLight;
   padding-left: 20px;
+  color: white;
+}
+a {
+  text-decoration: none !important;
+  color: white !important;
 }
 
 .offer_readmore_btn {
@@ -297,3 +311,47 @@
   }
 }
 
+
+.offer_modal .modal-title {
+  color: #046635;
+}
+.offer_modal .modal-body p {
+   margin: 10px;
+  font-size: 15px;
+  line-height: 22px; 
+  color: #000;
+  font-weight: bold;
+  font-family: sansationLight;
+}
+.offer_modal .modal-body span {
+   margin: 10px;
+  font-size: 15px;
+  line-height: 22px; 
+  color: #046635;
+  font-weight: bold;
+  font-family: sansationLight;
+}
+.offer_modal .modal-body ul {
+   margin: 10px;
+  font-size: 15px;
+  line-height: 22px; 
+  color: #046635;
+  font-weight: bold;
+  font-family: sansationLight;
+}
+.offer_modal .modal-body ul li {
+  margin: 10px;
+  font-size: 12px;
+  line-height: 22px; 
+  color: black;
+  font-family: sansationLight;
+}
+.offer_modal .modal-body ul li span {
+  margin: 10px;
+  font-size: 15px;
+  line-height: 22px; 
+  color: #046635;
+  font-weight: bold;
+  font-family: sansationLight;
+  text-decoration: underline;
+}

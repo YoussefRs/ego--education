@@ -72,14 +72,19 @@ function Navbar() {
       </div>
       <ul id="navBar" style={{ right: isOpen ? 0 : "-200px" }}>
         <li onClick={toggleNav}>
-          <NavLink activeclassname="active" aria-current="page" to="/">
+          <NavLink
+            className="__navigation"
+            activeclassname="active"
+            aria-current="page"
+            to="/"
+          >
             <div>Home</div>
           </NavLink>
         </li>
         <li>
           <div className="nav-dropdown">
             <div
-              className="nav-item"
+              className=""
               style={{
                 padding: 0,
                 display: "flex",
@@ -95,6 +100,7 @@ function Navbar() {
                 aria-current="page"
                 to="/courses"
                 onMouseEnter={toggleDropdown}
+                className="__navigation"
               >
                 <div>Courses</div>
               </NavLink>
@@ -198,6 +204,7 @@ function Navbar() {
           <NavLink
             target="_blank"
             activeclassname="active"
+            className="__navigation"
             aria-current="page"
             to="https://ego-education.ispringlearn.eu/signup/kDuZZhxbaZMhMNY5cUqoh5aX8xM"
           >
@@ -205,12 +212,22 @@ function Navbar() {
           </NavLink>
         </li>
         <li onClick={toggleNav}>
-          <NavLink activeclassname="active" aria-current="page" to="/about">
+          <NavLink
+            activeclassname="active"
+            aria-current="page"
+            to="/about"
+            className="__navigation"
+          >
             <div>About</div>
           </NavLink>
         </li>
         <li onClick={toggleNav}>
-          <NavLink activeclassname="active" aria-current="page" to="/contact">
+          <NavLink
+            activeclassname="active"
+            aria-current="page"
+            to="/contact"
+            className="__navigation"
+          >
             <div>Contact</div>
           </NavLink>
         </li>

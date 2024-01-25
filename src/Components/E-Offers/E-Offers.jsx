@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import "./E-Offers.css";
 import {bachelors, masters} from "../../Data/offers-list.js";
 import AOS from "aos";
@@ -6,6 +6,8 @@ import "aos/dist/aos.css";
 import { NavLink } from "react-router-dom";
 import Background from "../Background";
 import MetaData from "../../Data/MetaData";
+import { collection, getDocs } from "firebase/firestore";
+import { firestore } from "../../firebaseConfig.js";
 
 const Eoffers = () => {
   useEffect(() => {
@@ -15,9 +17,38 @@ const Eoffers = () => {
     });
   }, []);
 
+  const [courses, setCourses] = useState([]);
+
+const fetchCourseData = async () => {
+  try {
+    const querySnapshot = await getDocs(collection(firestore, "courses"));
+    const coursesArray = [];
+
+    for (const doc of querySnapshot.docs) {
+      const courseData = { id: doc.id, ...doc.data(), modules: [] };
+
+      // Fetch subcollection 'modules' for each course
+      const modulesSnapshot = await getDocs(collection(doc.ref, "modules"));
+      modulesSnapshot.forEach((moduleDoc) => {
+        courseData.modules.push({ id: moduleDoc.id, ...moduleDoc.data() });
+      });
+
+      coursesArray.push(courseData);
+    }
+
+    setCourses(coursesArray);
+  } catch (error) {
+    console.error("Error fetching course data:", error);
+  }
+  };
+
+  useEffect(() => {
+fetchCourseData();
+  }, [])
+  console.log(courses)
+
   return (
     <div className="offer-page">
-      <MetaData title="Educational Offers | eGO Education" />
       <div className="offer-header">
         <div className="offer_headline_div">
           <h1 data-aos={"zoom-in-up"} className="offer-moto">
