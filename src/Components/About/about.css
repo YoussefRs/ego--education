@@ -66,6 +66,7 @@
   padding: 20px;
   white-space: nowrap;
   font-family: SansationBold;
+  color: white;
 }
 .about-content {
   display: flex;

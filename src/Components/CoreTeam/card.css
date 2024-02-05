@@ -8,10 +8,10 @@
   font-size: 1.4rem;
   z-index: 5;
   position: relative;
-  top: -100px;
+  /* top: -100px; */
   text-align: left;
   padding-left: 20px;
-  text-shadow: 2px 2px 20px  #000;
+  /* text-shadow: 2px 2px 20px  #000; */
   background: linear-gradient(to right, rgb(255, 254, 254), rgba(0, 0, 0, 0.2));
   color: black;
   
@@ -21,11 +21,11 @@
   font-size: 1.2rem;
   padding: 0.3rem;
   position: relative;
-  top: -220px;
+  /* top: -220px; */
   text-align: left;
   padding-left: 20px;
   color: #046635;
-  text-shadow: 2px 2px 20px  #000000;
+  /* text-shadow: 2px 2px 20px  #000000; */
   background: linear-gradient(to right, rgb(255, 254, 254), rgba(0, 0, 0, 0.2));
  
 }

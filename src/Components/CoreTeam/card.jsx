@@ -60,6 +60,7 @@ const styles = {
     borderRadius: "5px",
     zIndex: "3",
     objectFit: "contain",
+    opacity: 0.3
   },
   department: {
     color: "white",

@@ -187,6 +187,7 @@ img {
   font-size: 2.5rem;
   padding: 20px;
   font-family: SansationBold;
+  color: white;
 }
 .fillform2 {
   font-size: 1.3rem;
@@ -196,6 +197,7 @@ img {
   font-size: medium;
   display: inline;
   position: relative;
+  color: #046635;
 }
 .contact_para {
   position: relative;
@@ -208,6 +210,7 @@ img {
   font-family: SansationLight;
   padding-top: 5px;
   font-size: small;
+  color: white;
 }
 
 .jointeam_img {

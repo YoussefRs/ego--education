@@ -1,13 +1,14 @@
 .distribution-map {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 588.9px;
   padding: 20px;
   box-sizing: border-box;
   margin: 0 auto;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  
 }
 .map {
   height: 100%;
@@ -17,12 +18,14 @@
 .countries {
   display: flex;
   justify-content: flex-start;
-  padding: 20px;
+  max-height: 100%;
+  overflow-y: auto;
+  margin: 20px;
+  
 }
 .countries ul {
   list-style: none;
-  height: 78%;
-  overflow-y: scroll;
+  text-align: left;
 }
 .countries ul li {
   cursor: pointer;
@@ -38,7 +41,6 @@
   .countries ul {
     display: flex;
     flex-wrap: wrap;
-  justify-content: center;
   line-height: 20px;
   }
   .countries ul li {
@@ -46,7 +48,7 @@
   }
 }
 @media (min-width: 1200px) and (max-width: 1500px) {
-  .countries ul {
+  /* .countries ul {
     max-height: clamp(60%, 80%, 80%);
-  }
+  } */
 }

@@ -105,7 +105,7 @@ function Navbar() {
                 <div>Courses</div>
               </NavLink>
             </div>
-            {isDropdownOpen && (
+            {/* {isDropdownOpen && (
               <ul className="dropdown-content">
                 <li>
                   <div
@@ -119,7 +119,6 @@ function Navbar() {
                     onClick={toggleBachelors}
                   >
                     BACHELORS
-                    {/* <button style={{height: 30, width: 30, cursor: "pointer"}}>v</button> */}
                   </div>
                 </li>
                 {isBachelorsOpen && (
@@ -158,7 +157,6 @@ function Navbar() {
                     onClick={toggleMasters}
                   >
                     MASTERS
-                    {/* <button style={{height: 30, width: 30, cursor: "pointer"}}>v</button> */}
                   </div>
                 </li>
                 {isMastersOpen && (
@@ -184,11 +182,10 @@ function Navbar() {
                     }}
                   >
                     ENGLISH COURSES
-                    {/* <button style={{height: 30, width: 30, cursor: "pointer"}}>v</button> */}
                   </div>
                 </li>
               </ul>
-            )}
+            )} */}
           </div>
         </li>
         {/* <li onClick={toggleNav}>

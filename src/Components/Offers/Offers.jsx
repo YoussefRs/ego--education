@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Offers.css";
 import AOS from "aos";
 import { achievements, master, English } from "../../Data/achievements";
@@ -19,12 +19,209 @@ const Main = () => {
   }, []);
   const [show, setShow] = useState(false);
   const [show2, setShow2] = useState(false);
+  const [show3, setShow3] = useState(false);
+  const [show4, setShow4] = useState(false);
+  const [show5, setShow5] = useState(false);
+  const [show6, setShow6] = useState(false);
+  const [canNavigateBack, setCanNavigateBack] = useState(true); 
   const openModal = () => {
     setShow(true);
   };
   const closeModal = () => {
-    setShowModal(false)
-  }
+    setShowModal(false);
+  };
+  const [listPath, setListPath] = useState([document.getElementById("list-0")]);
+  const onBackClick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (listPath.length < 2) {
+      return false;
+    }
+
+    const updatedListPath = [...listPath];
+    
+    const removedList = updatedListPath.pop();
+    setListPath(updatedListPath);
+
+    removedList.classList.remove("active-list");
+    if (updatedListPath.length > 0) {
+      updatedListPath[updatedListPath.length - 1].classList.remove(
+        "parent-list"
+      );
+    }
+
+    removedList
+      .closest(".list-body-container")
+      .querySelectorAll(".list-link")
+      .forEach((link) => link.classList.remove("active-link"));
+
+    window.setTimeout(() => {
+      removedList.classList.add("hidden");
+    }, 310);
+
+    // Check if going back to the list header container
+    if (removedList.id !== "list-0") {
+      // Allow navigation back to the list header container
+      setCanNavigateBack(true);
+    } else {
+      // Disallow navigation back if already in the list header container
+      setCanNavigateBack(false);
+    }
+  };
+  console.log(listPath)
+  const onLinkClick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const link = e.target;
+    const listId = link.getAttribute("href");
+    const list = document.querySelector(listId);
+
+    if (!list) {
+      return false;
+    }
+
+    link.classList.add("active-link");
+    list.classList.remove("hidden");
+
+    window.setTimeout(() => {
+      list.classList.add("active-list");
+    }, 10);
+
+    setListPath((prevListPath) => [...prevListPath, list]);
+
+    if (listPath.length > 0) {
+      listPath[listPath.length - 1].classList.add("parent-list");
+    }
+  };
+  // useEffect(() => {
+  //   // Attach event listeners
+  //   const backLink = document.querySelector(".back-link");
+  //   backLink.addEventListener("click", onBackClick);
+
+  //   const listLinks = document.querySelectorAll(".list-link");
+  //   listLinks.forEach((link) => link.addEventListener("click", onLinkClick));
+
+  //   // Cleanup on component unmount
+  //   return () => {
+  //     backLink.removeEventListener("click", onBackClick);
+  //     listLinks.forEach((link) =>
+  //       link.removeEventListener("click", onLinkClick)
+  //     );
+  //   };
+  // }, [listPath]);
+
+
+  const [mode, setMode] = useState("light");
+  const overlay = useRef(null);
+  const msg = useRef(null);
+  const main = useRef(null);
+  const htmlCourse = useRef(null);
+  const cssCourse = useRef(null);
+  const jsCourse = useRef(null);
+  const backBtns = useRef(null);
+  const buttons = useRef(null);
+  const markBtns = useRef(null);
+
+  const htmlCourses = useRef(null);
+  const cssCourses = useRef(null);
+  const jsCourses = useRef(null);
+  const progressBars = useRef(null);
+  const progressText = useRef(null);
+
+  const allCourses = [htmlCourses, cssCourses, jsCourses];
+
+  const updateCourses = () => {
+    for (let i = 0; i < progressBars?.current?.length; i++) {
+      const course = allCourses.current[i];
+      const length = course.length - 1;
+      let completed = 0;
+      for (let j = 0; j < course.length; j++) {
+        if (course[j].classList[2]) {
+          completed += 1;
+        }
+      }
+      progressText.current[
+        i
+      ].innerText = `${completed}/${length} Lessons Completed`;
+      progressBars.current[i].style.width = (completed / length) * 200 + "px";
+    }
+  };
+
+  updateCourses();
+
+  const showCourse = (course) => {
+    course.current.style.transform = "translateX(0px)";
+    course.current.style.display = "block";
+  };
+
+  const hideCourse = (course) => {
+    course.current.style.transform = "translateX(150%)";
+    course.current.style.display = "none";
+  };
+
+  const handleModeToggle = () => {
+    setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+  };
+
+  const handleButtonClick = (courseToShow) => {
+    overlay.current.style.transformOrigin = "right";
+    overlay.current.style.transform = "scaleX(1)";
+    msg.current.innerText = "Loading Course...";
+
+    setTimeout(() => {
+      msg.current.style.opacity = 1;
+      hideCourse(main);
+    }, 500);
+
+    setTimeout(() => {
+      msg.current.style.opacity = 0;
+      showCourse(courseToShow);
+    }, 2500);
+
+    setTimeout(() => {
+      overlay.current.style.transformOrigin = "left";
+      overlay.current.style.transform = "scaleX(0)";
+    }, 3000);
+  };
+
+  const handleBackButtonClick = () => {
+    overlay.current.style.transformOrigin = "right";
+    overlay.current.style.transform = "scaleX(1)";
+    msg.current.innerText = "Loading Courses...";
+
+    setTimeout(() => {
+      msg.current.style.opacity = 1;
+      for (let course of [htmlCourse, cssCourse, jsCourse]) {
+        hideCourse(course);
+      }
+    }, 500);
+
+    setTimeout(() => {
+      msg.current.style.opacity = 0;
+      showCourse(main);
+    }, 2500);
+
+    setTimeout(() => {
+      overlay.current.style.transformOrigin = "left";
+      overlay.current.style.transform = "scaleX(0)";
+    }, 3000);
+  };
+
+  const handleMarkButtonClick = (parentLesson, btn) => {
+    const checked = parentLesson.classList[2] ? true : false;
+    if (checked) {
+      parentLesson.classList.remove("checked");
+      btn.innerText = "Mark as Done";
+    } else {
+      parentLesson.classList.add("checked");
+      btn.innerText = "Mark as Incomplete";
+    }
+    updateCourses();
+  };
+
+
 
   return (
     <div className="achievements_section">
@@ -411,6 +608,358 @@ const Main = () => {
           </Modal.Body>
         </Modal>
       </>
+      <>
+        <Button variant="primary" onClick={() => setShow2(true)}>
+          Custom Width Modal
+        </Button>
+
+        <Modal
+          show={show3}
+          onHide={() => setShow3(false)}
+          dialogClassName="modal-90w"
+          aria-labelledby="example-custom-modal-styling-title"
+          size="lg"
+          className="offer_modal"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title id="example-custom-modal-styling-title">
+              BUSINESS ADMINISTRATION
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <p>
+              The 3-year Degree Course in Business Administration provides
+              students with a training that meet the needs of different types of
+              businesses. The skills acquired by graduates during their studies
+              may, in fact, flexibly match the majority of requests coming from
+              the world of work. This degree course offers to students the
+              possibility to acquire diverse skill sets in the
+              organisational-management, administrative-financial and banking
+              credit sectors. Taking into account personal interests and
+              attitudes, the students will deepen the scope of the main company
+              functions, with particular reference to accounting, planning,
+              control, organisational, legal and tax activities, with specific
+              regard to the small and medium-sized companies. The students may
+              alternatively choose amongst modules concerning corporate finance,
+              the structure and functioning of the financial markets and the
+              credit system as well. Professional activities range from
+              administrative and/or financial functions up to those related to
+              organisation, production and marketing.
+            </p>
+            <ul>
+              Career:
+              <li>Accountant</li>
+              <li>Bursar and Treasurer</li>
+              <li>Condominium and Building Administrator</li>
+              <li>
+                Organization and Management of Production Factors Technician
+              </li>
+              <li>Insurance Agent</li>
+              <li>Sales and Distribution Technician</li>
+              <li>Marketing Technician</li>
+            </ul>
+            <span>Entry Requirements</span>
+            <ul>
+              Applicants are required to have a:
+              <li>
+                A valid and recognised high school diploma, irrespective of
+                country of conferment, achieved after at least 12 years of
+                schooling.
+              </li>
+              <li>
+                It is also required a basic knowledge corresponding to the
+                average level acquired through school education at upper
+                secondary education level. The assessment of the basic knowledge
+                will occur according to the methods indicated in the Academic
+                Regulations of the course of reference.
+              </li>
+            </ul>
+            <span>Traineeship</span>
+            <p>
+              Pegaso International’s traineeships are integral part of the
+              student academic curriculum, and are provided as practical
+              activities of the academic record relevant to the completion of
+              the study course. Traineeships may be mandatory or recognized as
+              processes through which students may gain exemptions of credits.
+              The number of credits gained for curricular traineeships is stated
+              in the Standard Study Plans. Traineeship activities are officially
+              recognised through the acknowledgement of credits (1 ECTS = 8
+              hours). Generally, the working hours are mutually agreed upon
+              between the trainee and the host company, considering the current
+              needs of both parties and the company working hours. Students may
+              undertake the traineeship at any time of the year.
+            </p>
+            <span>Learning Outcomes</span> <br />
+            <ul>
+              The learner will be able to:
+              <li>
+                Demonstrate managerial, consulting and business administration
+              </li>
+              <li>
+                Explain the difference between private and public organizations
+              </li>
+              <li>
+                Illustrate the functioning of modern business organizations and
+                financial systems
+              </li>
+              <li>
+                Developing appropriate methods of analysis and critical
+                interpretation of the structures and dynamics of companies
+              </li>
+              <li>
+                Express specific aspects of leadership, management and business
+                administration
+              </li>
+              <li>
+                Identify specific types of businesses and financial
+                intermediation
+              </li>
+              <li>
+                Develop appropriate methods of analysis and critical
+                interpretation of the structures and dynamics of companies
+              </li>
+              <li>Support the principles of sustainability</li>
+              <li>
+                Combine the use of statistical tools and principles with the
+                administration of businesses.
+              </li>
+            </ul>
+            <h6>
+              Total:{" "}
+              <span style={{ textDecoration: "underline" }}>180 ECTS</span>
+            </h6>
+            <span>Admission Requirements</span>
+            <ul>
+              Students will be considered eligible for admission for a
+              traineeship, upon the positive assessment of a minimum number of
+              ECTS, with reference to:
+              <li>Three-year degree courses: 100 ECTS out of 180</li>
+              <li>Master’s degree courses: 50 ECTS out of 120</li>
+              <li>
+                one-year master degree course in Informatics: 20 ECTS out of 90
+              </li>
+              <ul>
+                Students are required to reach specific agreements with the host
+                company and communicate the following data in writing to Pegaso
+                International to the mail: traineeship@pegasointernational.eu
+              </ul>
+              <li>Name of the Host company</li>
+              <li>Agreed time frame of the traineeship</li>
+              <li>
+                Name and surname of the company tutor and relevant contact
+                details (telephone and email)
+              </li>
+              <li>
+                Educational objectives of the traineeship, agreed with the
+                company tutor
+              </li>
+            </ul>
+            <h6>
+              Price: <span>€ 3,000</span>
+            </h6>
+          </Modal.Body>
+        </Modal>
+      </>
+      <>
+        <Button variant="primary" onClick={() => setShow2(true)}>
+          Custom Width Modal
+        </Button>
+
+        <Modal
+          show={show4}
+          onHide={() => setShow4(false)}
+          dialogClassName="modal-90w"
+          aria-labelledby="example-custom-modal-styling-title"
+          size="lg"
+          className="offer_modal"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title id="example-custom-modal-styling-title">
+              SPORT SCIENCE
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <p>
+              The 3-year Degree Course in Sport Sciences aims to provide
+              students with knowledge and skills suitable for managing,
+              performing and assessing sport individual and group activities of
+              a compensatory, adapted, educational, recreational and playful
+              nature. The course programme provides a first academic year aimed
+              at the acquisition of anatomical, biochemical and physiological
+              knowledge needed to understand how basically the human body in
+              motion works. The second academic year is, instead, focused on the
+              teaching of motor and sports activities, as well as the knowledge
+              of sport sciences and its connections with health. The activities
+              of the third academic year are aimed at understanding theoretical
+              and practical aspects of sport training, as well as the functional
+              and nutritional assessment of the athlete and the subject trained,
+              or of the leisure-time motor and sport activities , the
+              environmental quality and safety in sports facilities, of
+              orthopedics and traumatology of sport and movement, and all the
+              legal and economic foundations of the structure and sports
+              organisations.
+            </p>
+            <ul>
+              Career:
+              <li>Trainers of non-competitive sport disciplines.t</li>
+              <li>Organizers of events and sports facilities.</li>
+              <li>Sports observers.</li>
+              <li>Sport coaches and technicians.</li>
+            </ul>
+            <span>Entry Requirements</span>
+            <ul>
+              Applicants are required to have a:
+              <li>
+                A valid and recognised high school diploma, irrespective of
+                country of conferment, achieved after at least 12 years of
+                schooling.
+              </li>
+              <li>
+                It is also required a basic knowledge corresponding to the
+                average level acquired through school education at upper
+                secondary education level. The assessment of the basic knowledge
+                will occur according to the methods indicated in the Academic
+                Regulations of the course of reference.
+              </li>
+            </ul>
+            <span>Educational Objectives</span> <br />
+            <ul>
+              Standard Specialisation
+              <li>
+                To effectively use, both in written and oral form, at least one
+                official language of the European Union, in addition to Italian,
+                for the exchange of general information in the field of
+                competence.
+              </li>
+              <li>Achieve adequate skills and tools for communication</li>
+              <li>
+                work both in a team and independently, and to quickly enter in
+                the workplace.
+              </li>
+              <span>
+                For the above-mentioned purposes, the curriculum of this degree
+                course:
+              </span>
+              <li>
+                Includes teachings and activities in the biomedical,
+                psycho-pedagogical and organizational fields, both in their
+                basic aspects and through disciplines characterized in relation
+                to specific course objectives.
+              </li>
+              <li>
+                Is further characterized by teachings directly related to motor
+                and sports activities.
+              </li>
+              <li>
+                Provides, in line with its specific objectives, the in-depth
+                study of some the modules and activities planned and internships
+                at: sports facilities and organisations, companies, public
+                administration entities and laboratories, as well at Italian and
+                foreign Institutions, of affiliated by the stipulation of
+                international agreements.
+              </li>
+              <span>
+                In order to manage internships and traineeships aimed at
+                carrying out physical exercises and practical technical
+                activities, the Institution has signed agreements with
+                affiliated associations and companies, such as:
+              </span>
+              <li>CONI (The Italian National Olympic Committee)</li>
+              <li>
+                NEUROMED (Mediterranean Neurological Institute), a leading
+                medical-scientific-hospital and research group, for research and
+                activities in the medical-scientific areas.
+              </li>
+              <span>
+                Such agreements have been entered into order to support the
+                Institution in the activities related to highly specialised
+                laboratories, IT and technological systems, personalised study
+                plans, as well as traineeships and internships.
+              </span>
+              <br />
+              <span>Bio-health specialisation</span>
+              <li>
+                Achieve all the knowledge and the competences used for the
+                development of a wild range professional activities connected to
+                the sport sector.
+              </li>
+              <li>
+                Develop appropriate organization and managerial capabilities
+                together with the communicative and relational ones.
+              </li>
+              <li>
+                Demonstrate understanding of global, societal, environmental,
+                and sustainability issues related to sport sector.
+              </li>
+              <li>
+                Exhibit effective communication, teamwork, entrepreneurial, and
+                leadership skill.
+              </li>
+              <li>
+                Achieve all the adequate competences for the organization and
+                the management of scientific, cultural and sporting events and
+                public performances of local national and international level.
+              </li>
+              <li>
+                Have adequate knowledge and instruments for the communication
+                and the management of information in a specific field of
+                competence
+              </li>
+            </ul>
+            <span>Job Opportunities</span> <br />
+            <ul>
+              Standard Specialisation
+              <li>
+                Management, conduction and evaluation of individual and group
+                motor activities of a compensatory, adaptive, educational,
+                recreational and sports nature aimed at maintaining
+                psycho-physical well-being through the promotion of active
+                lifestyles
+              </li>
+              <li>
+                Management, conduction and evaluation of individual and group
+                fitness activities.
+              </li>
+              <span>Bio-health specialisation</span>
+              <li>
+                Operator in education for the prevention of common health risk
+                factors, such as sedentary lifestyle, overweight and obesity.
+              </li>
+              <li>
+                Manager of physical, sports and leisure activities, divided by
+                various age groups (young, adult, elder).
+              </li>
+              <li>
+                Trainer expert in planning and managing personalised training
+                programs.
+              </li>
+              <li>
+                Technical-sports educator for activities aimed at achieving and
+                maintaining the efficiency of physical and psychophysical
+                measurement.
+              </li>
+              <li>
+                Technical-sports educator in the management of motor and sport
+                activities, supported and enhanced by the use of specific
+                equipment (fitness – wellness).
+              </li>
+              <li>
+                Consultant and Manager of both private and public sports clubs,
+                wellness centres and gyms. Consultant for facilities and sport
+                facilities in the area.
+              </li>
+              <li>Personal and team trainer.</li>
+            </ul>
+            <h6>
+              Total:{" "}
+              <span style={{ textDecoration: "underline" }}>180 ECTS</span>
+            </h6>
+            <h6>
+              Price: <span>€ 3,000</span>
+            </h6>
+          </Modal.Body>
+        </Modal>
+      </>
       <div className="achievements_header">
         <div className="achievements_headline_div">
           <h1 data-aos={"zoom-in-up"} className="achievements_thought">
@@ -440,7 +989,7 @@ const Main = () => {
           className="achievements_line_2"
         ></div>
       </div>
-      <div>
+      {/* <div>
         <h1 className="title" data-aos={"zoom-out"} data-aos-delay={"1600"}>
           MASTER DEGREES
         </h1>
@@ -723,6 +1272,556 @@ const Main = () => {
             </div>
           );
         })}
+      </div> */}
+      <div className="achievements_body">
+        {/* <div class="list-wrapper">
+          <div class="list-container">
+            <div class="list-header-container">
+              <a href="#list-0" class="back-link" onClick={onBackClick}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#000"
+                  class="bi bi-caret-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753" />
+                </svg>
+              </a>
+              <h3>PROGRAMS</h3>
+            </div>
+            <div class="list-body-container">
+              <ul id="list-0" class="list-0 active-list">
+                <li class="list-0-item">
+                  <a
+                    href="#list-1"
+                    id="list"
+                    class="list-link"
+                    onClick={onLinkClick}
+                  >
+                    <span class="list-link-label">eGO</span>
+                    <span class="right-arrow">&gt;</span>
+                  </a>
+                  <ul id="list-1" class="list hidden">
+                    <li class="list-item">
+                      <a href="#list-1-1" id="list-1-1-1" class="list-link">
+                        <span class="list-link-label">MASTER</span>
+                        <span class="right-arrow">&gt;</span>
+                      </a>
+                      <ul id="list-1-1" class="list  hidden">
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">Lorem ipsum.</span>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">Inventore, id.</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-0-item">
+                  <a href="#list-2" class="list-link">
+                    <span class="list-link-label">Peggaso</span>
+                    <span class="right-arrow">&gt;</span>
+                  </a>
+                  <ul id="list-2" class="list hidden">
+                    <li class="list-item">
+                      <a href="#list-2-1" class="list-link">
+                        <span class="list-link-label">BACHELOR</span>
+                        <span class="right-arrow">&gt;</span>
+                      </a>
+                      <ul id="list-2-1" class="list hidden">
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">Lorem ipsum.</span>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">
+                              Non, accusantium!
+                            </span>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">
+                              Itaque, adipisci!
+                            </span>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">Nemo, eligendi.</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="list-item">
+                      <a href="#list-2-2" class="list-link">
+                        <span class="list-link-label">MASTER</span>
+                        <span class="right-arrow">&gt;</span>
+                      </a>
+                      <ul id="list-2-2" class="list hidden">
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">Lorem ipsum.</span>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">Pariatur, quas!</span>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">Fugit, soluta.</span>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">
+                              Beatae, doloribus.
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> */}
+        <div className="achievements_lists">
+          <div class="courses">
+            <div class="course html checked" tabindex="1">
+              <div class="course-info">
+                <span>Master Degree</span>
+                <h5>Master of Science in Java Programming</h5>
+              </div>
+              <div class="course-more">
+                <div class="details">
+                  <h5>Description</h5>
+                </div>
+                <p class="description">
+                  The aim of the course is to allow students to deal with the
+                  entire software development cycle, from the analysis of
+                  customer needs to the structuring of the database, from the
+                  design of the user interface to the construction of the back
+                  end using Object Oriented programming model and the Java
+                  language.
+                </p>
+                <button
+                  onClick={() => setShow(true)}
+                  class="read-btn"
+                  tabindex="3"
+                >
+                  Read more
+                </button>
+                <div class="details">
+                  <h5>
+                    Fees: <span style={{ color: "white" }}>3000 €</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="course html checked" tabindex="4">
+              <div class="course-info">
+                <span>Master Degree</span>
+                <h5>Master of Science in Information Security</h5>
+              </div>
+              <div class="course-more">
+                {/* <div class="details">
+                  <h5>Lesson 2</h5>
+                  <span class="time">4 min.</span>
+                </div> */}
+                <p class="description">
+                  The aim of the course is to acquire critical and in deep
+                  knowledge and skills needed to define IT security strategy, to
+                  implement corporate asset protection programs, and to develop
+                  and implement processes about IT risks mitigation. Students
+                  will develop an advanced knowledge of information security and
+                  an awareness of the context in which information security
+                  operates in terms of safety, environmental, social, and
+                  economic aspects.
+                </p>
+                {/* <button class="read-btn mark" tabindex="5">
+                  Mark as Incomplete
+                </button> */}
+                <button
+                  class="read-btn"
+                  tabindex="6"
+                  onClick={() => setShow2(true)}
+                >
+                  Read More
+                </button>
+                <div class="details">
+                  <h5>
+                    Fees: <span style={{ color: "white" }}>3000 €</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="achievements_heading">
+        <div
+          data-aos={"fade-right"}
+          data-aos-delay={"700"}
+          className="achievements_line_1"
+        ></div>
+        <div>
+          <h1
+            data-aos={"zoom-out"}
+            data-aos-delay={"1200"}
+            className="achievements_title"
+          >
+            Featured Courses
+          </h1>
+        </div>
+        <div
+          data-aos={"fade-left"}
+          data-aos-delay={"700"}
+          className="achievements_line_2"
+        ></div>
+      </div>
+      <div className="achievements_body">
+        {/* <div class="list-wrapper">
+          <div class="list-container">
+            <div class="list-header-container">
+              <a href="#list-0" class="back-link" onClick={onBackClick}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#000"
+                  class="bi bi-caret-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753" />
+                </svg>
+              </a>
+              <h3>PROGRAMS</h3>
+            </div>
+            <div class="list-body-container">
+              <ul id="list-0" class="list-0 active-list">
+                <li class="list-0-item">
+                  <a
+                    href="#list-1"
+                    id="list"
+                    class="list-link"
+                    onClick={onLinkClick}
+                  >
+                    <span class="list-link-label">eGO</span>
+                    <span class="right-arrow">&gt;</span>
+                  </a>
+                  <ul id="list-1" class="list hidden">
+                    <li class="list-item">
+                      <a href="#list-1-1" id="list-1-1-1" class="list-link">
+                        <span class="list-link-label">MASTER</span>
+                        <span class="right-arrow">&gt;</span>
+                      </a>
+                      <ul id="list-1-1" class="list  hidden">
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">Lorem ipsum.</span>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">Inventore, id.</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-0-item">
+                  <a href="#list-2" class="list-link">
+                    <span class="list-link-label">Peggaso</span>
+                    <span class="right-arrow">&gt;</span>
+                  </a>
+                  <ul id="list-2" class="list hidden">
+                    <li class="list-item">
+                      <a href="#list-2-1" class="list-link">
+                        <span class="list-link-label">BACHELOR</span>
+                        <span class="right-arrow">&gt;</span>
+                      </a>
+                      <ul id="list-2-1" class="list hidden">
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">Lorem ipsum.</span>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">
+                              Non, accusantium!
+                            </span>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">
+                              Itaque, adipisci!
+                            </span>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">Nemo, eligendi.</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="list-item">
+                      <a href="#list-2-2" class="list-link">
+                        <span class="list-link-label">MASTER</span>
+                        <span class="right-arrow">&gt;</span>
+                      </a>
+                      <ul id="list-2-2" class="list hidden">
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">Lorem ipsum.</span>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">Pariatur, quas!</span>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">Fugit, soluta.</span>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#" class="list-link">
+                            <span class="list-link-label">
+                              Beatae, doloribus.
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> */}
+        <div className="achievements_lists">
+          <div class="courses">
+            <div class="course pegaso html checked" tabindex="1">
+              <div class="course-info">
+                <span>bachelor degree</span>
+                <h5>BUSINESS ADMINISTRATION</h5>
+              </div>
+              <div class="pegaso course-more">
+                {/* <div class="details">
+                  <h5>Lesson 1</h5>
+                </div> */}
+                <p class="pegaso description">
+                  The 3-year Degree Course in Business Administration provides
+                  students with a training that meet the needs of different
+                  types of businesses.
+                </p>
+                <button
+                  onClick={() => setShow3(true)}
+                  class="read-btn"
+                  tabindex="3"
+                >
+                  Read more
+                </button>
+                <div class="details">
+                  <h5>
+                    Fees: <span style={{ color: "white" }}>3000 €</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="course html pegaso checked" tabindex="4">
+              <div class="course-info">
+                <span>bachelor degree</span>
+                <h5>SPORT SCIENCE</h5>
+              </div>
+              <div class="pegaso course-more">
+                {/* <div class="details">
+                  <h5>Lesson 2</h5>
+                  <span class="time">4 min.</span>
+                </div> */}
+                <p class="description">
+                  The 3-year Degree Course in Sport Sciences aims to provide
+                  students with knowledge and skills suitable for managing,
+                  performing and assessing sport individual and group activities
+                  of a compensatory.
+                </p>
+                {/* <button class="read-btn mark" tabindex="5">
+                  Mark as Incomplete
+                </button> */}
+                <button
+                  class="read-btn"
+                  tabindex="6"
+                  onClick={() => setShow4(true)}
+                >
+                  Read More
+                </button>
+                <div class="details">
+                  <h5>
+                    Fees: <span style={{ color: "white" }}>3000 €</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="course pegaso checked html" tabindex="7">
+              <div class="course-info">
+                <span>bachelor degree</span>
+                <h5>EDUCATIONAL SCIENCES</h5>
+              </div>
+              <div class="pegaso course-more">
+                {/* <div class="details">
+                  <h5>Lesson 3</h5>
+                  <span class="time">4 min.</span>
+                </div> */}
+                <p class="description">
+                  The 3-year bachelor degree course in Educational Sciences is
+                  aimed at acquiring the basic and methodological skills
+                  concerning pedagogical and didactic knowledge.
+                </p>
+                {/* <button class="read-btn mark" tabindex="8">
+                  Mark as Done
+                </button> */}
+                <button class="read-btn" tabindex="9">
+                  Read More
+                </button>
+                <div class="details">
+                  <h5>
+                    Fees: <span style={{ color: "white" }}>3000 €</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="course pegaso checked html" tabindex="7">
+              <div class="course-info">
+                <span>bachelor degree</span>
+                <h5>CIVIL ENGENEERING</h5>
+              </div>
+              <div class="pegaso course-more">
+                {/* <div class="details">
+                  <h5>Lesson 3</h5>
+                  <span class="time">4 min.</span>
+                </div> */}
+                <p class="description">
+                  The areas of interest related to this 3-year bachelor Degree
+                  course in Civil Engineering are construction and
+                  infrastructures.
+                </p>
+                {/* <button class="read-btn mark" tabindex="8">
+                  Mark as Done
+                </button> */}
+                <button class="read-btn" tabindex="9">
+                  Read More
+                </button>
+                <div class="details">
+                  <h5>
+                    Fees: <span style={{ color: "white" }}>3000 €</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="course pegaso checked html" tabindex="7">
+              <div class="course-info">
+                <span>MASTER DEGREE</span>
+                <h5>INFORMATICS</h5>
+              </div>
+              <div class="pegaso course-more">
+                {/* <div class="details">
+                  <h5>Lesson 3</h5>
+                  <span class="time">4 min.</span>
+                </div> */}
+                <p class="description">
+                  Master of Science in Informatics is a 1-year master’s
+                  programme for those who wish to continue studying Informatics
+                  after completion of a bachelor’s degree programme.
+                </p>
+                {/* <button class="read-btn mark" tabindex="8">
+                  Mark as Done
+                </button> */}
+                <button class="read-btn" tabindex="9">
+                  Read More
+                </button>
+                <div class="details">
+                  <h5>
+                    Fees: <span style={{ color: "white" }}>3000 €</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="course pegaso checked html" tabindex="7">
+              <div class="course-info">
+                <span>MASTER DEGREE</span>
+                <h5>SUSTAINABLE DEVELOPEMENT</h5>
+              </div>
+              <div class="pegaso course-more">
+                {/* <div class="details">
+                  <h5>Lesson 3</h5>
+                  <span class="time">4 min.</span>
+                </div> */}
+                <p class="description">
+                  Sustainable Development is a fast growing discipline within
+                  areas of study that complement such growth, thereby developing
+                  in tandem.
+                </p>
+                {/* <button class="read-btn mark" tabindex="8">
+                  Mark as Done
+                </button> */}
+                <button class="read-btn" tabindex="9">
+                  Read More
+                </button>
+                <div class="details">
+                  <h5>
+                    Fees: <span style={{ color: "white" }}>3000 €</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="course pegaso checked html" tabindex="7">
+              <div class="course-info">
+                {/* <span>MASTER DEGREE</span> */}
+                <h5>ENGLISH LANGUAGE COURSES</h5>
+              </div>
+              <div class="pegaso course-more">
+                {/* <div class="details">
+                  <h5>Lesson 3</h5>
+                  <span class="time">4 min.</span>
+                </div> */}
+                <p class="description">
+                  Pegaso International provides language training through its
+                  internal Language Centre, a multilingual environment that
+                  offers a range of English courses.
+                </p>
+                {/* <button class="read-btn mark" tabindex="8">
+                  Mark as Done
+                </button> */}
+                <button class="read-btn" tabindex="9">
+                  Read More
+                </button>
+                <div class="details">
+                  <h5>
+                    Fees: <span style={{ color: "white" }}>4000 €</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

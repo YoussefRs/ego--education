@@ -19,7 +19,7 @@ const Home = () => {
     <div>
       <MetaData title="eGO Education" />
       <Landingslide />
-      <Event />
+      {/* <Event /> */}
       <HomeAbout />
       <WorldMap />
       <Dec2 />
