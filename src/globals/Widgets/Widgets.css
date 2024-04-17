@@ -1,0 +1,107 @@
+.course-info {
+  & .row {
+    border-bottom: 1px solid #e7e7e7;
+  }
+  & .col {
+    padding: 1rem;
+    font-weight: 400;
+    font-family: "Gotham Medium", sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: left;
+    padding: 16px 0;
+  }
+  & .row:last-child {
+    border-bottom: none;
+  }
+  & span {
+    font-weight: 600;
+  }
+}
+
+.contact-widget {
+  width: 100%;
+  position: relative;
+  background-color: #046635;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+
+  & .contact-img {
+    width: 100%;
+    background: transparent;
+
+    &::before {
+      content: "";
+      border-radius: 10px;
+      background: linear-gradient(1deg, #046635, transparent);
+      position: absolute;
+      top: 20%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    & img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+}
+
+.contact-details {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  z-index: 3;
+
+  & .icon-content {
+    display: inline-flex;
+    justify-content: inherit;
+
+    & span {
+      color: white;
+
+      & i {
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        height: 3em;
+        position: relative;
+        vertical-align: top;
+        width: 3em;
+
+        & svg {
+          fill: currentColor;
+          height: 3em;
+          width: 3em;
+        }
+      }
+    }
+  }
+
+  & .details-wrapper {
+    text-align: start;
+    margin-left: 20px;
+
+    & .details-subtitle {
+      font-size: clamp(1rem, 0.9555rem + 0.2454vw, 1.25rem);
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: capitalize;
+      color: #fff;
+    }
+
+    & a{
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
